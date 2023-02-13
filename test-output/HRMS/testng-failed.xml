@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [HRMS]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="HRMS automation masters(failed)">
+    <groups>
+      <run>
+        <include name="GeoCountry"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.hrms.masters.tests.MastersGeographyTest">
+        <methods>
+          <include name="CountryTest"/>
+          <include name="CountryEditTest"/>
+        </methods>
+      </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
+    </classes>
+  </test> <!-- HRMS automation masters(failed) -->
+</suite> <!-- Failed suite [HRMS] -->

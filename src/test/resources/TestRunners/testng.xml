@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="HRMS">
+
+
+	<test name="HRMS automation masters">
+	<groups>
+		     <run>
+		         <include name ="GeoCountry"></include>
+		     </run>
+		</groups>
+		
+		<classes>
+		<class name="com.hrms.masters.tests.MastersGeographyTest" />
+		</classes> 
+		
+	</test>
+
+
+</suite>
+
+
