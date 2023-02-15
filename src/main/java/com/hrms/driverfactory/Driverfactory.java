@@ -8,6 +8,8 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -26,6 +28,8 @@ public class Driverfactory {
 	public static String highlight;
 	private Optionsmanagers optionsManager;
 	
+	public static Logger logger; 
+	
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 	
 	/**
@@ -35,12 +39,17 @@ public class Driverfactory {
 	@SuppressWarnings("deprecation")
 	public WebDriver initDriver(Properties prop) {  
 			
+		
+		
+		
         String browserName = prop.getProperty("browser");
         highlight =prop.getProperty("highlight"); 
         
 		System.out.println("browser name is:"+browserName);
 		
 		optionsManager =new Optionsmanagers(prop);
+		
+		
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
@@ -61,7 +70,7 @@ public class Driverfactory {
 		
 		getDriver().manage().deleteAllCookies();
 		getDriver().manage().window().maximize();
-		getDriver().manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		getDriver().get(prop.getProperty("url"));
 		
 		return getDriver();
@@ -77,12 +86,17 @@ public class Driverfactory {
 	 */
 	public Properties initProperties() {
 		
+		
+		
 		Properties prop =null;
 		FileInputStream ip=null;
 		
 		String env =System.getProperty("env");//mvn clean install 
 		
 		try {
+			logger = Logger.getLogger("HRMS");
+			PropertyConfigurator.configure("Log4j.properties");
+			
 		if(env==null) {
 			System.out.println("Running on Environment:PROD env...");
 			ip = new FileInputStream("./src/test/resources/Config/Config.properties");
@@ -123,8 +137,15 @@ public class Driverfactory {
 		
 	}
 	
-
+public static int max = 1000;
+public static int min = 500;
+	public static void Max_wait() throws InterruptedException {
+	Thread.sleep(max);
+	}
 	
+	public static void Min_wait() throws InterruptedException {
+	Thread.sleep(min);
+	}
 	
 	
 	/**

@@ -1,64 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-13T17:18:31 IST" name="HRMS" finished-at="2023-02-13T17:18:32 IST" duration-ms="108">
+  <suite started-at="2023-02-14T16:20:05 IST" name="Default suite" finished-at="2023-02-14T16:21:12 IST" duration-ms="66788">
     <groups>
-      <group name="GeoCountry">
-        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@7c711375]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@7c711375]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-      </group> <!-- GeoCountry -->
+      <group name="Geography">
+        <method signature="MastersGeographyTest.LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="LoginTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+      </group> <!-- Geography -->
       <group name="Regression">
-        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@7c711375]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@7c711375]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="LoginTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-02-13T17:18:31 IST" name="HRMS automation masters" finished-at="2023-02-13T17:18:32 IST" duration-ms="108">
+    <test started-at="2023-02-14T16:20:05 IST" name="Default test" finished-at="2023-02-14T16:21:12 IST" duration-ms="66788">
       <class name="com.hrms.masters.tests.MastersGeographyTest">
-        <test-method signature="CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@7c711375]" started-at="2023-02-13T17:18:32 IST" name="CountryEditTest" finished-at="2023-02-13T17:18:32 IST" duration-ms="17" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.hrms.masters.tests.MastersGeographyTest.CountryEditTest(MastersGeographyTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:05 IST" name="setup" finished-at="2023-02-14T16:20:17 IST" duration-ms="11912" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:17 IST" name="LoginTest" finished-at="2023-02-14T16:20:36 IST" duration-ms="19260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest -->
+        <test-method signature="CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:36 IST" name="CountryEditTest" finished-at="2023-02-14T16:20:59 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="22430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountryEditTest -->
-        <test-method signature="CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@7c711375]" started-at="2023-02-13T17:18:32 IST" name="CountryTest" finished-at="2023-02-13T17:18:32 IST" duration-ms="2" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:59 IST" name="CountryTest" finished-at="2023-02-14T16:21:01 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="2184" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button style="width:50px;" type="submit" id="swap" class="btn btn-sm btn-secondary float-right " onclick="swapping();">...</button> is not clickable at point (1496, 134). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div>
+  (Session info: chrome=110.0.5481.96)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b7c703fe201728e03d12312a996a0ba3, clickElement {id=7edc2878-d833-490e-ac61-5a71780e2aac}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55824/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b7c703fe201728e03d12312a996a0ba3)] -> xpath: //*[@id='swap']]
+Session ID: b7c703fe201728e03d12312a996a0ba3]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.hrms.masters.tests.MastersGeographyTest.CountryTest(MastersGeographyTest.java:17)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button style="width:50px;" type="submit" id="swap" class="btn btn-sm btn-secondary float-right " onclick="swapping();">...</button> is not clickable at point (1496, 134). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div>
+  (Session info: chrome=110.0.5481.96)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b7c703fe201728e03d12312a996a0ba3, clickElement {id=7edc2878-d833-490e-ac61-5a71780e2aac}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55824/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b7c703fe201728e03d12312a996a0ba3)] -> xpath: //*[@id='swap']]
+Session ID: b7c703fe201728e03d12312a996a0ba3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.hrms.Utils.ElementUtils.doClick(ElementUtils.java:101)
+at com.hrms.pageactions.MastersGeography.CountryCheck(MastersGeography.java:31)
+at com.hrms.masters.tests.MastersGeographyTest.CountryTest(MastersGeographyTest.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,11 +102,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountryTest -->
+        <test-method signature="StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:21:01 IST" name="StateEditTest" finished-at="2023-02-14T16:21:02 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="1076" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StateEditTest -->
+        <test-method signature="StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:21:02 IST" name="StateTest" finished-at="2023-02-14T16:21:11 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="8661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StateTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:21:11 IST" name="tearDown" finished-at="2023-02-14T16:21:12 IST" duration-ms="1109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
-    </test> <!-- HRMS automation masters -->
-  </suite> <!-- HRMS -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -8,7 +8,7 @@
           <include name="setup"/>
           <include name="CountryTest"/>
           <include name="tearDown"/>
-          <include name="CountryEditTest"/>
+          <include name="LoginTest"/>
         </methods>
       </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
     </classes>

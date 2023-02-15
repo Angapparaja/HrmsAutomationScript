@@ -18,7 +18,7 @@ public class Masters{
 	
 	public static By AddBtn=By.xpath("//*[@id='swap']");
 	
-	public static By showentries =By.xpath("(//select)[2]");
+	public static By showentries =By.xpath("//label[text()='Show ']/select");
 	
 	public static By Tabledata =By.xpath("(((//table)[1]//tr[@role]))[position()=last()]//td[position()>1]");
 	
@@ -41,11 +41,20 @@ public class Masters{
 	 */
 
 	public static By countryName=By.xpath("//*[@id='CountyName']");
-	
 	public static By CountryTableCheck = By.xpath("((//table//tr)[2][position()=last()]//td)[2]");
 	
 
 	
+	/*
+	 * Master-Geography-State-Locators
+	 */
+
+	public static By province=By.xpath("//span[@id='state']");
+	public static By countrySelect=By.xpath("//*[@id='countryId']");
+	public static By stateName=By.xpath("//*[@id='StateName']");
+
+
+
 
 	
 

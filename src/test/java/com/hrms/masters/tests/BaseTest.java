@@ -2,6 +2,7 @@ package com.hrms.masters.tests;
 
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -42,7 +43,7 @@ public class BaseTest {
 		geography = new MastersGeography(driver);
 		
 		
-		loginPage.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
+	//	loginPage.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 	
 		
 //		TestUtil.WaitTill_PageLoads(10);
@@ -50,8 +51,8 @@ public class BaseTest {
 	
 	@AfterTest
 	public void tearDown() {
-//		driver.quit();
-		driver.close();
+		driver.quit();
+		
 	}
 	
 

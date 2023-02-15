@@ -1,22 +1,15 @@
 package com.hrms.pageactions;
-
 import org.openqa.selenium.WebDriver;
-
-
 import com.hrms.Utils.ElementUtils;
+import com.hrms.driverfactory.Driverfactory;
 import com.hrms.pageobjects.Masters;
 
 
 
-
-
-
-
-public class MastersGeography {
+public class MastersGeography extends Driverfactory{
 	public static WebDriver driver;
 	public static ElementUtils elementUtil;
 	Masters mas;
-	
 	
 	
 	public MastersGeography(WebDriver driver) {
@@ -26,54 +19,58 @@ public class MastersGeography {
 		
 		 
 	}
-	
+
 	/*
 	 * Masters-Geography-country action class
 	 */
 	
 	public boolean CountryCheck(String CountryName) throws InterruptedException {
+		
 		elementUtil.doClick(mas.masterIcon);
-		Thread.sleep(500);
+		Max_wait();
 		elementUtil.doClick(mas.AddBtn);
-		Thread.sleep(500);
+		
+		Min_wait();
 		elementUtil.doSendKeys(mas.countryName, CountryName);
 		elementUtil.doClick(mas.saveButton);
-		System.out.println("************** DATA CHECK **************");
-		
+		logger.info("************** DATA CHECK **************");
 		if(elementUtil.toasterMessage().equals("Saved Successfully")) {
-			System.out.println("Verified new data saved!! -> " + elementUtil.toasterMessage);
+			logger.info("Verified new data saved!! -> " + elementUtil.toasterMessage);
 		}else {
-			System.out.println("Duplicate check!! -> " + elementUtil.toasterMessage);
+			logger.info("Duplicate check!! " + elementUtil.toasterMessage);
 		}
+		
 		elementUtil.doClick(mas.AddBtn);
+		Min_wait();
 		elementUtil.doSendKeys(mas.countryName, "#@$$$");  //negative check 
 		elementUtil.doClick(mas.saveButton);
-		System.out.println("************** NEGATIVE DATA CHECK **************");
-		
+
+		logger.info("************** NEGATIVE DATA CHECK **************");
 		elementUtil.toasterMessage("Please enter Country Name");
-		Thread.sleep(500);
-		elementUtil.doSendKeys(mas.countryName, CountryName);
-		System.out.println("************** RESET BUTTON CHECK **************");
+		logger.info("Negative data check  : " + elementUtil.toasterMessage);
 		
+		elementUtil.doSendKeys(mas.countryName, CountryName);
+
+		logger.info("************** RESET BUTTON CHECK **************");
 		if(elementUtil.doIsEnabled(mas.resetButton)) {
 		elementUtil.doClick(mas.resetButton);
-		System.out.println("Reset button successfully worked");
+		logger.info("Reset button successfully worked");
 		}else {
-			System.out.println("Reset button is does not worked");
+			logger.info("Reset button is does not worked");
 		}
-		Thread.sleep(500);
-		elementUtil.doSelectByVisibleText(mas.showentries, "100");
-		Thread.sleep(500);
-		System.out.println("************** TABLE DATA VALIDATION  CHECK **************");
 		
+		Min_wait();
+		elementUtil.doSelectByVisibleText(mas.showentries, "100");
+		Min_wait();
+		logger.info("************** TABLE DATA VALIDATION  CHECK **************");
 		elementUtil.doSendKeys(mas.searchBox, CountryName);
 		String country = CountryName;
-		Thread.sleep(500);
+		
 		if(country.equals(elementUtil.getElements(mas.Tabledata).get(0).getAttribute("innerText").trim())) {
-			System.out.println("country name is Approved");
+			logger.info("country name is Approved");
 		}
 		else {
-			System.out.println("country name is not shown in the Table data");
+			logger.info("country name is not shown in the Table data");
 		}
 
     return true;
@@ -81,19 +78,117 @@ public class MastersGeography {
 	}
 	
 	
-	public boolean CountryEdit(String countryedit) throws InterruptedException {
+	public void CountryEdit(String SearchCountry ,String countryedit) throws InterruptedException {
+		try {
 		elementUtil.doClick(mas.masterIcon);
-		Thread.sleep(500);
+		Min_wait();
 		elementUtil.doClick(mas.AddBtn);
-		Thread.sleep(500);
-		elementUtil.doSendKeys(mas.searchBox, countryedit);
-		Thread.sleep(500);
+		logger.info("************** Search the Country Name **************");
+		elementUtil.waitForElementPresence(mas.searchBox, 30);
+		elementUtil.doSendKeys(mas.searchBox, SearchCountry);
+		logger.info("**************Search Country Name  is : " + SearchCountry + "****************");
 		elementUtil.doClick(mas.editBtn);
-		elementUtil.doSendKeys(mas.countryName, "rusia");
+		Min_wait();
+		elementUtil.doSendKeys(mas.countryName, countryedit);
+		logger.info("**************Edit Country Name  is : " + countryedit + "****************");
+		
 		elementUtil.doClick(mas.updateBtn);
-		return true;
+		}catch(Exception e) {
+			logger.info("Unable to edit the flow");
+		}
+		
 			
 		}
+	
+	
+	/*
+	 * Masters-Geography-State action class
+	 */
+	
+public boolean StateCheck(String CountryName,String StateName) throws InterruptedException {
+		
+		elementUtil.doClick(mas.masterIcon);
+		Max_wait();
+		elementUtil.doClick(mas.province);
+		Min_wait();
+		elementUtil.doClick(mas.AddBtn);
+		
+		Min_wait();
+		elementUtil.doSelectByVisibleText(mas.countrySelect, CountryName);
+		Min_wait();
+		elementUtil.doSendKeys(mas.stateName, StateName);
+		elementUtil.doClick(mas.saveButton);
+		logger.info("************** DATA CHECK **************");
+		if(elementUtil.toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + elementUtil.toasterMessage);
+		}else {
+			logger.info("Duplicate check!! " + elementUtil.toasterMessage);
+		}
+		
+		elementUtil.doClick(mas.AddBtn);
+		Min_wait();
+		elementUtil.doSelectByVisibleText(mas.countrySelect, CountryName);
+		elementUtil.doSendKeys(mas.stateName, "#@$$$");  //negative check 
+		elementUtil.doClick(mas.saveButton);
+
+		logger.info("************** NEGATIVE DATA CHECK **************");
+		elementUtil.toasterMessage("Please enter state");
+		logger.info("Negative data check  : " + elementUtil.toasterMessage);
+		
+		
+		logger.info("************** RESET BUTTON CHECK **************");
+		
+		elementUtil.doSelectByVisibleText(mas.countrySelect, CountryName);
+		elementUtil.doSendKeys(mas.stateName, StateName);
+		if(elementUtil.doIsEnabled(mas.resetButton)) {
+		elementUtil.doClick(mas.resetButton);
+		logger.info("Reset button successfully worked");
+		}else {
+			logger.info("Reset button is does not worked");
+		}
+		
+		Min_wait();
+		elementUtil.doSelectByVisibleText(mas.showentries, "100");
+		Min_wait();
+		logger.info("************** TABLE DATA VALIDATION  CHECK **************");
+		elementUtil.doSendKeys(mas.searchBox, StateName);
+		String state = StateName;
+		Min_wait();
+		if(state.equals(elementUtil.getElements(mas.Tabledata).get(1).getAttribute("innerText").trim())) {
+			logger.info("state name is Approved");
+		}
+		else {
+			logger.info("state name is not shown in the Table data");
+		}
+
+    return true;
+		
+	}
+
+
+public void StateEdit(String SearchState ,String stateedit) throws InterruptedException {
+	try {
+	elementUtil.doClick(mas.masterIcon);
+	Min_wait();
+	elementUtil.doClick(mas.province);
+	Min_wait();
+	elementUtil.doClick(mas.AddBtn);
+	logger.info("************** Search the State Name **************");
+	elementUtil.waitForElementPresence(mas.searchBox, 30);
+	elementUtil.doSendKeys(mas.searchBox, SearchState);
+	logger.info("**************Search State Name  is : " + SearchState + "****************");
+	elementUtil.doClick(mas.editBtn);
+	Min_wait();
+	elementUtil.doSendKeys(mas.stateName, stateedit);
+	logger.info("**************Edit State Name  is : " + stateedit + "****************");
+	
+	elementUtil.doClick(mas.updateBtn);
+	}catch(Exception e) {
+		logger.info("Unable to edit the flow");
+	}
+	
+		
+	}
 
 
 }

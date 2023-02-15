@@ -4,14 +4,13 @@
   <test thread-count="5" name="HRMS automation masters(failed)">
     <groups>
       <run>
-        <include name="GeoCountry"/>
+        <include name="Regression"/>
       </run>
     </groups>
     <classes>
       <class name="com.hrms.masters.tests.MastersGeographyTest">
         <methods>
           <include name="CountryTest"/>
-          <include name="CountryEditTest"/>
         </methods>
       </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
     </classes>
