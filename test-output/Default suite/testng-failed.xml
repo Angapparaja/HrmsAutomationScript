@@ -5,8 +5,8 @@
     <classes>
       <class name="com.hrms.masters.tests.MastersGeographyTest">
         <methods>
+          <include name="WorklocationTest"/>
           <include name="setup"/>
-          <include name="CountryTest"/>
           <include name="tearDown"/>
           <include name="LoginTest"/>
         </methods>

@@ -10,31 +10,7 @@ import com.hrms.driverfactory.Driverfactory;
 
 public class Masters{
 	
-	/*
-	 * Masters Page comman Locators
-	 * 
-	 */
 	public static By masterIcon=By.xpath("//img[@src='resources/images/menu-icon-5.png']");
-	
-	public static By AddBtn=By.xpath("//*[@id='swap']");
-	
-	public static By showentries =By.xpath("//label[text()='Show ']/select");
-	
-	public static By Tabledata =By.xpath("(((//table)[1]//tr[@role]))[position()=last()]//td[position()>1]");
-	
-	public static By duplicateCheck=By.xpath("//div[@class='toast-message']");
-	
-	public static By saveButton=By.xpath("//*[text()='Save']");
-	
-	public static By resetButton=By.xpath("//*[text()='Reset']");
-	
-	public static By nextButton=By.xpath("//*[text()='Next']");
-	
-	public static By searchBox=By.xpath("//input[@type='search']");
-	
-	public static By updateBtn =By.xpath("//button[text()='Update']");
-	
-	public static By editBtn =By.xpath("(//a[@class='fa fa-edit'])[1]");
 
 	/*
 	 * Master-Geography-Country-Locators
@@ -50,13 +26,52 @@ public class Masters{
 	 */
 
 	public static By province=By.xpath("//span[@id='state']");
-	public static By countrySelect=By.xpath("//*[@id='countryId']");
+	
 	public static By stateName=By.xpath("//*[@id='StateName']");
 
 
-
-
+	/*
+	 * Master-Geography-City-Locators
+	 */
 	
+	public static By city=By.xpath("//span[@id='city']");
+	
+	public static By cityName=By.xpath("//*[@id='cityName']");
+	
+	public static By population=By.xpath("//select[@id='population']");	
+	
+	public static By LocMetro = By.xpath("(//span[@class='checkmark'])[1]");
+	
+	public static By LocNonMetro = By.xpath("(//span[@class='checkmark'])[2]");
+	
+	
+	
+	/*
+	 * Master-Geography-Area-Locators
+	 */
+	
+	public static By barangay=By.xpath("//*[@id='barangay']");
+	
+	
+	
+	public static By barangayName=By.xpath("//*[@id='BarangayName']");
+	
+	public static By zipCode=By.xpath("//*[@id='zipcode']");
+	
+	public static By searchBox1=By.xpath("//input[@id='search']");
+	
+	/*
+	 * Master-Geography-WORKLOCATION-Locators
+	 */
+	
+	public static By workLocation=By.xpath("//*[@id='workLocation']");
+	
+	public static By AreaSelect=By.xpath("//*[@id='barengay']");
 
+	public static By workLocationCode=By.xpath("//*[@id='workLocationCode']");
+	
+	public static By workLocationName=By.xpath("//*[@id='workLocationName']");
+	
+	
 
 }

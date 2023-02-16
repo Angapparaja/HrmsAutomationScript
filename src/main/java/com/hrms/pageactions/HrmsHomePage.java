@@ -12,7 +12,7 @@ import com.hrms.Utils.ElementUtils;
 
 public class HrmsHomePage {
 	private WebDriver driver;
-	private ElementUtils elementUtil;
+	private ElementUtils eleUtil;
 	
 	
 	@FindBy(xpath="//img[@src='resources/images/menu-icon-1.png']")
@@ -35,7 +35,7 @@ public class HrmsHomePage {
 
 	public HrmsHomePage(WebDriver driver) {
 		this.driver=driver; 
-		elementUtil =new ElementUtils(driver);
+		eleUtil =new ElementUtils(driver);
 	}
 	
 	public String verifyPageTitle() {
