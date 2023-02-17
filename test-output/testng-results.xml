@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -29,8 +30,24 @@
         <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
         <method signature="MastersGeographyTest.WorklocationEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="WorklocationEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
         <method signature="MastersGeographyTest.WorklocationTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="WorklocationTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+=======
+<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-16T17:31:33 IST" name="HRMS" finished-at="2023-02-16T17:32:20 IST" duration-ms="46686">
+    <groups>
+      <group name="Geography">
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@5b03b9fe]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+      </group> <!-- Geography -->
+      <group name="Regression">
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@5b03b9fe]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+>>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
       </group> <!-- Regression -->
+      <group name="Country">
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@5b03b9fe]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+      </group> <!-- Country -->
     </groups>
+<<<<<<< HEAD
     <test started-at="2023-02-17T11:55:47 IST" name="HRMS automation masters" finished-at="2023-02-17T11:59:14 IST" duration-ms="206608">
       <class name="com.hrms.masters.tests.MastersGeographyTest">
         <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:55:48 IST" name="setup" finished-at="2023-02-17T11:55:55 IST" duration-ms="7890" status="PASS">
@@ -295,6 +312,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- WorklocationTest -->
         <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:59:13 IST" name="tearDown" finished-at="2023-02-17T11:59:14 IST" duration-ms="803" status="PASS">
+=======
+    <test started-at="2023-02-16T17:31:33 IST" name="HRMS automation masters" finished-at="2023-02-16T17:32:20 IST" duration-ms="46686">
+      <class name="com.hrms.masters.tests.MastersGeographyTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@5b03b9fe]" started-at="2023-02-16T17:31:33 IST" name="setup" finished-at="2023-02-16T17:32:09 IST" duration-ms="36147" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@5b03b9fe]" started-at="2023-02-16T17:32:09 IST" name="CountryTest" finished-at="2023-02-16T17:32:18 IST" duration-ms="8100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountryTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@5b03b9fe]" started-at="2023-02-16T17:32:18 IST" name="tearDown" finished-at="2023-02-16T17:32:20 IST" duration-ms="2367" status="PASS">
+>>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

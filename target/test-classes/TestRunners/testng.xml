@@ -13,7 +13,11 @@
 		     <run>
 		         <include name ="Country"></include>
 		     </run>
+<<<<<<< HEAD
 		</groups> -->
+=======
+		</groups> 
+>>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
 		
 		<classes>
 		<class name="com.hrms.masters.tests.MastersGeographyTest" />

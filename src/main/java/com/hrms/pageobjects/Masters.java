@@ -74,4 +74,8 @@ public class Masters{
 	
 	
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
