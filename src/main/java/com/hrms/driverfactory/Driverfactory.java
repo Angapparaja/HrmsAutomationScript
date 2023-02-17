@@ -19,6 +19,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -27,6 +30,10 @@ public class Driverfactory {
 	public static WebDriver driver;
 	public static String highlight;
 	private Optionsmanagers optionsManager;
+	
+	public ExtentReports reports;
+	public ExtentTest logs;
+	
 	
 	public static Logger logger; 
 	
@@ -137,7 +144,7 @@ public class Driverfactory {
 		
 	}
 	
-public static int max = 1000;
+public static int max = 1100;
 public static int min = 500;
 	public static void Max_wait() throws InterruptedException {
 	Thread.sleep(max);

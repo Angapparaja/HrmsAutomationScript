@@ -1,61 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="11" passed="8" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-14T16:20:05 IST" name="Default suite" finished-at="2023-02-14T16:21:12 IST" duration-ms="66788">
+  <suite started-at="2023-02-17T11:55:47 IST" name="HRMS" finished-at="2023-02-17T11:59:14 IST" duration-ms="206608">
     <groups>
       <group name="Geography">
-        <method signature="MastersGeographyTest.LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="LoginTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="LoginTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.AreaEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="AreaEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.AreaTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="AreaTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CityEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CityTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CityTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="StateEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.WorklocationEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="WorklocationEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.WorklocationTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="WorklocationTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
       </group> <!-- Geography -->
       <group name="Regression">
-        <method signature="MastersGeographyTest.LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="LoginTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
-        <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="LoginTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.AreaEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="AreaEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.AreaTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="AreaTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CityEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CityTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CityTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CountryEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="CountryTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="StateEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="StateTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.WorklocationEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="WorklocationEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersGeographyTest.WorklocationTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" name="WorklocationTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-02-14T16:20:05 IST" name="Default test" finished-at="2023-02-14T16:21:12 IST" duration-ms="66788">
+    <test started-at="2023-02-17T11:55:47 IST" name="HRMS automation masters" finished-at="2023-02-17T11:59:14 IST" duration-ms="206608">
       <class name="com.hrms.masters.tests.MastersGeographyTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:05 IST" name="setup" finished-at="2023-02-14T16:20:17 IST" duration-ms="11912" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:55:48 IST" name="setup" finished-at="2023-02-17T11:55:55 IST" duration-ms="7890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:17 IST" name="LoginTest" finished-at="2023-02-14T16:20:36 IST" duration-ms="19260" status="PASS">
+        <test-method signature="LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:55:55 IST" name="LoginTest" finished-at="2023-02-17T11:56:13 IST" duration-ms="17197" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginTest -->
-        <test-method signature="CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:36 IST" name="CountryEditTest" finished-at="2023-02-14T16:20:59 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="22430" status="PASS">
+        <test-method signature="AreaEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:56:13 IST" name="AreaEditTest" finished-at="2023-02-17T11:56:15 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="2746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AreaEditTest -->
+        <test-method signature="AreaTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:56:15 IST" name="AreaTest" finished-at="2023-02-17T11:56:49 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="33748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AreaTest -->
+        <test-method signature="CityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:56:49 IST" name="CityEditTest" finished-at="2023-02-17T11:56:51 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="1752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CityEditTest -->
+        <test-method signature="CityTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:56:51 IST" name="CityTest" finished-at="2023-02-17T11:57:25 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="33640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CityTest -->
+        <test-method signature="CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:57:25 IST" name="CountryEditTest" finished-at="2023-02-17T11:57:46 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="21951" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountryEditTest -->
-        <test-method signature="CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:20:59 IST" name="CountryTest" finished-at="2023-02-14T16:21:01 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="2184" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:57:46 IST" name="CountryTest" finished-at="2023-02-17T11:57:48 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="1983" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[element click intercepted: Element <button style="width:50px;" type="submit" id="swap" class="btn btn-sm btn-secondary float-right " onclick="swapping();">...</button> is not clickable at point (1496, 134). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div>
+              <![CDATA[stale element reference: element is not attached to the page document
   (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b7c703fe201728e03d12312a996a0ba3, clickElement {id=7edc2878-d833-490e-ac61-5a71780e2aac}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55824/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b7c703fe201728e03d12312a996a0ba3)] -> xpath: //*[@id='swap']]
-Session ID: b7c703fe201728e03d12312a996a0ba3]]>
+Command: [6a25afbba48c8e433c4988fa48f5e3b5, clickElement {id=4065f843-179b-46a0-9ff7-2b5c8b3b54b3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6a25afbba48c8e433c4988fa48f5e3b5)] -> xpath: //*[@id='swap']]
+Session ID: 6a25afbba48c8e433c4988fa48f5e3b5]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button style="width:50px;" type="submit" id="swap" class="btn btn-sm btn-secondary float-right " onclick="swapping();">...</button> is not clickable at point (1496, 134). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: wait; position: fixed;"></div>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b7c703fe201728e03d12312a996a0ba3, clickElement {id=7edc2878-d833-490e-ac61-5a71780e2aac}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55824}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55824/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b7c703fe201728e03d12312a996a0ba3)] -> xpath: //*[@id='swap']]
-Session ID: b7c703fe201728e03d12312a996a0ba3
+Command: [6a25afbba48c8e433c4988fa48f5e3b5, clickElement {id=4065f843-179b-46a0-9ff7-2b5c8b3b54b3}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6a25afbba48c8e433c4988fa48f5e3b5)] -> xpath: //*[@id='swap']]
+Session ID: 6a25afbba48c8e433c4988fa48f5e3b5
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -70,8 +100,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 at com.hrms.Utils.ElementUtils.doClick(ElementUtils.java:101)
-at com.hrms.pageactions.MastersGeography.CountryCheck(MastersGeography.java:31)
-at com.hrms.masters.tests.MastersGeographyTest.CountryTest(MastersGeographyTest.java:23)
+at com.hrms.pageactions.MastersGeography.CountryCheck(MastersGeography.java:37)
+at com.hrms.masters.tests.MastersGeographyTest.CountryTest(MastersGeographyTest.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,23 +132,173 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CountryTest -->
-        <test-method signature="StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:21:01 IST" name="StateEditTest" finished-at="2023-02-14T16:21:02 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="1076" status="PASS">
+        <test-method signature="StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:57:49 IST" name="StateEditTest" finished-at="2023-02-17T11:58:11 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="22157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StateEditTest -->
-        <test-method signature="StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:21:02 IST" name="StateTest" finished-at="2023-02-14T16:21:11 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="8661" status="PASS">
+        <test-method signature="StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:58:11 IST" name="StateTest" finished-at="2023-02-17T11:58:18 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="7655" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a25afbba48c8e433c4988fa48f5e3b5, clearElement {id=4ea212f6-0cdd-4a09-966b-c9a31f6d00ca}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6a25afbba48c8e433c4988fa48f5e3b5)] -> xpath: //*[@id='StateName']]
+Session ID: 6a25afbba48c8e433c4988fa48f5e3b5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=110.0.5481.96)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a25afbba48c8e433c4988fa48f5e3b5, clearElement {id=4ea212f6-0cdd-4a09-966b-c9a31f6d00ca}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (6a25afbba48c8e433c4988fa48f5e3b5)] -> xpath: //*[@id='StateName']]
+Session ID: 6a25afbba48c8e433c4988fa48f5e3b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:132)
+at com.hrms.Utils.ElementUtils.doSendKeys(ElementUtils.java:96)
+at com.hrms.pageactions.MastersGeography.StateCheck(MastersGeography.java:138)
+at com.hrms.masters.tests.MastersGeographyTest.StateTest(MastersGeographyTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StateTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4310d43]" started-at="2023-02-14T16:21:11 IST" name="tearDown" finished-at="2023-02-14T16:21:12 IST" duration-ms="1109" status="PASS">
+        <test-method signature="WorklocationEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:58:19 IST" name="WorklocationEditTest" finished-at="2023-02-17T11:59:01 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="42468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WorklocationEditTest -->
+        <test-method signature="WorklocationTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:59:01 IST" name="WorklocationTest" finished-at="2023-02-17T11:59:13 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="11934" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=110.0.5481.96)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a25afbba48c8e433c4988fa48f5e3b5, clickElement {id=39a606ff-4a93-4f94-bf4c-9a5901929f83}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (6a25afbba48c8e433c4988fa48f5e3b5)] -> xpath: //*[@id='countryId']]] -> xpath: .//option[normalize-space(.) = "India"]]
+Session ID: 6a25afbba48c8e433c4988fa48f5e3b5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: Element is not currently visible and may not be manipulated
+  (Session info: chrome=110.0.5481.96)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6a25afbba48c8e433c4988fa48f5e3b5, clickElement {id=39a606ff-4a93-4f94-bf4c-9a5901929f83}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63968}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63968/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[[[ChromeDriver: chrome on WINDOWS (6a25afbba48c8e433c4988fa48f5e3b5)] -> xpath: //*[@id='countryId']]] -> xpath: .//option[normalize-space(.) = "India"]]
+Session ID: 6a25afbba48c8e433c4988fa48f5e3b5
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at org.openqa.selenium.support.ui.Select.setSelected(Select.java:320)
+at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+at com.hrms.Utils.ElementUtils.doSelectByVisibleText(ElementUtils.java:160)
+at com.hrms.pageactions.MastersGeography.WorklocationCheck(MastersGeography.java:502)
+at com.hrms.masters.tests.MastersGeographyTest.WorklocationTest(MastersGeographyTest.java:71)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WorklocationTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@895e367]" started-at="2023-02-17T11:59:13 IST" name="tearDown" finished-at="2023-02-17T11:59:14 IST" duration-ms="803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- HRMS automation masters -->
+  </suite> <!-- HRMS -->
 </testng-results>

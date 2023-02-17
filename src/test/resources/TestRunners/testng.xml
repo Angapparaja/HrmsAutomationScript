@@ -3,13 +3,17 @@
 
 <suite name="HRMS">
 
+<listeners>
+<listener class-name="com.hrms.listeners.ExtentReportListeners"></listener>
+</listeners>
+
 
 	<test name="HRMS automation masters">
-	<groups>
+<!-- 	<groups>
 		     <run>
-		         <include name ="Regression"></include>
+		         <include name ="Country"></include>
 		     </run>
-		</groups>
+		</groups> -->
 		
 		<classes>
 		<class name="com.hrms.masters.tests.MastersGeographyTest" />
@@ -19,5 +23,4 @@
 
 
 </suite>
-
 

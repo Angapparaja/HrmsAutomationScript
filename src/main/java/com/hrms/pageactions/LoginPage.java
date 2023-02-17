@@ -10,6 +10,7 @@ import org.openqa.selenium.support.FindBy;
 
 
 import com.hrms.Utils.ElementUtils;
+import com.hrms.commans.CommanLocators;
 
 
 
@@ -17,37 +18,31 @@ import com.hrms.Utils.ElementUtils;
 public class LoginPage {
 	
 	private WebDriver driver;
-	private ElementUtils elementUtil;
+	private ElementUtils eleUtil;
+	
+	CommanLocators CL;
 
 
-	public static By clientName=By.xpath("//*[@name='clientname']");
-	
-	public static By userName=By.xpath("//*[@name='username']");
-	
-	public static By password=By.xpath("//*[@name='password']");
-	
-	public static By loginBtn=By.xpath("//button[text()='LOGIN ']");
+
 	
 	
-	public static By hrms=By.xpath("//div[text()=' HRMS-CORE ']");
-	
-	public static By selfcare=By.xpath("//div[text()=' HRMS-SELFCARE ']");
+
 	
 	public LoginPage(WebDriver driver) {
 		this.driver=driver; 
-		elementUtil =new ElementUtils(driver);
+		eleUtil =new ElementUtils(driver);
 	}
 	
 	public void Login(String cn, String un, String pwd) throws InterruptedException {
 		//driver.navigate().refresh();
 //		clientName.sendKeys(cn);
 		
-		elementUtil.doSendKeys(clientName, cn);
-		elementUtil.doSendKeys(userName, un);
+		eleUtil.doSendKeys(CL.clientName, cn);
+		eleUtil.doSendKeys(CL.userName, un);
 		
-		elementUtil.doSendKeys(password, pwd);
+		eleUtil.doSendKeys(CL.password, pwd);
 		
-		elementUtil.doClick(loginBtn);
+		eleUtil.doClick(CL.loginBtn);
 	
 //		loginBtn.click();
 //		Thread.sleep(1500);
@@ -60,13 +55,13 @@ public class LoginPage {
 	            if (element.isDisplayed() || element.isEnabled())
 //	                flag = false;
 //	            	ElementUtils.waitForElementPresenseClick(hrms, 10);
-	            elementUtil.doClick(hrms);
+	            eleUtil.doClick(CL.hrms);
 //	            	Locationetro.click();
 			
 	        } catch (Exception e) {
 
 //	            ElementUtils.waitForElementPresenseClick(selfcare, 10);
-	            elementUtil.doClick(selfcare);
+	            eleUtil.doClick(CL.selfcare);
 	        } 
 			
 		
