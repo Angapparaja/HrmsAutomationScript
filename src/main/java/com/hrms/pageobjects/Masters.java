@@ -72,10 +72,49 @@ public class Masters{
 	
 	public static By workLocationName=By.xpath("//*[@id='workLocationName']");
 	
+	/*
+	 * Master-Personal-Religion-Locators
+	 */
+	public static By personal=By.xpath("//*[@id='otherdetail']");
 	
+	public static By religionName=By.xpath("//*[@id='religionName']");
+	
+	
+	/*
+	 * Master-Personal-Nationality-Locators
+	 */
 
-<<<<<<< HEAD
+	public static By nationality=By.xpath("//*[@id='nationality']");
+	
+	public static By nationalityName=By.xpath("//*[@id='nationalityName']");
+	
+	
+	/*
+	 * Master-Personal-Language-Locators
+	 */
+	public static By language=By.xpath("//*[@id='language']");
+	
+	public static By languageName=By.xpath("//*[@id='languageName']");
+	
+	/*
+	 * Master-Personal-Relationship-Locators
+	 */
+	public static By relationship=By.xpath("//span[@id='relationship']");
+	
+	public static By relationshipName=By.xpath("//*[@id='relationshipName']");
+
+	/*
+	 * Master-Personal-BloodGroup-Locators
+	 */
+	public static By bloodGroup=By.xpath("//*[@id='bloodGroup']");
+	
+	public static By bloodgroupName=By.xpath("//*[@id='bloodgroupName']");
+	
+	/*
+	 * Master-Personal-IdentificationProof-Locators
+	 */
+	public static By idproof=By.xpath("//*[@id='idproof']");
+	
+	public static By idproofName=By.xpath("//*[@id='idproofName']");
 }
-=======
-}
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+

@@ -1,4 +1,4 @@
-package com.hrms.pageactions;
+package com.hrms.pageactions.masters;
 
 import java.util.Iterator;
 import java.util.Set;

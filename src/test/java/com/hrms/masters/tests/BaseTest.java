@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -15,9 +16,11 @@ import org.testng.asserts.SoftAssert;
 
 
 import com.hrms.driverfactory.Driverfactory;
-import com.hrms.pageactions.HrmsHomePage;
-import com.hrms.pageactions.LoginPage;
-import com.hrms.pageactions.MastersGeography;
+import com.hrms.pageactions.masters.HrmsHomePage;
+import com.hrms.pageactions.masters.LoginPage;
+import com.hrms.pageactions.masters.MastersGeography;
+import com.hrms.pageactions.masters.MastersPersonal;
+
 
 
 
@@ -35,13 +38,11 @@ public class BaseTest {
 	HrmsHomePage Hp;
 	
 	MastersGeography Mg;
+	MastersPersonal Mp;
 	
 	 
-<<<<<<< HEAD
+
 	@BeforeTest(alwaysRun = true)
-=======
-	@BeforeMethod(alwaysRun = true)
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
 	public void setup() throws InterruptedException {
 		softAssert = new SoftAssert();
 		df =new Driverfactory(); 
@@ -49,26 +50,21 @@ public class BaseTest {
 		driver = df.initDriver(prop);
 		Lp = new LoginPage(driver);
 		Mg = new MastersGeography(driver);
+		Mp = new MastersPersonal(driver);
 		
-<<<<<<< HEAD
+
 //		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
-=======
-		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
-	//	loginPage.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
+
 	
 		
 //		TestUtil.WaitTill_PageLoads(10);
 	}
 	
-<<<<<<< HEAD
-	@AfterClass(alwaysRun = true)
-=======
-	@AfterMethod(alwaysRun = true)
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+
+	@AfterTest(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
-		
+
 	}
 	
 

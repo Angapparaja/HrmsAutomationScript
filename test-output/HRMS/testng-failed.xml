@@ -5,31 +5,26 @@
     <listener class-name="com.hrms.listeners.ExtentReportListeners"/>
   </listeners>
   <test thread-count="5" name="HRMS automation masters(failed)">
-<<<<<<< HEAD
     <classes>
-      <class name="com.hrms.masters.tests.MastersGeographyTest">
+      <class name="com.hrms.masters.tests.MastersPersonalTest">
         <methods>
-          <include name="WorklocationTest"/>
-          <include name="setup"/>
-          <include name="CountryTest"/>
+          <include name="RelationshipEditTest"/>
+          <include name="ReligionTest"/>
           <include name="tearDown"/>
+          <include name="BloodGroupTest"/>
+          <include name="LanguageTest"/>
+          <include name="ReligionEditTest"/>
+          <include name="NationalityTest"/>
+          <include name="BloodGroupEditTest"/>
+          <include name="RelationShipTest"/>
+          <include name="IdentificationProofEditTest"/>
+          <include name="LanguageEditTest"/>
+          <include name="setup"/>
+          <include name="IdentificationProofTest"/>
+          <include name="NationalityEditTest"/>
           <include name="LoginTest"/>
-          <include name="StateTest"/>
-=======
-    <groups>
-      <run>
-        <include name="Country"/>
-      </run>
-    </groups>
-    <classes>
-      <class name="com.hrms.masters.tests.MastersGeographyTest">
-        <methods>
-          <include name="setup"/>
-          <include name="CountryTest"/>
-          <include name="tearDown"/>
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
         </methods>
-      </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
+      </class> <!-- com.hrms.masters.tests.MastersPersonalTest -->
     </classes>
   </test> <!-- HRMS automation masters(failed) -->
 </suite> <!-- Failed suite [HRMS] -->

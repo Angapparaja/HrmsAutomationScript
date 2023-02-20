@@ -1,4 +1,4 @@
-package com.hrms.pageactions;
+package com.hrms.pageactions.masters;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

@@ -603,3 +603,492 @@
 2023-02-16 17:32:17,836 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
 2023-02-16 17:32:18,040 - HRMS -INFO - country name is Approved
 >>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+2023-02-17 12:38:52,452 - HRMS -INFO - Search the Area Name 
+2023-02-17 12:38:52,804 - HRMS -INFO - Search Area Name  is : Northstreet
+2023-02-17 12:38:53,049 - HRMS -INFO - Unable to edit the flow
+2023-02-17 12:39:00,357 - HRMS -INFO -  DATA CHECK 
+2023-02-17 12:39:01,589 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 12:39:03,682 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-17 12:39:04,737 - HRMS -INFO - Negative data check  : Enter Area Name
+2023-02-17 12:39:04,738 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 12:39:05,054 - HRMS -INFO - Reset button successfully worked
+2023-02-17 12:39:05,564 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-17 12:39:26,849 - HRMS -INFO - Area name is not shown in the Table data
+2023-02-17 12:39:28,904 - HRMS -INFO - Unable to edit the flow
+2023-02-17 12:39:36,080 - HRMS -INFO -  DATA CHECK 
+2023-02-17 12:39:37,310 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 12:39:38,756 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-17 12:39:39,819 - HRMS -INFO - Negative data check  : Please enter city
+2023-02-17 12:39:39,822 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 12:39:40,099 - HRMS -INFO - Reset button successfully worked
+2023-02-17 12:39:40,613 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-17 12:40:01,861 - HRMS -INFO - City name is Approved
+2023-02-17 12:40:03,592 - HRMS -INFO -  Search the Country Name 
+2023-02-17 12:40:03,741 - HRMS -INFO - Search Country Name  is : Rusia 
+2023-02-17 12:40:23,774 - HRMS -INFO - Unable to edit the flow
+2023-02-17 12:40:26,642 - HRMS -INFO -  DATA CHECK 
+2023-02-17 12:40:27,833 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 12:40:28,538 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-17 12:40:29,620 - HRMS -INFO - Negative data check  : Please enter Country Name
+2023-02-17 12:40:29,704 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 12:40:29,809 - HRMS -INFO - Reset button successfully worked
+2023-02-17 12:40:30,922 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-17 12:40:31,075 - HRMS -INFO - country name is Approved
+2023-02-17 12:40:32,793 - HRMS -INFO - Search the State Name 
+2023-02-17 12:40:32,946 - HRMS -INFO - Search State Name  is : Altai
+2023-02-17 12:40:53,000 - HRMS -INFO - Unable to edit the flow
+2023-02-17 12:40:59,684 - HRMS -INFO -  DATA CHECK 
+2023-02-17 12:41:00,913 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 12:41:01,689 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-17 12:41:02,744 - HRMS -INFO - Negative data check  : Please enter state
+2023-02-17 12:41:02,745 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 12:41:02,951 - HRMS -INFO - Reset button successfully worked
+2023-02-17 12:41:04,061 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-17 12:41:04,761 - HRMS -INFO - state name is Approved
+2023-02-17 12:41:06,489 - HRMS -INFO - Search the WorkLocation Code Name 
+2023-02-17 12:41:47,113 - HRMS -INFO - Unable to edit the flow
+2023-02-17 12:41:55,318 - HRMS -INFO -  DATA CHECK 
+2023-02-17 12:41:56,378 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 14:13:36,162 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:13:37,620 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 14:13:38,364 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-17 14:13:39,447 - HRMS -INFO - Negative data check  : Enter religion Name
+2023-02-17 14:13:39,528 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 14:13:39,631 - HRMS -INFO - Reset button successfully worked
+2023-02-17 14:13:40,133 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-17 14:13:40,297 - HRMS -INFO - Religion name is Approved
+2023-02-17 14:17:11,162 - HRMS -INFO -  Search the Religion Name 
+2023-02-17 14:17:11,337 - HRMS -INFO - Search Religion Name  is : Buddhism
+2023-02-17 14:17:32,020 - HRMS -INFO - Unable to edit the flow
+2023-02-17 14:30:29,476 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:30:30,690 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 14:32:34,535 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:32:35,763 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 14:32:36,519 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-17 14:32:37,593 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-17 14:32:37,679 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 14:32:37,764 - HRMS -INFO - Reset button successfully worked
+2023-02-17 14:32:38,269 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-17 14:34:40,214 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:34:41,417 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 14:34:42,131 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-17 14:34:43,214 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-17 14:34:43,307 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 14:34:43,400 - HRMS -INFO - Reset button successfully worked
+2023-02-17 14:34:43,914 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-17 14:46:01,192 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:46:02,411 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 14:46:03,184 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-17 14:46:04,240 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-17 14:46:04,381 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 14:46:04,492 - HRMS -INFO - Reset button successfully worked
+2023-02-17 14:46:05,002 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-17 14:53:06,216 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:53:07,442 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 14:53:08,204 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-17 14:53:09,260 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-17 14:53:09,342 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 14:53:09,439 - HRMS -INFO - Reset button successfully worked
+2023-02-17 14:53:09,946 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-17 14:53:10,124 - HRMS -INFO - Nationality name is Approved
+2023-02-17 14:55:20,129 - HRMS -INFO -  Search the Nationality Name 
+2023-02-17 14:55:20,274 - HRMS -INFO - Search Nationality Name  is : Indian
+2023-02-17 14:55:20,988 - HRMS -INFO - Edit Nationality Name  is : Indian
+2023-02-17 14:56:24,502 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:56:25,574 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 14:57:44,347 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:57:45,434 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 14:58:56,189 - HRMS -INFO -  DATA CHECK 
+2023-02-17 14:58:57,258 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:00:36,870 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:00:37,937 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:16:24,220 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:16:25,318 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:25:00,051 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:25:01,229 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:26:34,971 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:26:36,057 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:32:12,087 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:32:13,161 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:34:01,169 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:34:02,239 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:38:32,596 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:38:33,685 - HRMS -INFO - Duplicate check!! Enter work Location Name
+2023-02-17 15:40:26,189 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:40:27,480 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-17 15:42:10,577 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:42:11,816 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-17 15:42:18,191 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-17 15:42:19,247 - HRMS -INFO - Negative data check  : Enter work Location Code
+2023-02-17 15:42:19,248 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 15:42:20,635 - HRMS -INFO - Reset button successfully worked
+2023-02-17 15:42:21,136 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-17 15:46:48,916 - HRMS -INFO -  DATA CHECK 
+2023-02-17 15:46:50,416 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-17 15:46:57,233 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-17 15:46:58,287 - HRMS -INFO - Negative data check  : Enter work Location Code
+2023-02-17 15:46:58,288 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-17 15:46:59,605 - HRMS -INFO - Reset button successfully worked
+2023-02-17 15:47:00,113 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-17 15:47:21,383 - HRMS -INFO - location code is not shown in the Table data
+2023-02-20 10:30:04,449 - HRMS -INFO -  DATA CHECK 
+2023-02-20 10:30:05,660 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 10:30:06,401 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 10:30:07,433 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-20 10:30:07,545 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 10:30:07,851 - HRMS -INFO - Reset button successfully worked
+2023-02-20 10:30:08,353 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 10:30:08,610 - HRMS -INFO - Nationality name is Approved
+2023-02-20 10:30:48,065 - HRMS -INFO -  Search the Nationality Name 
+2023-02-20 10:30:48,201 - HRMS -INFO - Search Nationality Name  is : Indian
+2023-02-20 10:30:48,891 - HRMS -INFO - Edit Nationality Name  is : Indian
+2023-02-20 10:44:20,577 - HRMS -INFO -  DATA CHECK 
+2023-02-20 10:44:21,782 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 10:46:15,860 - HRMS -INFO -  DATA CHECK 
+2023-02-20 10:46:17,054 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 10:46:17,822 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 10:46:18,874 - HRMS -INFO - Negative data check  : Enter language Name
+2023-02-20 10:46:18,958 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 10:46:19,066 - HRMS -INFO - Reset button successfully worked
+2023-02-20 10:46:19,578 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 10:46:19,737 - HRMS -INFO - Languauge name is Approved
+2023-02-20 10:46:59,135 - HRMS -INFO -  Search the Languauge Name 
+2023-02-20 10:46:59,278 - HRMS -INFO - Search Languauge Name  is : Tamil
+2023-02-20 10:46:59,950 - HRMS -INFO - Edit Languauge Name  is : Tamil
+2023-02-20 11:00:13,369 - HRMS -INFO -  DATA CHECK 
+2023-02-20 11:00:14,577 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 11:00:15,313 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 11:00:16,380 - HRMS -INFO - Negative data check  : Enter relationship Name
+2023-02-20 11:00:16,491 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 11:00:16,576 - HRMS -INFO - Reset button successfully worked
+2023-02-20 11:00:17,078 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 11:03:12,692 - HRMS -INFO -  DATA CHECK 
+2023-02-20 11:03:13,895 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 11:03:14,630 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 11:03:15,684 - HRMS -INFO - Negative data check  : Enter relationship Name
+2023-02-20 11:03:15,775 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 11:03:15,864 - HRMS -INFO - Reset button successfully worked
+2023-02-20 11:03:16,365 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 11:03:16,546 - HRMS -INFO - relation name is Approved
+2023-02-20 11:03:52,972 - HRMS -INFO -  Search the relationship Name 
+2023-02-20 11:03:53,135 - HRMS -INFO - Search relationship Name  is : Father
+2023-02-20 11:03:53,845 - HRMS -INFO - Edit relationship Name  is : Father
+2023-02-20 11:13:31,315 - HRMS -INFO -  DATA CHECK 
+2023-02-20 11:13:32,520 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-20 11:13:33,280 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 11:13:33,847 - HRMS -INFO - Negative data check  : Saved Successfully
+2023-02-20 11:16:12,823 - HRMS -INFO -  DATA CHECK 
+2023-02-20 11:16:14,036 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 11:16:14,783 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 11:16:15,528 - HRMS -INFO - Negative data check  : Internal Error, Please contact Admin!!!
+2023-02-20 11:17:50,200 - HRMS -INFO -  DATA CHECK 
+2023-02-20 11:17:51,429 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 11:17:52,219 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 11:17:52,782 - HRMS -INFO - Negative data check  : Internal Error, Please contact Admin!!!
+2023-02-20 11:17:53,464 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 11:17:53,544 - HRMS -INFO - Reset button successfully worked
+2023-02-20 11:17:54,048 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 11:17:54,251 - HRMS -INFO - BloodGroup name is Approved
+2023-02-20 11:53:09,556 - HRMS -INFO -  Search the BloodGroup Name 
+2023-02-20 11:53:09,787 - HRMS -INFO - Search BloodGroup Name  is : A +ve
+2023-02-20 11:53:10,519 - HRMS -INFO - Edit BloodGroup Name  is : A +ve
+2023-02-20 12:05:38,343 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:05:39,553 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:05:40,330 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:05:41,397 - HRMS -INFO - Negative data check  : Enter Idproof Name
+2023-02-20 12:07:22,450 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:07:23,681 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:07:24,455 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:07:25,520 - HRMS -INFO - Negative data check  : Enter Idproof Name
+2023-02-20 12:07:26,110 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:07:26,189 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:07:26,697 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:07:26,878 - HRMS -INFO - IdentificationProof name is Approved
+2023-02-20 12:08:03,169 - HRMS -INFO -  Search the IdentificationProof Name 
+2023-02-20 12:08:03,359 - HRMS -INFO - Search IdentificationProof Name  is : Aadhar card
+2023-02-20 12:08:04,062 - HRMS -INFO - Edit IdentificationProof Name  is : Aadhar card
+2023-02-20 12:09:11,741 - HRMS -INFO - Search the Area Name 
+2023-02-20 12:09:11,949 - HRMS -INFO - Search Area Name  is : Northstreet
+2023-02-20 12:09:12,158 - HRMS -INFO - Unable to edit the flow
+2023-02-20 12:09:19,536 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:09:22,803 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:09:25,016 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 12:09:26,085 - HRMS -INFO - Negative data check  : Enter Area Name
+2023-02-20 12:09:26,086 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:09:26,434 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:09:26,943 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:09:48,280 - HRMS -INFO - Area name is not shown in the Table data
+2023-02-20 12:09:50,259 - HRMS -INFO - Search the City Name 
+2023-02-20 12:09:50,425 - HRMS -INFO - Search City Name  is : Mangalore
+2023-02-20 12:09:51,124 - HRMS -INFO - Edit City Name  is : Mangalore
+2023-02-20 12:09:58,511 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:09:59,713 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:10:01,187 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 12:10:02,245 - HRMS -INFO - Negative data check  : Please enter city
+2023-02-20 12:10:02,245 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:10:02,550 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:10:03,056 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:10:24,329 - HRMS -INFO - City name is Approved
+2023-02-20 12:10:26,117 - HRMS -INFO -  Search the Country Name 
+2023-02-20 12:10:26,286 - HRMS -INFO - Search Country Name  is : Rusia 
+2023-02-20 12:10:46,368 - HRMS -INFO - Unable to edit the flow
+2023-02-20 12:10:49,245 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:10:50,542 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:10:51,284 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:10:52,346 - HRMS -INFO - Negative data check  : Please enter Country Name
+2023-02-20 12:10:52,448 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:10:52,532 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:10:53,654 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:10:53,821 - HRMS -INFO - country name is Approved
+2023-02-20 12:10:55,553 - HRMS -INFO - Search the State Name 
+2023-02-20 12:10:55,680 - HRMS -INFO - Search State Name  is : Altai
+2023-02-20 12:11:15,695 - HRMS -INFO - Unable to edit the flow
+2023-02-20 12:11:20,054 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:11:21,243 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:11:22,088 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 12:11:23,154 - HRMS -INFO - Negative data check  : Please enter state
+2023-02-20 12:11:23,155 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:11:23,374 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:11:24,493 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:11:25,162 - HRMS -INFO - state name is Approved
+2023-02-20 12:11:26,762 - HRMS -INFO - Search the WorkLocation Code Name 
+2023-02-20 12:12:07,382 - HRMS -INFO - Unable to edit the flow
+2023-02-20 12:12:15,709 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:12:16,965 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-20 12:12:23,032 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 12:12:24,089 - HRMS -INFO - Negative data check  : Enter work Location Code
+2023-02-20 12:12:24,090 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:12:25,453 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:12:25,962 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:12:48,971 - HRMS -INFO - location code is not shown in the Table data
+2023-02-20 12:15:39,039 - HRMS -INFO -  Search the BloodGroup Name 
+2023-02-20 12:15:39,224 - HRMS -INFO - Search BloodGroup Name  is : A +ve
+2023-02-20 12:15:39,937 - HRMS -INFO - Edit BloodGroup Name  is : A +ve
+2023-02-20 12:15:44,240 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:15:45,343 - HRMS -INFO - Duplicate check!! Data updated successfully
+2023-02-20 12:15:50,178 - HRMS -INFO -  Search the IdentificationProof Name 
+2023-02-20 12:15:50,314 - HRMS -INFO - Search IdentificationProof Name  is : Aadhar card
+2023-02-20 12:15:51,044 - HRMS -INFO - Edit IdentificationProof Name  is : Aadhar card
+2023-02-20 12:15:55,417 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:15:56,510 - HRMS -INFO - Duplicate check!! Data updated successfully
+2023-02-20 12:15:57,301 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:15:58,361 - HRMS -INFO - Negative data check  : Enter Idproof Name
+2023-02-20 12:15:58,997 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:15:59,092 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:15:59,608 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:15:59,768 - HRMS -INFO - IdentificationProof name is Approved
+2023-02-20 12:16:03,036 - HRMS -INFO -  Search the Languauge Name 
+2023-02-20 12:16:03,153 - HRMS -INFO - Search Languauge Name  is : Tamil
+2023-02-20 12:16:03,836 - HRMS -INFO - Edit Languauge Name  is : Tamil
+2023-02-20 12:16:10,770 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:16:11,990 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:16:12,736 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:16:13,790 - HRMS -INFO - Negative data check  : Enter language Name
+2023-02-20 12:16:13,924 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:16:13,990 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:16:14,504 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:16:14,738 - HRMS -INFO - Languauge name is Approved
+2023-02-20 12:16:18,179 - HRMS -INFO -  Search the Nationality Name 
+2023-02-20 12:16:18,294 - HRMS -INFO - Search Nationality Name  is : Indian
+2023-02-20 12:16:18,990 - HRMS -INFO - Edit Nationality Name  is : Indian
+2023-02-20 12:16:23,402 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:16:24,511 - HRMS -INFO - Duplicate check!! Data updated successfully
+2023-02-20 12:16:25,240 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:16:26,283 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-20 12:16:26,385 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:16:26,490 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:16:26,993 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:16:27,160 - HRMS -INFO - Nationality name is Approved
+2023-02-20 12:16:31,464 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:16:32,658 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:16:33,392 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:16:34,442 - HRMS -INFO - Negative data check  : Enter relationship Name
+2023-02-20 12:16:34,529 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:16:34,642 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:16:35,144 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:16:35,326 - HRMS -INFO - relation name is Approved
+2023-02-20 12:16:38,119 - HRMS -INFO - Unable to edit the flow
+2023-02-20 12:16:41,197 - HRMS -INFO -  Search the Religion Name 
+2023-02-20 12:16:41,335 - HRMS -INFO - Search Religion Name  is : Buddhism
+2023-02-20 12:17:01,895 - HRMS -INFO - Unable to edit the flow
+2023-02-20 12:17:05,745 - HRMS -INFO -  DATA CHECK 
+2023-02-20 12:17:06,989 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 12:17:07,756 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 12:17:08,806 - HRMS -INFO - Negative data check  : Enter religion Name
+2023-02-20 12:17:08,915 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 12:17:08,995 - HRMS -INFO - Reset button successfully worked
+2023-02-20 12:17:09,506 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 12:17:09,689 - HRMS -INFO - Religion name is Approved
+2023-02-20 13:02:51,808 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:02:53,057 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:02:54,331 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:02:55,568 - HRMS -INFO - Negative data check  : Please Enter valid Blood Group
+2023-02-20 13:02:56,254 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:02:56,396 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:02:56,902 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:02:57,073 - HRMS -INFO - BloodGroup name is not shown in the Table data
+2023-02-20 13:03:56,953 - HRMS -INFO -  Search the BloodGroup Name 
+2023-02-20 13:03:57,160 - HRMS -INFO - Search BloodGroup Name  is : A +ve
+2023-02-20 13:03:57,864 - HRMS -INFO - Edit BloodGroup Name  is : A +ve
+2023-02-20 13:04:04,335 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:04:05,546 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:04:06,799 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:04:08,062 - HRMS -INFO - Negative data check  : Please Enter valid Blood Group
+2023-02-20 13:04:08,808 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:04:08,940 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:04:09,441 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:04:09,607 - HRMS -INFO - BloodGroup name is not shown in the Table data
+2023-02-20 13:04:13,150 - HRMS -INFO -  Search the IdentificationProof Name 
+2023-02-20 13:04:13,285 - HRMS -INFO - Search IdentificationProof Name  is : Aadhar card
+2023-02-20 13:04:13,985 - HRMS -INFO - Edit IdentificationProof Name  is : Aadhar card
+2023-02-20 13:04:18,526 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:04:19,592 - HRMS -INFO - Duplicate check!! Data updated successfully
+2023-02-20 13:04:20,317 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:04:21,386 - HRMS -INFO - Negative data check  : Enter Idproof Name
+2023-02-20 13:04:22,013 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:04:22,110 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:04:22,612 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:04:22,783 - HRMS -INFO - IdentificationProof name is Approved
+2023-02-20 13:04:28,061 - HRMS -INFO -  Search the Languauge Name 
+2023-02-20 13:04:28,194 - HRMS -INFO - Search Languauge Name  is : Tamil
+2023-02-20 13:04:28,874 - HRMS -INFO - Edit Languauge Name  is : Tamil
+2023-02-20 13:04:33,391 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:04:34,465 - HRMS -INFO - Duplicate check!! Data updated successfully
+2023-02-20 13:04:35,196 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:04:36,254 - HRMS -INFO - Negative data check  : Enter language Name
+2023-02-20 13:04:36,363 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:04:36,469 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:04:36,982 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:04:37,166 - HRMS -INFO - Languauge name is Approved
+2023-02-20 13:04:40,601 - HRMS -INFO -  Search the Nationality Name 
+2023-02-20 13:04:40,728 - HRMS -INFO - Search Nationality Name  is : Indian
+2023-02-20 13:04:41,422 - HRMS -INFO - Edit Nationality Name  is : Indian
+2023-02-20 13:04:45,840 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:04:46,907 - HRMS -INFO - Duplicate check!! Data updated successfully
+2023-02-20 13:04:47,637 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:04:48,683 - HRMS -INFO - Negative data check  : Enter nationality Name
+2023-02-20 13:04:48,779 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:04:48,878 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:04:49,386 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:04:49,570 - HRMS -INFO - Nationality name is Approved
+2023-02-20 13:04:55,111 - HRMS -INFO -  Search the relationship Name 
+2023-02-20 13:04:55,268 - HRMS -INFO - Search relationship Name  is : Father
+2023-02-20 13:04:55,948 - HRMS -INFO - Edit relationship Name  is : Father
+2023-02-20 13:04:58,927 - HRMS -INFO -  Search the Religion Name 
+2023-02-20 13:04:59,058 - HRMS -INFO - Search Religion Name  is : Buddhism
+2023-02-20 13:05:19,658 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:05:23,421 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:05:24,664 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:05:25,448 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:05:26,514 - HRMS -INFO - Negative data check  : Enter religion Name
+2023-02-20 13:05:26,623 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:05:26,738 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:05:27,246 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:05:27,406 - HRMS -INFO - Religion name is Approved
+2023-02-20 13:07:29,715 - HRMS -INFO - Search the Area Name 
+2023-02-20 13:07:30,012 - HRMS -INFO - Search Area Name  is : Northstreet
+2023-02-20 13:07:30,068 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:07:37,737 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:07:39,062 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:07:43,086 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:07:44,149 - HRMS -INFO - Negative data check  : Enter Area Name
+2023-02-20 13:07:44,150 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:07:44,511 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:07:45,020 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:08:06,280 - HRMS -INFO - Area name is not shown in the Table data
+2023-02-20 13:08:08,163 - HRMS -INFO - Search the City Name 
+2023-02-20 13:08:08,333 - HRMS -INFO - Search City Name  is : Mangalore
+2023-02-20 13:08:09,043 - HRMS -INFO - Edit City Name  is : Mangalore
+2023-02-20 13:08:16,350 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:08:17,731 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:08:19,189 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:08:20,237 - HRMS -INFO - Negative data check  : Please enter city
+2023-02-20 13:08:20,238 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:08:20,520 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:08:21,036 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:08:42,293 - HRMS -INFO - City name is Approved
+2023-02-20 13:08:44,055 - HRMS -INFO -  Search the Country Name 
+2023-02-20 13:08:44,229 - HRMS -INFO - Search Country Name  is : Rusia 
+2023-02-20 13:09:04,275 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:09:07,077 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:09:08,278 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:09:09,018 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:09:10,079 - HRMS -INFO - Negative data check  : Please enter Country Name
+2023-02-20 13:09:10,157 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:09:10,255 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:09:11,352 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:09:11,509 - HRMS -INFO - country name is Approved
+2023-02-20 13:09:13,092 - HRMS -INFO - Search the State Name 
+2023-02-20 13:09:13,231 - HRMS -INFO - Search State Name  is : Altai
+2023-02-20 13:09:33,286 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:09:37,552 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:09:38,808 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:09:39,720 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:09:40,758 - HRMS -INFO - Negative data check  : Please enter state
+2023-02-20 13:09:40,758 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:09:41,022 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:09:42,202 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:09:42,867 - HRMS -INFO - state name is Approved
+2023-02-20 13:09:44,537 - HRMS -INFO - Search the WorkLocation Code Name 
+2023-02-20 13:10:25,145 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:10:33,366 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:10:34,578 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-20 13:10:40,641 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:10:41,708 - HRMS -INFO - Negative data check  : Enter work Location Code
+2023-02-20 13:10:41,708 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:10:42,987 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:10:43,491 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:11:06,467 - HRMS -INFO - location code is not shown in the Table data
+2023-02-20 13:13:19,788 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:14:17,560 - HRMS -INFO - Search the Area Name 
+2023-02-20 13:14:17,887 - HRMS -INFO - Search Area Name  is : Northstreet
+2023-02-20 13:14:18,025 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:14:25,193 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:14:26,379 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:14:28,444 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:14:29,500 - HRMS -INFO - Negative data check  : Enter Area Name
+2023-02-20 13:14:29,501 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:14:29,835 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:14:30,342 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:14:51,592 - HRMS -INFO - Area name is not shown in the Table data
+2023-02-20 13:14:53,343 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:15:00,732 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:15:01,985 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:15:03,456 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:15:04,519 - HRMS -INFO - Negative data check  : Please enter city
+2023-02-20 13:15:04,521 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:15:04,794 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:15:05,306 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:15:26,555 - HRMS -INFO - City name is Approved
+2023-02-20 13:15:28,331 - HRMS -INFO -  Search the Country Name 
+2023-02-20 13:15:28,464 - HRMS -INFO - Search Country Name  is : Rusia 
+2023-02-20 13:15:48,483 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:15:51,343 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:15:52,555 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:15:53,320 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-02-20 13:15:54,386 - HRMS -INFO - Negative data check  : Please enter Country Name
+2023-02-20 13:15:54,479 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:15:54,573 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:15:55,692 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:15:55,840 - HRMS -INFO - country name is Approved
+2023-02-20 13:15:59,915 - HRMS -INFO - Search the State Name 
+2023-02-20 13:16:00,076 - HRMS -INFO - Search State Name  is : Altai
+2023-02-20 13:16:20,112 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:16:24,819 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:16:26,024 - HRMS -INFO - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-20 13:16:26,842 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:16:27,915 - HRMS -INFO - Negative data check  : Please enter state
+2023-02-20 13:16:27,916 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:16:28,134 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:16:29,262 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:16:30,012 - HRMS -INFO - state name is Approved
+2023-02-20 13:16:31,731 - HRMS -INFO - Search the WorkLocation Code Name 
+2023-02-20 13:17:12,347 - HRMS -INFO - Unable to edit the flow
+2023-02-20 13:17:20,640 - HRMS -INFO -  DATA CHECK 
+2023-02-20 13:17:21,829 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-02-20 13:17:30,183 - HRMS -INFO -  NEGATIVE DATA CHECK 
+2023-02-20 13:17:31,241 - HRMS -INFO - Negative data check  : Enter work Location Code
+2023-02-20 13:17:31,243 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-02-20 13:17:32,532 - HRMS -INFO - Reset button successfully worked
+2023-02-20 13:17:33,038 - HRMS -INFO - TABLE DATA VALIDATION  CHECK 
+2023-02-20 13:17:56,042 - HRMS -INFO - location code is not shown in the Table data
