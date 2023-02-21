@@ -55,13 +55,13 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>HRMS automation masters</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/1/12</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 20 13:13:50 IST 2023</td>
+<td>Started on:</td><td>Tue Feb 21 14:39:09 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>247 seconds (247870 ms)</td>
+<tr><td>Total time:</td><td>102 seconds (102673 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td></td>
+<td>Included groups:</td><td>Education </td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -75,13 +75,55 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.LoginTest()'><b>LoginTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.hrms.masters.tests.MastersPersonalTest.LoginTest(MastersPersonalTest.java:10)
+<td title='com.hrms.masters.tests.MastersEducationTest.DegreeTest()'><b>DegreeTest</b><br>Test class: com.hrms.masters.tests.MastersEducationTest</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot; onclick=&quot;dis_horizontal(&apos;education&apos;,&apos;edu_font&apos;,&apos;qualification&apos;)&quot; id=&quot;education&quot;&gt;...&lt;/a&gt; is not clickable at point (113, 200). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: default; position: fixed;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=110.0.5481.96)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a949cc4b2b71e961ac3b66e806e4b1c3, clickElement {id=0345bf3d-a2a1-4562-b235-ffd510b6b42f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a949cc4b2b71e961ac3b66e806e4b1c3)] -&gt; xpath: //*[@id=&apos;education&apos;]]
+Session ID: a949cc4b2b71e961ac3b66e806e4b1c3
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.hrms.Utils.ElementUtils.doClick(ElementUtils.java:101)
+	at com.hrms.pageactions.masters.MastersEducation.DegreeCheck(MastersEducation.java:125)
+	at com.hrms.masters.tests.MastersEducationTest.DegreeTest(MastersEducationTest.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1305596603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1305596603'><pre>java.lang.NullPointerException
-	at com.hrms.masters.tests.MastersPersonalTest.LoginTest(MastersPersonalTest.java:10)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1200812313", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1200812313'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;#&quot; onclick=&quot;dis_horizontal(&apos;education&apos;,&apos;edu_font&apos;,&apos;qualification&apos;)&quot; id=&quot;education&quot;&gt;...&lt;/a&gt; is not clickable at point (113, 200). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: default; position: fixed;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=110.0.5481.96)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a949cc4b2b71e961ac3b66e806e4b1c3, clickElement {id=0345bf3d-a2a1-4562-b235-ffd510b6b42f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a949cc4b2b71e961ac3b66e806e4b1c3)] -&gt; xpath: //*[@id=&apos;education&apos;]]
+Session ID: a949cc4b2b71e961ac3b66e806e4b1c3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.hrms.Utils.ElementUtils.doClick(ElementUtils.java:101)
+	at com.hrms.pageactions.masters.MastersEducation.DegreeCheck(MastersEducation.java:125)
+	at com.hrms.masters.tests.MastersEducationTest.DegreeTest(MastersEducationTest.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,8 +153,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
+<td>2</td>
+<td>com.hrms.masters.tests.MastersEducationTest@79c97cb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -122,404 +164,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.LoginTest()'><b>LoginTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
+<td title='com.hrms.masters.tests.MastersEducationTest.CourseEditTest()'><b>CourseEditTest</b><br>Test class: com.hrms.masters.tests.MastersEducationTest</td>
 <td></td>
-<td>16</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
+<td>4</td>
+<td>com.hrms.masters.tests.MastersEducationTest@79c97cb</td></tr>
 <tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.StateEditTest()'><b>StateEditTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
-<td></td>
-<td>24</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.AreaTest()'><b>AreaTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
-<td></td>
-<td>33</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.CountryTest()'><b>CountryTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
-<td></td>
-<td>7</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.CityEditTest()'><b>CityEditTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
-<td></td>
-<td>1</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.StateTest()'><b>StateTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
+<td title='com.hrms.masters.tests.MastersEducationTest.DegreeEditTest()'><b>DegreeEditTest</b><br>Test class: com.hrms.masters.tests.MastersEducationTest</td>
 <td></td>
 <td>9</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
+<td>com.hrms.masters.tests.MastersEducationTest@79c97cb</td></tr>
 <tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.CountryEditTest()'><b>CountryEditTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
+<td title='com.hrms.masters.tests.MastersEducationTest.CourseTest()'><b>CourseTest</b><br>Test class: com.hrms.masters.tests.MastersEducationTest</td>
 <td></td>
-<td>21</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
+<td>15</td>
+<td>com.hrms.masters.tests.MastersEducationTest@79c97cb</td></tr>
 <tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.WorklocationTest()'><b>WorklocationTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
+<td title='com.hrms.masters.tests.MastersEducationTest.QualificationTest()'><b>QualificationTest</b><br>Test class: com.hrms.masters.tests.MastersEducationTest</td>
 <td></td>
-<td>43</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
+<td>13</td>
+<td>com.hrms.masters.tests.MastersEducationTest@79c97cb</td></tr>
 <tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.CityTest()'><b>CityTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
+<td title='com.hrms.masters.tests.MastersEducationTest.QualificationEditTest()'><b>QualificationEditTest</b><br>Test class: com.hrms.masters.tests.MastersEducationTest</td>
 <td></td>
-<td>33</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.AreaEditTest()'><b>AreaEditTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
-<td></td>
-<td>3</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersGeographyTest.WorklocationEditTest()'><b>WorklocationEditTest</b><br>Test class: com.hrms.masters.tests.MastersGeographyTest</td>
-<td></td>
-<td>42</td>
-<td>com.hrms.masters.tests.MastersGeographyTest@4d518b32</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.ReligionTest()'><b>ReligionTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.ReligionTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1896062177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1896062177'><pre>java.lang.Throwable: Method MastersPersonalTest.ReligionTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.IdentificationProofEditTest()'><b>IdentificationProofEditTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.IdentificationProofEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace70435057", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace70435057'><pre>java.lang.Throwable: Method MastersPersonalTest.IdentificationProofEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.BloodGroupEditTest()'><b>BloodGroupEditTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.BloodGroupEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1738604325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1738604325'><pre>java.lang.Throwable: Method MastersPersonalTest.BloodGroupEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.IdentificationProofTest()'><b>IdentificationProofTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.IdentificationProofTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace676153477", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace676153477'><pre>java.lang.Throwable: Method MastersPersonalTest.IdentificationProofTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.LanguageTest()'><b>LanguageTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.LanguageTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace407285007", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace407285007'><pre>java.lang.Throwable: Method MastersPersonalTest.LanguageTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.RelationshipEditTest()'><b>RelationshipEditTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.RelationshipEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1608217492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1608217492'><pre>java.lang.Throwable: Method MastersPersonalTest.RelationshipEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.BloodGroupTest()'><b>BloodGroupTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.BloodGroupTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2104246393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2104246393'><pre>java.lang.Throwable: Method MastersPersonalTest.BloodGroupTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.NationalityEditTest()'><b>NationalityEditTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.NationalityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace834093538", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace834093538'><pre>java.lang.Throwable: Method MastersPersonalTest.NationalityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.ReligionEditTest()'><b>ReligionEditTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.ReligionEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1264031938", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1264031938'><pre>java.lang.Throwable: Method MastersPersonalTest.ReligionEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.RelationShipTest()'><b>RelationShipTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.RelationShipTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1831953318", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1831953318'><pre>java.lang.Throwable: Method MastersPersonalTest.RelationShipTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.LanguageEditTest()'><b>LanguageEditTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.LanguageEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace10919837", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace10919837'><pre>java.lang.Throwable: Method MastersPersonalTest.LanguageEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
-<tr>
-<td title='com.hrms.masters.tests.MastersPersonalTest.NationalityTest()'><b>NationalityTest</b><br>Test class: com.hrms.masters.tests.MastersPersonalTest</td>
-<td><div><pre>java.lang.Throwable: Method MastersPersonalTest.NationalityTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace686840588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace686840588'><pre>java.lang.Throwable: Method MastersPersonalTest.NationalityTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.hrms.masters.tests.MastersPersonalTest@479cbee5</td></tr>
+<td>5</td>
+<td>com.hrms.masters.tests.MastersEducationTest@79c97cb</td></tr>
 </table><p>
 </body>
 </html>

@@ -9,20 +9,23 @@
 
 
 	<test name="HRMS automation masters">
-<!-- 	<groups>
+ 	<groups>
 		     <run>
-		         <include name ="Country"></include>
+		         <include name ="Education"></include>
 		     </run>
 
-		</groups> -->
+		</groups> 
 
 	
 
 	
 		<classes>
 		
-		<class name="com.hrms.masters.tests.MastersGeographyTest" />
+		 <class name="com.hrms.masters.tests.MastersGeographyTest" />
+		
 		<class name="com.hrms.masters.tests.MastersPersonalTest" />
+		
+		<class name="com.hrms.masters.tests.MastersEducationTest" />
 		</classes> 
 		
 	</test>

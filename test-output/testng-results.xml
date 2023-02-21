@@ -1,17 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="26" passed="11" failed="1" skipped="12">
+<testng-results ignored="22" total="28" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-20T13:13:50 IST" name="HRMS" finished-at="2023-02-20T13:17:57 IST" duration-ms="247870">
+  <suite started-at="2023-02-21T14:39:09 IST" name="HRMS" finished-at="2023-02-21T14:40:52 IST" duration-ms="102673">
     <groups>
+      <group name="Education">
+        <method signature="MastersEducationTest.CourseEditTest()[pri:5, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" name="CourseEditTest" class="com.hrms.masters.tests.MastersEducationTest"/>
+        <method signature="MastersEducationTest.CourseTest()[pri:4, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" name="CourseTest" class="com.hrms.masters.tests.MastersEducationTest"/>
+        <method signature="MastersEducationTest.DegreeEditTest()[pri:3, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" name="DegreeEditTest" class="com.hrms.masters.tests.MastersEducationTest"/>
+        <method signature="MastersEducationTest.DegreeTest()[pri:2, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" name="DegreeTest" class="com.hrms.masters.tests.MastersEducationTest"/>
+        <method signature="MastersEducationTest.QualificationEditTest()[pri:1, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" name="QualificationEditTest" class="com.hrms.masters.tests.MastersEducationTest"/>
+        <method signature="MastersEducationTest.QualificationTest()[pri:0, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" name="QualificationTest" class="com.hrms.masters.tests.MastersEducationTest"/>
+      </group> <!-- Education -->
     </groups>
-    <test started-at="2023-02-20T13:13:50 IST" name="HRMS automation masters" finished-at="2023-02-20T13:17:57 IST" duration-ms="247870">
-      <class name="com.hrms.masters.tests.MastersPersonalTest">
-        <test-method signature="LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="LoginTest" finished-at="2023-02-20T13:17:56 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+    <test started-at="2023-02-21T14:39:09 IST" name="HRMS automation masters" finished-at="2023-02-21T14:40:52 IST" duration-ms="102673">
+      <class name="com.hrms.masters.tests.MastersEducationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:39:09 IST" name="setup" finished-at="2023-02-21T14:39:26 IST" duration-ms="17137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:39:26 IST" name="login" finished-at="2023-02-21T14:39:58 IST" duration-ms="32230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="QualificationTest()[pri:0, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:39:59 IST" name="QualificationTest" finished-at="2023-02-21T14:40:12 IST" duration-ms="13246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QualificationTest -->
+        <test-method signature="QualificationEditTest()[pri:1, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:40:12 IST" name="QualificationEditTest" finished-at="2023-02-21T14:40:18 IST" duration-ms="5831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- QualificationEditTest -->
+        <test-method signature="DegreeTest()[pri:2, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:40:18 IST" name="DegreeTest" finished-at="2023-02-21T14:40:21 IST" duration-ms="2904" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" onclick="dis_horizontal('education','edu_font','qualification')" id="education">...</a> is not clickable at point (113, 200). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: default; position: fixed;"></div>
+  (Session info: chrome=110.0.5481.96)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a949cc4b2b71e961ac3b66e806e4b1c3, clickElement {id=0345bf3d-a2a1-4562-b235-ffd510b6b42f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a949cc4b2b71e961ac3b66e806e4b1c3)] -> xpath: //*[@id='education']]
+Session ID: a949cc4b2b71e961ac3b66e806e4b1c3]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at com.hrms.masters.tests.MastersPersonalTest.LoginTest(MastersPersonalTest.java:10)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" onclick="dis_horizontal('education','edu_font','qualification')" id="education">...</a> is not clickable at point (113, 200). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0.6; cursor: default; position: fixed;"></div>
+  (Session info: chrome=110.0.5481.96)
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a949cc4b2b71e961ac3b66e806e4b1c3, clickElement {id=0345bf3d-a2a1-4562-b235-ffd510b6b42f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.96, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\angap\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 110.0.5481.96, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a949cc4b2b71e961ac3b66e806e4b1c3)] -> xpath: //*[@id='education']]
+Session ID: a949cc4b2b71e961ac3b66e806e4b1c3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.hrms.Utils.ElementUtils.doClick(ElementUtils.java:101)
+at com.hrms.pageactions.masters.MastersEducation.DegreeCheck(MastersEducation.java:125)
+at com.hrms.masters.tests.MastersEducationTest.DegreeTest(MastersEducationTest.java:30)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -42,449 +100,27 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method signature="BloodGroupEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="BloodGroupEditTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.BloodGroupEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.BloodGroupEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- DegreeTest -->
+        <test-method signature="DegreeEditTest()[pri:3, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:40:21 IST" name="DegreeEditTest" finished-at="2023-02-21T14:40:31 IST" duration-ms="9972" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BloodGroupEditTest -->
-        <test-method signature="BloodGroupTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="BloodGroupTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.BloodGroupTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.BloodGroupTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- DegreeEditTest -->
+        <test-method signature="CourseTest()[pri:4, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:40:31 IST" name="CourseTest" finished-at="2023-02-21T14:40:47 IST" duration-ms="15638" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BloodGroupTest -->
-        <test-method signature="IdentificationProofEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="IdentificationProofEditTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.IdentificationProofEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.IdentificationProofEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        </test-method> <!-- CourseTest -->
+        <test-method signature="CourseEditTest()[pri:5, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:40:47 IST" name="CourseEditTest" finished-at="2023-02-21T14:40:51 IST" duration-ms="4139" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- IdentificationProofEditTest -->
-        <test-method signature="IdentificationProofTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="IdentificationProofTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.IdentificationProofTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.IdentificationProofTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- IdentificationProofTest -->
-        <test-method signature="LanguageEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="LanguageEditTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.LanguageEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.LanguageEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LanguageEditTest -->
-        <test-method signature="LanguageTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:56 IST" name="LanguageTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.LanguageTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.LanguageTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LanguageTest -->
-        <test-method signature="NationalityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:57 IST" name="NationalityEditTest" finished-at="2023-02-20T13:17:57 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.NationalityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.NationalityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NationalityEditTest -->
-        <test-method signature="NationalityTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:57 IST" name="NationalityTest" finished-at="2023-02-20T13:17:57 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.NationalityTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.NationalityTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- NationalityTest -->
-        <test-method signature="RelationShipTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:57 IST" name="RelationShipTest" finished-at="2023-02-20T13:17:57 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.RelationShipTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.RelationShipTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RelationShipTest -->
-        <test-method signature="RelationshipEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:57 IST" name="RelationshipEditTest" finished-at="2023-02-20T13:17:57 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.RelationshipEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.RelationshipEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RelationshipEditTest -->
-        <test-method signature="ReligionEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:57 IST" name="ReligionEditTest" finished-at="2023-02-20T13:17:57 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.ReligionEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.ReligionEditTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReligionEditTest -->
-        <test-method signature="ReligionTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5]" started-at="2023-02-20T13:17:57 IST" name="ReligionTest" finished-at="2023-02-20T13:17:57 IST" depends-on-methods="com.hrms.masters.tests.MastersPersonalTest.LoginTest" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method MastersPersonalTest.ReligionTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method MastersPersonalTest.ReligionTest()[pri:0, instance:com.hrms.masters.tests.MastersPersonalTest@479cbee5] depends on not successfully finished methods
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReligionTest -->
-      </class> <!-- com.hrms.masters.tests.MastersPersonalTest -->
-      <class name="com.hrms.masters.tests.MastersGeographyTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:13:50 IST" name="setup" finished-at="2023-02-20T13:13:58 IST" duration-ms="8660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="LoginTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:13:58 IST" name="LoginTest" finished-at="2023-02-20T13:14:14 IST" duration-ms="16201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginTest -->
-        <test-method signature="AreaEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:14:15 IST" name="AreaEditTest" finished-at="2023-02-20T13:14:18 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="3009" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AreaEditTest -->
-        <test-method signature="AreaTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:14:18 IST" name="AreaTest" finished-at="2023-02-20T13:14:51 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="33558" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AreaTest -->
-        <test-method signature="CityEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:14:51 IST" name="CityEditTest" finished-at="2023-02-20T13:14:53 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="1743" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CityEditTest -->
-        <test-method signature="CityTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:14:53 IST" name="CityTest" finished-at="2023-02-20T13:15:26 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="33215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CityTest -->
-        <test-method signature="CountryEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:15:26 IST" name="CountryEditTest" finished-at="2023-02-20T13:15:48 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="21918" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CountryEditTest -->
-        <test-method signature="CountryTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:15:48 IST" name="CountryTest" finished-at="2023-02-20T13:15:55 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="7364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CountryTest -->
-        <test-method signature="StateEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:15:55 IST" name="StateEditTest" finished-at="2023-02-20T13:16:20 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="24256" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StateEditTest -->
-        <test-method signature="StateTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:16:20 IST" name="StateTest" finished-at="2023-02-20T13:16:30 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="9891" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- StateTest -->
-        <test-method signature="WorklocationEditTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:16:30 IST" name="WorklocationEditTest" finished-at="2023-02-20T13:17:12 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="42332" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WorklocationEditTest -->
-        <test-method signature="WorklocationTest()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:17:12 IST" name="WorklocationTest" finished-at="2023-02-20T13:17:56 IST" depends-on-methods="com.hrms.masters.tests.MastersGeographyTest.LoginTest" duration-ms="43689" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WorklocationTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@4d518b32]" started-at="2023-02-20T13:17:58 IST" name="tearDown" finished-at="2023-02-20T13:17:59 IST" duration-ms="950" status="PASS">
+        </test-method> <!-- CourseEditTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersEducationTest@79c97cb]" started-at="2023-02-21T14:40:51 IST" name="tearDown" finished-at="2023-02-21T14:40:52 IST" duration-ms="969" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
+      </class> <!-- com.hrms.masters.tests.MastersEducationTest -->
     </test> <!-- HRMS automation masters -->
   </suite> <!-- HRMS -->
 </testng-results>

@@ -293,6 +293,7 @@ public class MastersPersonal extends Driverfactory {
 	
 	public boolean RelationShipCheck(String relationName) throws InterruptedException {
 		Max_wait();
+		Max_wait();
 		eleUtil.doClick(mas.masterIcon);
 		Max_wait();
 		eleUtil.doClick(mas.personal);
@@ -305,6 +306,7 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doSendKeys(mas.relationshipName,relationName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
+		Min_wait();
 		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
 		}else {

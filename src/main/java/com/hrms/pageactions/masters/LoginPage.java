@@ -11,11 +11,12 @@ import org.openqa.selenium.support.FindBy;
 
 import com.hrms.Utils.ElementUtils;
 import com.hrms.commans.CommanLocators;
+import com.hrms.driverfactory.Driverfactory;
 
 
 
 
-public class LoginPage {
+public class LoginPage extends Driverfactory{
 	
 	private WebDriver driver;
 	private ElementUtils eleUtil;
@@ -36,7 +37,7 @@ public class LoginPage {
 	public void Login(String cn, String un, String pwd) throws InterruptedException {
 		//driver.navigate().refresh();
 //		clientName.sendKeys(cn);
-		
+		Max_wait();
 		eleUtil.doSendKeys(CL.clientName, cn);
 		eleUtil.doSendKeys(CL.userName, un);
 		

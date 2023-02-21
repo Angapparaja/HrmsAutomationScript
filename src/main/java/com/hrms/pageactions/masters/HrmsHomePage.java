@@ -7,10 +7,11 @@ import org.openqa.selenium.support.PageFactory;
 
 
 import com.hrms.Utils.ElementUtils;
+import com.hrms.driverfactory.Driverfactory;
 
 
 
-public class HrmsHomePage {
+public class HrmsHomePage extends Driverfactory{
 	private WebDriver driver;
 	private ElementUtils eleUtil;
 	

@@ -344,6 +344,7 @@ public boolean AreaCheck(String CountryName,String StateName,String CityName,Str
 Max_wait();
 eleUtil.doClick(mas.masterIcon);
 	Max_wait();
+	Max_wait();
 	eleUtil.doClick(mas.barangay);
 	Max_wait();
 	eleUtil.doClick(CL.AddBtn);

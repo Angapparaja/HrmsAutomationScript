@@ -5,26 +5,20 @@
     <listener class-name="com.hrms.listeners.ExtentReportListeners"/>
   </listeners>
   <test thread-count="5" name="HRMS automation masters(failed)">
+    <groups>
+      <run>
+        <include name="Education"/>
+      </run>
+    </groups>
     <classes>
-      <class name="com.hrms.masters.tests.MastersPersonalTest">
+      <class name="com.hrms.masters.tests.MastersEducationTest">
         <methods>
-          <include name="RelationshipEditTest"/>
-          <include name="ReligionTest"/>
-          <include name="tearDown"/>
-          <include name="BloodGroupTest"/>
-          <include name="LanguageTest"/>
-          <include name="ReligionEditTest"/>
-          <include name="NationalityTest"/>
-          <include name="BloodGroupEditTest"/>
-          <include name="RelationShipTest"/>
-          <include name="IdentificationProofEditTest"/>
-          <include name="LanguageEditTest"/>
           <include name="setup"/>
-          <include name="IdentificationProofTest"/>
-          <include name="NationalityEditTest"/>
-          <include name="LoginTest"/>
+          <include name="tearDown"/>
+          <include name="login"/>
+          <include name="DegreeTest"/>
         </methods>
-      </class> <!-- com.hrms.masters.tests.MastersPersonalTest -->
+      </class> <!-- com.hrms.masters.tests.MastersEducationTest -->
     </classes>
   </test> <!-- HRMS automation masters(failed) -->
 </suite> <!-- Failed suite [HRMS] -->

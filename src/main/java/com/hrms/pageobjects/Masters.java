@@ -116,5 +116,37 @@ public class Masters{
 	public static By idproof=By.xpath("//*[@id='idproof']");
 	
 	public static By idproofName=By.xpath("//*[@id='idproofName']");
+	
+	
+	/*
+	 * Master-Education-Qualification-Locators
+	 */
+	public static By education=By.xpath("//*[@id='education']");
+	
+	public static By Qualification=By.xpath("//*[text()='Qualification']");
+	
+	public static By qualificationName=By.xpath("//*[@id='qualificationName']");
+	
+	
+	
+	/*
+	 * Master-Education-Degree-Locators
+	 */
+	public static By degree=By.xpath("//*[text()='Degree']");
+	
+	public static By qualificationselect=By.xpath("//*[@id='quali']");
+	
+	public static By degreeName=By.xpath("//*[@id='degreeName']");
+	
+	
+	/*
+	 * Master-Education-Course-Locators
+	 */
+	public static By course=By.xpath("//*[text()='Course']");
+	
+	public static By degreeSelect=By.xpath("//*[@id='degreeId']");
+	
+	public static By courseName=By.xpath("//*[@id='courseName']");
+	
 }
 
