@@ -8,10 +8,10 @@
 </listeners>
 
 
-	<test name="HRMS automation masters">
+	<test name="HRMS automation masters" parallel="methods" >
  	<groups>
 		     <run>
-		         <include name ="Education"></include>
+		         <include name ="Regression"></include>
 		     </run>
 
 		</groups> 

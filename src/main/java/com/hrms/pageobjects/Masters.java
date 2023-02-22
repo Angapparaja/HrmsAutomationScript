@@ -148,5 +148,17 @@ public class Masters{
 	
 	public static By courseName=By.xpath("//*[@id='courseName']");
 	
+	
+	/*
+	 * Master-Position-JobLevel-Locators
+	 */
+	public static By Position=By.xpath("//*[@id='job_position']");
+	
+	public static By jobLevel=By.xpath("//*[text()='Job Level']");
+	
+	public static By jobLevelName=By.xpath("//*[@id='levelName']"); 
+	
+	public static By hierarchySelect=By.xpath("//*[@id='weightage']"); 
+	
 }
 

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-@Test(groups = { "Education" })	
+@Test(groups = { "Education" ,"Regression"})	
 public class MastersEducationTest extends BaseTest{
 	
 	@BeforeClass

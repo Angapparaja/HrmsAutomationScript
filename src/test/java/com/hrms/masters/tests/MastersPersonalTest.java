@@ -2,7 +2,7 @@ package com.hrms.masters.tests;
 
 import org.junit.Assert;
 import org.testng.annotations.*;
-
+@Test(groups = {"Regression"})
 public class MastersPersonalTest extends BaseTest{
 	
 //	@Test(priority=0)

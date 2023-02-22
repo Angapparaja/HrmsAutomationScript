@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 
 
-@Test
+@Test(groups = {"Regression"})
 public class MastersGeographyTest extends BaseTest{
 	
 	
