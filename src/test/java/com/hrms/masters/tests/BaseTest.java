@@ -37,11 +37,8 @@ public class BaseTest {
 	MastersGeography Mg;
 	
 	 
-<<<<<<< HEAD
+
 	@BeforeTest(alwaysRun = true)
-=======
-	@BeforeMethod(alwaysRun = true)
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
 	public void setup() throws InterruptedException {
 		softAssert = new SoftAssert();
 		df =new Driverfactory(); 
@@ -50,22 +47,19 @@ public class BaseTest {
 		Lp = new LoginPage(driver);
 		Mg = new MastersGeography(driver);
 		
-<<<<<<< HEAD
+
 //		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
-=======
-		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+
+	//	Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
+
 	//	loginPage.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 	
 		
 //		TestUtil.WaitTill_PageLoads(10);
 	}
 	
-<<<<<<< HEAD
+
 	@AfterClass(alwaysRun = true)
-=======
-	@AfterMethod(alwaysRun = true)
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
 	public void tearDown() {
 		driver.quit();
 		

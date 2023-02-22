@@ -13,19 +13,19 @@ import org.testng.annotations.Test;
 public class MastersGeographyTest extends BaseTest{
 	
 	
-<<<<<<< HEAD
+
 	@Test()
 	public void LoginTest() throws InterruptedException {
 		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 	}
-=======
+
 //	@Test()
 //	public void LoginTest() throws InterruptedException {
 //		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 //	}
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
 
-	@Test(groups= {"Country"})
+
+	@Test(dependsOnMethods = { "LoginTest" })
 	public void CountryTest() throws InterruptedException {
 	//	Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 		Assert.assertTrue(Mg.CountryCheck(prop.getProperty("countryname")));
@@ -86,8 +86,8 @@ public class MastersGeographyTest extends BaseTest{
 	}
 	
 		
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+
+
+

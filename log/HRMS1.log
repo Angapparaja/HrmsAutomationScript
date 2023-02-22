@@ -603,3 +603,20 @@
 2023-02-16 17:32:17,836 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
 2023-02-16 17:32:18,040 [main] INFO HRMS - country name is Approved
 >>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+2023-02-17 12:46:05,466 [main] INFO HRMS - Unable to edit the flow
+2023-02-17 12:47:22,890 [main] INFO HRMS - Unable to edit the flow
+2023-02-17 12:51:54,908 [main] INFO HRMS - Unable to edit the flow
+2023-02-17 12:53:06,356 [main] INFO HRMS - Unable to edit the flow
+2023-02-17 12:55:49,362 [main] INFO HRMS - Search the Area Name 
+2023-02-17 12:55:49,753 [main] INFO HRMS - Search Area Name  is : Northstreet
+2023-02-17 12:55:49,915 [main] INFO HRMS - Unable to edit the flow
+2023-02-17 12:55:56,984 [main] INFO HRMS - Search the City Name 
+2023-02-17 12:55:57,216 [main] INFO HRMS - Search City Name  is : Mangalore
+2023-02-17 12:55:58,275 [main] INFO HRMS - Edit City Name  is : Mangalore
+2023-02-17 12:56:06,459 [main] INFO HRMS -  DATA CHECK 
+2023-02-17 12:56:07,940 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-17 12:56:10,034 [main] INFO HRMS -  NEGATIVE DATA CHECK 
+2023-02-17 12:56:11,209 [main] INFO HRMS - Negative data check  : Please enter city
+2023-02-17 12:56:11,210 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-17 12:56:11,811 [main] INFO HRMS - Reset button successfully worked
+2023-02-17 12:56:12,325 [main] INFO HRMS - TABLE DATA VALIDATION  CHECK 

@@ -68,18 +68,14 @@
 </dependency>
 
 <dependency>
-<<<<<<< HEAD
+
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
 </dependency>
-=======
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>4.0.0</version>
-</dependency>
 
->>>>>>> 7232133e012b2f5eb58ec1ff5dd44fe53c3d9012
+
+
     
   </dependencies>
 
