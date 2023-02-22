@@ -1,5 +1,6 @@
 package com.hrms.Utils;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -50,9 +51,9 @@ public class JavaScriptUtil {
 		return js.executeScript("return document.documentElement.innerText;").toString();
 	}
 
-	public void clickElementByJS(WebElement element) {
+	public void clickElementByJS(By addBtn) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", element);
+		js.executeScript("arguments[0].click();", addBtn);
 	}
 
 	public void sendKeysUsingWithId(String id, String value) {

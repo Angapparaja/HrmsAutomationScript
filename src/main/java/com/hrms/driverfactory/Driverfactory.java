@@ -45,10 +45,7 @@ public class Driverfactory {
 	 */
 	@SuppressWarnings("deprecation")
 	public WebDriver initDriver(Properties prop) {  
-			
-		
-		
-		
+
         String browserName = prop.getProperty("browser");
         highlight =prop.getProperty("highlight"); 
         

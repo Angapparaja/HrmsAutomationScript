@@ -72,10 +72,101 @@ public class Masters{
 	
 	public static By workLocationName=By.xpath("//*[@id='workLocationName']");
 	
+	/*
+	 * Master-Personal-Religion-Locators
+	 */
+	public static By personal=By.xpath("//*[@id='otherdetail']");
 	
+	public static By religionName=By.xpath("//*[@id='religionName']");
+	
+	
+	/*
+	 * Master-Personal-Nationality-Locators
+	 */
 
+<<<<<<< HEAD
 
 }
 
 
 
+=======
+	public static By nationality=By.xpath("//*[@id='nationality']");
+	
+	public static By nationalityName=By.xpath("//*[@id='nationalityName']");
+	
+	
+	/*
+	 * Master-Personal-Language-Locators
+	 */
+	public static By language=By.xpath("//*[@id='language']");
+	
+	public static By languageName=By.xpath("//*[@id='languageName']");
+	
+	/*
+	 * Master-Personal-Relationship-Locators
+	 */
+	public static By relationship=By.xpath("//span[@id='relationship']");
+	
+	public static By relationshipName=By.xpath("//*[@id='relationshipName']");
+
+	/*
+	 * Master-Personal-BloodGroup-Locators
+	 */
+	public static By bloodGroup=By.xpath("//*[@id='bloodGroup']");
+	
+	public static By bloodgroupName=By.xpath("//*[@id='bloodgroupName']");
+	
+	/*
+	 * Master-Personal-IdentificationProof-Locators
+	 */
+	public static By idproof=By.xpath("//*[@id='idproof']");
+	
+	public static By idproofName=By.xpath("//*[@id='idproofName']");
+	
+	
+	/*
+	 * Master-Education-Qualification-Locators
+	 */
+	public static By education=By.xpath("//*[@id='education']");
+	
+	public static By Qualification=By.xpath("//*[text()='Qualification']");
+	
+	public static By qualificationName=By.xpath("//*[@id='qualificationName']");
+	
+	
+	
+	/*
+	 * Master-Education-Degree-Locators
+	 */
+	public static By degree=By.xpath("//*[text()='Degree']");
+	
+	public static By qualificationselect=By.xpath("//*[@id='quali']");
+	
+	public static By degreeName=By.xpath("//*[@id='degreeName']");
+	
+	
+	/*
+	 * Master-Education-Course-Locators
+	 */
+	public static By course=By.xpath("//*[text()='Course']");
+	
+	public static By degreeSelect=By.xpath("//*[@id='degreeId']");
+	
+	public static By courseName=By.xpath("//*[@id='courseName']");
+	
+	
+	/*
+	 * Master-Position-JobLevel-Locators
+	 */
+	public static By Position=By.xpath("//*[@id='job_position']");
+	
+	public static By jobLevel=By.xpath("//*[text()='Job Level']");
+	
+	public static By jobLevelName=By.xpath("//*[@id='levelName']"); 
+	
+	public static By hierarchySelect=By.xpath("//*[@id='weightage']"); 
+	
+}
+
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5

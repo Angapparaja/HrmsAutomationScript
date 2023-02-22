@@ -8,18 +8,31 @@
 </listeners>
 
 
-	<test name="HRMS automation masters">
-<!-- 	<groups>
+	<test name="HRMS automation masters" parallel="methods" >
+ 	<groups>
 		     <run>
-		         <include name ="Country"></include>
+		         <include name ="Regression"></include>
 		     </run>
 
+<<<<<<< HEAD
 		</groups> -->
 
 		
 		
+=======
+		</groups> 
+
+	
+
+	
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5
 		<classes>
-		<class name="com.hrms.masters.tests.MastersGeographyTest" />
+		
+		 <class name="com.hrms.masters.tests.MastersGeographyTest" />
+		
+		<class name="com.hrms.masters.tests.MastersPersonalTest" />
+		
+		<class name="com.hrms.masters.tests.MastersEducationTest" />
 		</classes> 
 		
 	</test>
