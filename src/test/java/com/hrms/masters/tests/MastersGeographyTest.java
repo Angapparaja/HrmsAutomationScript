@@ -3,15 +3,13 @@ import org.junit.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 
 
 @Test(groups = {"Regression"})
 public class MastersGeographyTest extends BaseTest{
-	
-	
-
 
 
 	@BeforeClass
@@ -19,9 +17,9 @@ public class MastersGeographyTest extends BaseTest{
 		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-	@Test(priority=0)
+	@Test(priority=0 )
 	public void CountryTest() throws InterruptedException {
-
+		
 		Assert.assertTrue(Mg.CountryCheck(prop.getProperty("countryname")));
 	}
 	

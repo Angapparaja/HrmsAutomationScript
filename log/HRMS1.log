@@ -2573,3 +2573,506 @@
 2023-02-21 15:24:07,300 [TestNG-test=HRMS automation masters-1] INFO HRMS - TABLE DATA VALIDATION  CHECK 
 2023-02-21 15:24:30,268 [TestNG-test=HRMS automation masters-1] INFO HRMS - location code is not shown in the Table data
 2023-02-21 15:24:30,999 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 12:32:58,458 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 12:32:59,709 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 12:33:00,698 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 12:33:01,804 [main] INFO HRMS - Negative data check  : Enter Job level Name
+2023-02-23 12:33:02,734 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 12:33:02,900 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 12:33:03,422 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 12:33:03,747 [main] INFO HRMS - JobLevel name is not shown in the Table data
+2023-02-23 12:33:55,617 [main] INFO HRMS -  Search the Joblevel Name 
+2023-02-23 12:33:55,894 [main] INFO HRMS - Search Joblevel Name  is : S Level 2
+2023-02-23 12:33:56,789 [main] INFO HRMS - Edit jobLevelName  is : S Level 2
+2023-02-23 12:34:17,105 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 12:35:20,320 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 12:37:51,235 [main] INFO HRMS -  Search the Joblevel Name 
+2023-02-23 12:37:51,922 [main] INFO HRMS - Search Joblevel Name  is : S Level 2
+2023-02-23 12:38:12,607 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 12:40:10,286 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 12:41:12,080 [main] INFO HRMS -  Search the Joblevel Name 
+2023-02-23 12:41:13,230 [main] INFO HRMS - Search Joblevel Name  is : S Level 2
+2023-02-23 12:41:13,913 [main] INFO HRMS - Edit jobLevelName  is : S Level 2
+2023-02-23 12:49:22,046 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 12:49:23,272 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 12:49:23,968 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 12:49:25,025 [main] INFO HRMS - Negative data check  : Enter Job level Name
+2023-02-23 12:49:25,760 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 12:49:25,854 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 12:49:26,366 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 12:49:26,480 [main] INFO HRMS - JobLevel name is not shown in the Table data
+2023-02-23 12:54:36,616 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 12:54:37,828 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 12:54:38,554 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 12:54:39,625 [main] INFO HRMS - Negative data check  : Enter Job level Name
+2023-02-23 12:54:40,311 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 12:54:40,390 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 12:54:40,903 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 12:54:41,070 [main] INFO HRMS - JobLevel name is Approved
+2023-02-23 12:56:36,059 [main] INFO HRMS -  Search the Joblevel Name 
+2023-02-23 12:56:37,216 [main] INFO HRMS - Search Joblevel Name  is : S Level 2
+2023-02-23 12:56:37,882 [main] INFO HRMS - Edit jobLevelName  is : S Level 2
+2023-02-23 13:22:39,569 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 13:22:40,786 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 13:22:42,095 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 13:22:43,146 [main] INFO HRMS - Negative data check  : Enter Designation
+2023-02-23 13:22:43,740 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 13:22:43,832 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 13:22:44,347 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 13:22:44,514 [main] INFO HRMS - Designation name is Approved
+2023-02-23 13:23:38,412 [main] INFO HRMS -  Search the Designation Name 
+2023-02-23 13:23:39,574 [main] INFO HRMS - Search Designation Name  is : developer
+2023-02-23 13:23:40,245 [main] INFO HRMS - Edit Designation  is : developer
+2023-02-23 13:26:16,444 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 13:26:17,638 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 13:26:18,381 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 13:26:19,444 [main] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 13:26:19,528 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 13:26:19,616 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 13:26:20,768 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 13:26:20,952 [main] INFO HRMS - country name is Approved
+2023-02-23 13:26:59,580 [main] INFO HRMS -  Search the Country Name 
+2023-02-23 13:26:59,765 [main] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 13:27:00,447 [main] INFO HRMS - Edit Country Name  is : Russia
+2023-02-23 13:28:04,261 [main] INFO HRMS - Search the State Name 
+2023-02-23 13:28:04,462 [main] INFO HRMS - Search State Name  is : Altalaium
+2023-02-23 13:28:05,130 [main] INFO HRMS - Edit State Name  is : Altalaium
+2023-02-23 14:15:58,490 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 14:15:59,812 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 14:16:00,737 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 14:16:01,816 [main] INFO HRMS - Negative data check  : Enter Business Unit Name
+2023-02-23 14:16:02,553 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 14:16:02,863 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 14:16:03,377 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 14:16:04,392 [main] INFO HRMS - BusinessUnit name is Approved
+2023-02-23 14:16:52,577 [main] INFO HRMS -  Search the BusinessUnit Name 
+2023-02-23 14:16:53,930 [main] INFO HRMS - Search BusinessUnit Name  is : Business Unit New
+2023-02-23 14:16:54,805 [main] INFO HRMS - Edit BusinessUnit  is : Business Unit New
+2023-02-23 14:54:25,304 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 14:54:26,627 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 14:54:28,041 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 14:54:29,144 [main] INFO HRMS - Negative data check  : Enter Department Name
+2023-02-23 14:54:30,565 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 14:54:30,706 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 14:54:31,217 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 14:54:31,526 [main] INFO HRMS - Department name is Approved
+2023-02-23 14:55:14,814 [main] INFO HRMS -  Search the department Name 
+2023-02-23 14:55:16,060 [main] INFO HRMS - Search BusinessUnit Name  is : Accounts
+2023-02-23 14:55:16,817 [main] INFO HRMS - Edit department  is : Accounts
+2023-02-23 15:11:29,863 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-23 15:11:31,082 [TestNG-test=HRMS automation masters-2] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:11:31,958 [TestNG-test=HRMS automation masters-2] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 15:11:33,079 [TestNG-test=HRMS automation masters-2] INFO HRMS - Negative data check  : Enter religion Name
+2023-02-23 15:11:33,208 [TestNG-test=HRMS automation masters-2] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:11:33,366 [TestNG-test=HRMS automation masters-2] INFO HRMS - Reset button successfully worked
+2023-02-23 15:11:33,868 [TestNG-test=HRMS automation masters-2] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:11:34,177 [TestNG-test=HRMS automation masters-2] INFO HRMS - Religion name is Approved
+2023-02-23 15:11:36,813 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Religion Name 
+2023-02-23 15:11:37,019 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-23 15:11:57,656 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:12:02,338 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-23 15:12:03,611 [TestNG-test=HRMS automation masters-2] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:12:04,464 [TestNG-test=HRMS automation masters-2] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 15:12:05,541 [TestNG-test=HRMS automation masters-2] INFO HRMS - Negative data check  : Enter nationality Name
+2023-02-23 15:12:05,673 [TestNG-test=HRMS automation masters-2] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:12:05,863 [TestNG-test=HRMS automation masters-2] INFO HRMS - Reset button successfully worked
+2023-02-23 15:12:06,364 [TestNG-test=HRMS automation masters-2] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:12:06,597 [TestNG-test=HRMS automation masters-2] INFO HRMS - Nationality name is Approved
+2023-02-23 15:12:09,993 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Nationality Name 
+2023-02-23 15:12:10,874 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Nationality Name  is : Indian
+2023-02-23 15:12:11,718 [TestNG-test=HRMS automation masters-2] INFO HRMS - Edit Nationality Name  is : Indian
+2023-02-23 15:12:16,717 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-23 15:12:20,239 [TestNG-test=HRMS automation masters-2] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:12:21,134 [TestNG-test=HRMS automation masters-2] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 15:12:22,201 [TestNG-test=HRMS automation masters-2] INFO HRMS - Negative data check  : Enter language Name
+2023-02-23 15:12:22,462 [TestNG-test=HRMS automation masters-2] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:12:22,745 [TestNG-test=HRMS automation masters-2] INFO HRMS - Reset button successfully worked
+2023-02-23 15:12:23,267 [TestNG-test=HRMS automation masters-2] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:12:23,633 [TestNG-test=HRMS automation masters-2] INFO HRMS - Languauge name is Approved
+2023-02-23 15:27:08,901 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 15:27:10,231 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:27:11,034 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 15:27:12,163 [main] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 15:27:12,252 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:27:12,407 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 15:27:13,606 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:27:13,825 [main] INFO HRMS - country name is Approved
+2023-02-23 15:27:15,560 [main] INFO HRMS -  Search the Country Name 
+2023-02-23 15:27:15,862 [main] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 15:27:16,774 [main] INFO HRMS - Edit Country Name  is : Russia
+2023-02-23 15:27:23,612 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 15:27:24,836 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:27:25,813 [main] INFO HRMS -  NEGATIVE DATA CHECK 
+2023-02-23 15:27:26,906 [main] INFO HRMS - Negative data check  : Please enter state
+2023-02-23 15:27:26,906 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:27:27,248 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 15:27:28,467 [main] INFO HRMS - TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:27:29,141 [main] INFO HRMS - state name is Approved
+2023-02-23 15:27:31,497 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 15:27:38,728 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 15:27:39,961 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:27:41,566 [main] INFO HRMS -  NEGATIVE DATA CHECK 
+2023-02-23 15:27:42,619 [main] INFO HRMS - Negative data check  : Please enter city
+2023-02-23 15:27:42,620 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:27:42,984 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 15:27:43,502 [main] INFO HRMS - TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:27:45,386 [main] INFO HRMS - state name is Approved
+2023-02-23 15:27:47,211 [main] INFO HRMS - Search the City Name 
+2023-02-23 15:27:47,468 [main] INFO HRMS - Search City Name  is : Mangalore
+2023-02-23 15:27:48,237 [main] INFO HRMS - Edit City Name  is : Mangalore
+2023-02-23 15:27:58,021 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 15:27:59,247 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:28:01,436 [main] INFO HRMS -  NEGATIVE DATA CHECK 
+2023-02-23 15:28:02,500 [main] INFO HRMS - Negative data check  : Enter Area Name
+2023-02-23 15:28:02,501 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:28:02,929 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 15:28:03,430 [main] INFO HRMS - TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:28:24,789 [main] INFO HRMS - Area name is not shown in the Table data
+2023-02-23 15:28:26,973 [main] INFO HRMS - Search the Area Name 
+2023-02-23 15:28:27,258 [main] INFO HRMS - Search Area Name  is : Northstreet
+2023-02-23 15:28:27,413 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 15:28:32,689 [main] INFO HRMS - Search the WorkLocation Code Name 
+2023-02-23 15:29:13,297 [main] INFO HRMS - Unable to edit the flow
+2023-02-23 15:29:46,936 [main] INFO HRMS -  DATA CHECK 
+2023-02-23 15:29:48,151 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:29:48,966 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 15:29:50,025 [main] INFO HRMS - Negative data check  : Enter religion Name
+2023-02-23 15:29:50,136 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:29:50,264 [main] INFO HRMS - Reset button successfully worked
+2023-02-23 15:29:50,778 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 15:29:51,026 [main] INFO HRMS - Religion name is Approved
+2023-02-23 15:29:53,601 [main] INFO HRMS -  Search the Religion Name 
+2023-02-23 15:29:53,821 [main] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-23 15:34:08,550 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 15:34:09,777 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 15:34:10,787 [TestNG-test=HRMS automation masters-1] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 15:34:12,005 [TestNG-test=HRMS automation masters-1] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 15:34:12,197 [TestNG-test=HRMS automation masters-1] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 15:34:12,453 [TestNG-test=HRMS automation masters-1] INFO HRMS - Reset button successfully worked
+2023-02-23 15:42:36,961 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:42:58,178 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:43:58,261 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:44:19,142 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:45:19,259 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:49:03,735 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:49:24,700 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:50:24,818 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:50:45,649 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:51:45,753 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:52:06,577 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:53:06,677 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:53:27,568 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:54:27,635 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:54:48,488 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:55:30,476 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:58:05,891 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:58:26,727 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 15:59:26,817 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 15:59:47,775 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 16:00:48,553 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 16:01:31,547 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 16:02:13,434 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 16:02:55,435 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 17:44:26,586 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 17:44:27,844 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 17:44:28,844 [TestNG-test=HRMS automation masters-1] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 17:44:29,930 [TestNG-test=HRMS automation masters-1] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 17:44:30,057 [TestNG-test=HRMS automation masters-1] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 17:44:30,227 [TestNG-test=HRMS automation masters-1] INFO HRMS - Reset button successfully worked
+2023-02-23 17:44:31,468 [TestNG-test=HRMS automation masters-1] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 17:44:31,687 [TestNG-test=HRMS automation masters-1] INFO HRMS - country name is not shown in the Table data
+2023-02-23 17:44:33,662 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-23 17:44:34,014 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 17:44:34,884 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit Country Name  is : Russia
+2023-02-23 17:44:39,848 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 17:44:41,081 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Data updated successfully
+2023-02-23 17:44:42,314 [TestNG-test=HRMS automation masters-1] INFO HRMS -  NEGATIVE DATA CHECK 
+2023-02-23 17:44:43,411 [TestNG-test=HRMS automation masters-1] INFO HRMS - Negative data check  : Please enter state
+2023-02-23 17:44:43,412 [TestNG-test=HRMS automation masters-1] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 17:44:43,870 [TestNG-test=HRMS automation masters-1] INFO HRMS - Reset button successfully worked
+2023-02-23 17:44:45,044 [TestNG-test=HRMS automation masters-1] INFO HRMS - TABLE DATA VALIDATION  CHECK 
+2023-02-23 17:44:45,917 [TestNG-test=HRMS automation masters-1] INFO HRMS - state name is Approved
+2023-02-23 17:45:47,349 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 17:45:48,572 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 17:45:49,540 [TestNG-test=HRMS automation masters-1] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 17:45:50,760 [TestNG-test=HRMS automation masters-1] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 17:45:50,887 [TestNG-test=HRMS automation masters-1] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 17:45:51,042 [TestNG-test=HRMS automation masters-1] INFO HRMS - Reset button successfully worked
+2023-02-23 17:45:52,249 [TestNG-test=HRMS automation masters-1] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 17:45:52,552 [TestNG-test=HRMS automation masters-1] INFO HRMS - country name is Approved
+2023-02-23 17:45:54,350 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-23 17:45:54,597 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 17:45:55,535 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit Country Name  is : Russia
+2023-02-23 17:48:15,262 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 17:48:16,593 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 17:48:17,452 [TestNG-test=HRMS automation masters-1] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 17:48:18,571 [TestNG-test=HRMS automation masters-1] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 17:48:18,727 [TestNG-test=HRMS automation masters-1] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 17:48:18,893 [TestNG-test=HRMS automation masters-1] INFO HRMS - Reset button successfully worked
+2023-02-23 17:48:20,225 [TestNG-test=HRMS automation masters-1] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 17:48:20,626 [TestNG-test=HRMS automation masters-1] INFO HRMS - country name is Approved
+2023-02-23 17:48:22,404 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-23 17:48:22,870 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 17:48:23,767 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit Country Name  is : Russia
+2023-02-23 18:08:40,276 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-23 18:08:41,677 [TestNG-test=HRMS automation masters-2] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 18:08:42,590 [TestNG-test=HRMS automation masters-2] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 18:08:43,853 [TestNG-test=HRMS automation masters-2] INFO HRMS - Negative data check  : Enter religion Name
+2023-02-23 18:08:44,209 [TestNG-test=HRMS automation masters-2] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 18:08:44,383 [TestNG-test=HRMS automation masters-2] INFO HRMS - Reset button successfully worked
+2023-02-23 18:08:44,896 [TestNG-test=HRMS automation masters-2] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 18:08:45,123 [TestNG-test=HRMS automation masters-2] INFO HRMS - Religion name is not shown in the Table data
+2023-02-23 18:08:46,766 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:09:27,580 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:10:23,255 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:10:24,719 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:10:26,098 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:10:27,470 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:11:07,229 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 18:11:08,948 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-23 18:11:09,932 [TestNG-test=HRMS automation masters-1] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-23 18:11:11,109 [TestNG-test=HRMS automation masters-1] INFO HRMS - Negative data check  : Please enter Country Name
+2023-02-23 18:11:12,031 [TestNG-test=HRMS automation masters-1] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-23 18:11:12,218 [TestNG-test=HRMS automation masters-1] INFO HRMS - Reset button successfully worked
+2023-02-23 18:11:13,829 [TestNG-test=HRMS automation masters-1] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-23 18:11:14,734 [TestNG-test=HRMS automation masters-1] INFO HRMS - country name is Approved
+2023-02-23 18:12:38,081 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:12:43,326 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-23 18:12:43,762 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 18:12:44,094 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:12:45,890 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:12:49,862 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:12:56,029 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:12:57,810 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search the City Name 
+2023-02-23 18:12:58,061 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search City Name  is : Mangalore
+2023-02-23 18:12:59,060 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit City Name  is : Mangalore
+2023-02-23 18:12:59,366 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:13:05,504 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:13:07,595 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:13:12,303 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:13:12,728 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:13:14,571 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:15,871 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:27,368 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:28,322 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-23 18:15:28,693 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 18:15:29,376 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:34,809 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:36,547 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search the State Name 
+2023-02-23 18:15:36,857 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search State Name  is : Altalaium
+2023-02-23 18:15:37,736 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit State Name  is : Altalaium
+2023-02-23 18:15:38,111 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:44,493 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:15:46,836 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:17:40,158 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-23 18:17:44,162 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-23 18:17:45,048 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-23 18:17:45,508 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:17:50,278 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Religion Name 
+2023-02-23 18:17:50,777 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-23 18:17:51,538 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:17:52,673 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search the State Name 
+2023-02-23 18:17:53,008 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search State Name  is : Altalaium
+2023-02-23 18:17:53,452 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:17:58,800 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:00,263 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:06,763 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:08,023 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search the Area Name 
+2023-02-23 18:18:08,336 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Area Name  is : Northstreet
+2023-02-23 18:18:08,384 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:13,032 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:14,136 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:16,020 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-23 18:18:17,932 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 10:49:05,129 [main] INFO HRMS -  DATA CHECK 
+2023-02-24 10:49:06,374 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 10:49:07,192 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 10:49:08,273 [main] INFO HRMS - Negative data check  : Enter qualification Name
+2023-02-24 10:49:08,443 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 10:49:08,573 [main] INFO HRMS - Reset button successfully worked
+2023-02-24 10:49:09,096 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 10:49:10,396 [main] INFO HRMS - Qualification name is Approved
+2023-02-24 10:50:15,330 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 10:50:15,943 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-24 10:50:16,208 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-24 10:50:17,313 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit Country Name  is : Russia
+2023-02-24 10:50:17,638 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 10:50:23,318 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 10:50:25,683 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 10:55:56,889 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-24 10:56:05,195 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-24 11:02:04,237 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-24 11:28:13,798 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-24 11:30:39,912 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-24 11:32:55,527 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-24 11:36:04,946 [TestNG-test=HRMS automation masters-1] INFO HRMS -  DATA CHECK 
+2023-02-24 11:36:08,583 [TestNG-test=HRMS automation masters-1] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 11:36:12,790 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-24 11:36:13,169 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-24 11:36:14,607 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit Country Name  is : Russia
+2023-02-24 11:36:35,226 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:36:36,381 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Religion Name 
+2023-02-24 11:36:36,747 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-24 11:36:37,169 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 11:37:02,937 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:37:04,795 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 11:37:10,823 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:37:12,609 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 11:39:06,228 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-24 11:41:36,925 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:43:42,869 [TestNG-test=HRMS automation masters-1] INFO HRMS -  Search the Country Name 
+2023-02-24 11:43:43,102 [TestNG-test=HRMS automation masters-1] INFO HRMS - Search Country Name  is : Russia 
+2023-02-24 11:43:43,982 [TestNG-test=HRMS automation masters-1] INFO HRMS - Edit Country Name  is : Russia
+2023-02-24 11:43:44,374 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:43:46,463 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 11:43:52,319 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:43:55,013 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 11:44:03,202 [TestNG-test=HRMS automation masters-1] INFO HRMS - Unable to edit the flow
+2023-02-24 11:44:05,022 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 12:16:00,367 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 12:16:08,124 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 12:21:44,019 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Religion Name 
+2023-02-24 12:21:44,403 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-24 12:21:44,729 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 12:21:53,519 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Nationality Name 
+2023-02-24 12:21:53,856 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Nationality Name  is : Indian
+2023-02-24 12:21:54,250 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 13:48:32,069 [main] INFO HRMS -  Search the Center Name 
+2023-02-24 13:48:33,210 [main] INFO HRMS - Search Center Name  is : Adyar
+2023-02-24 13:48:33,893 [main] INFO HRMS - Edit CenterName  is : Adyar
+2023-02-24 13:49:14,403 [main] INFO HRMS -  DATA CHECK 
+2023-02-24 13:49:15,498 [main] INFO HRMS - Duplicate check!! Select TaxEligible
+2023-02-24 13:50:54,052 [main] INFO HRMS -  DATA CHECK 
+2023-02-24 13:50:55,125 [main] INFO HRMS - Duplicate check!! Select TaxEligible
+2023-02-24 13:54:36,416 [main] INFO HRMS -  DATA CHECK 
+2023-02-24 13:54:37,706 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 13:54:40,245 [main] INFO HRMS -  DATA CHECK 
+2023-02-24 13:54:41,500 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 13:54:42,969 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 13:54:44,057 [main] INFO HRMS - Negative data check  : Enter Position Category Name
+2023-02-24 13:54:44,771 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 13:54:44,961 [main] INFO HRMS - Reset button successfully worked
+2023-02-24 13:54:45,473 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 13:54:45,804 [main] INFO HRMS - PositionCategory name is Approved
+2023-02-24 13:57:10,090 [main] INFO HRMS -  DATA CHECK -- TaxeligibleYes 
+2023-02-24 13:57:11,411 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 13:57:13,954 [main] INFO HRMS -  DATA CHECK -- TaxeligibleNo
+2023-02-24 13:57:15,270 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 13:57:16,657 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 13:57:17,745 [main] INFO HRMS - Negative data check  : Enter Position Category Name
+2023-02-24 13:57:18,412 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 13:57:18,579 [main] INFO HRMS - Reset button successfully worked
+2023-02-24 13:57:19,092 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 13:57:19,350 [main] INFO HRMS - PositionCategory name is Approved
+2023-02-24 13:58:40,461 [main] INFO HRMS -  DATA CHECK -- TaxeligibleYes 
+2023-02-24 13:58:41,717 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 13:58:44,354 [main] INFO HRMS -  DATA CHECK -- TaxeligibleNo
+2023-02-24 13:58:45,618 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 13:58:47,089 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 13:58:48,192 [main] INFO HRMS - Negative data check  : Enter Position Category Name
+2023-02-24 13:58:48,896 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 13:58:49,087 [main] INFO HRMS - Reset button successfully worked
+2023-02-24 13:58:49,597 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 13:58:49,944 [main] INFO HRMS - PositionCategory name is Approved
+2023-02-24 13:59:56,257 [main] INFO HRMS -  DATA CHECK -- TaxeligibleYes 
+2023-02-24 13:59:57,499 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 14:00:00,111 [main] INFO HRMS -  DATA CHECK -- TaxeligibleNo
+2023-02-24 14:00:01,355 [main] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 14:00:02,846 [main] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 14:00:03,948 [main] INFO HRMS - Negative data check  : Enter Position Category Name
+2023-02-24 14:00:04,628 [main] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 14:00:04,835 [main] INFO HRMS - Reset button successfully worked
+2023-02-24 14:00:05,343 [main] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 14:00:05,699 [main] INFO HRMS - PositionCategory name is Approved
+2023-02-24 14:00:51,459 [main] INFO HRMS -  Search the PositionCategory Name 
+2023-02-24 14:00:52,725 [main] INFO HRMS - Search positionCategory Name  is : Development
+2023-02-24 14:00:53,596 [main] INFO HRMS - Edit positionCategoryName  is : Development
+2023-02-24 15:06:05,915 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:06:14,553 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:06:26,008 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:06:31,808 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:06:43,046 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the BloodGroup Name 
+2023-02-24 15:06:43,271 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search BloodGroup Name  is : A +ve
+2023-02-24 15:06:44,072 [TestNG-test=HRMS automation masters-2] INFO HRMS - Edit BloodGroup Name  is : A +ve
+2023-02-24 15:06:49,133 [TestNG-test=HRMS automation masters-2] INFO HRMS -  DATA CHECK 
+2023-02-24 15:06:50,266 [TestNG-test=HRMS automation masters-2] INFO HRMS - Duplicate check!! Data updated successfully
+2023-02-24 15:06:51,244 [TestNG-test=HRMS automation masters-2] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 15:06:52,337 [TestNG-test=HRMS automation masters-2] INFO HRMS - Negative data check  : Enter Idproof Name
+2023-02-24 15:06:53,032 [TestNG-test=HRMS automation masters-2] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 15:06:53,286 [TestNG-test=HRMS automation masters-2] INFO HRMS - Reset button successfully worked
+2023-02-24 15:06:53,815 [TestNG-test=HRMS automation masters-2] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 15:06:54,159 [TestNG-test=HRMS automation masters-2] INFO HRMS - IdentificationProof name is Approved
+2023-02-24 15:06:57,634 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the IdentificationProof Name 
+2023-02-24 15:06:57,861 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search IdentificationProof Name  is : Aadhar card
+2023-02-24 15:06:58,714 [TestNG-test=HRMS automation masters-2] INFO HRMS - Edit IdentificationProof Name  is : Aadhar card
+2023-02-24 15:21:22,776 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:21:33,949 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:22:23,725 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:22:59,417 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:23:01,981 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:23:04,598 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:32:05,090 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:32:10,331 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:32:15,536 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:32:21,848 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:32:26,678 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:32:30,158 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:35:50,162 [TestNG-test=HRMS automation masters-2] INFO HRMS -  Search the Religion Name 
+2023-02-24 15:35:50,469 [TestNG-test=HRMS automation masters-2] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-24 15:36:12,118 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:36:21,950 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:36:49,058 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:37:24,402 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:37:36,913 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:37:40,356 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:46:38,845 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:47:59,528 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:49:20,158 [TestNG-test=HRMS automation masters-2] INFO HRMS - Unable to edit the flow
+2023-02-24 15:50:11,256 [TestNG-test=HRMS automation masters-3] INFO HRMS -  Search the Religion Name 
+2023-02-24 15:50:11,528 [TestNG-test=HRMS automation masters-3] INFO HRMS - Search Religion Name  is : Buddhism
+2023-02-24 15:50:32,522 [TestNG-test=HRMS automation masters-3] INFO HRMS - Unable to edit the flow
+2023-02-24 15:50:38,254 [TestNG-test=HRMS automation masters-3] INFO HRMS -  DATA CHECK 
+2023-02-24 15:50:39,570 [TestNG-test=HRMS automation masters-3] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 15:50:40,745 [TestNG-test=HRMS automation masters-3] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 15:50:41,801 [TestNG-test=HRMS automation masters-3] INFO HRMS - Negative data check  : Enter nationality Name
+2023-02-24 15:50:41,947 [TestNG-test=HRMS automation masters-3] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 15:50:42,098 [TestNG-test=HRMS automation masters-3] INFO HRMS - Reset button successfully worked
+2023-02-24 15:50:42,914 [TestNG-test=HRMS automation masters-3] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 15:50:43,113 [TestNG-test=HRMS automation masters-3] INFO HRMS - Nationality name is Approved
+2023-02-24 15:50:49,475 [TestNG-test=HRMS automation masters-3] INFO HRMS -  Search the Nationality Name 
+2023-02-24 15:50:49,673 [TestNG-test=HRMS automation masters-3] INFO HRMS - Search Nationality Name  is : Indian
+2023-02-24 15:50:50,702 [TestNG-test=HRMS automation masters-3] INFO HRMS - Edit Nationality Name  is : Indian
+2023-02-24 15:50:57,357 [TestNG-test=HRMS automation masters-3] INFO HRMS -  DATA CHECK 
+2023-02-24 15:50:58,614 [TestNG-test=HRMS automation masters-3] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 15:50:59,754 [TestNG-test=HRMS automation masters-3] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 15:51:00,841 [TestNG-test=HRMS automation masters-3] INFO HRMS - Negative data check  : Enter language Name
+2023-02-24 15:51:00,989 [TestNG-test=HRMS automation masters-3] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 15:51:01,141 [TestNG-test=HRMS automation masters-3] INFO HRMS - Reset button successfully worked
+2023-02-24 15:51:01,951 [TestNG-test=HRMS automation masters-3] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 15:51:02,152 [TestNG-test=HRMS automation masters-3] INFO HRMS - Languauge name is Approved
+2023-02-24 15:51:06,245 [TestNG-test=HRMS automation masters-3] INFO HRMS -  Search the Languauge Name 
+2023-02-24 15:51:06,444 [TestNG-test=HRMS automation masters-3] INFO HRMS - Search Languauge Name  is : Tamil
+2023-02-24 15:51:07,457 [TestNG-test=HRMS automation masters-3] INFO HRMS - Edit Languauge Name  is : Tamil
+2023-02-24 15:51:14,795 [TestNG-test=HRMS automation masters-3] INFO HRMS -  DATA CHECK 
+2023-02-24 15:51:16,659 [TestNG-test=HRMS automation masters-3] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 15:51:17,743 [TestNG-test=HRMS automation masters-3] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 15:51:18,811 [TestNG-test=HRMS automation masters-3] INFO HRMS - Negative data check  : Enter relationship Name
+2023-02-24 15:51:18,948 [TestNG-test=HRMS automation masters-3] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 15:51:19,132 [TestNG-test=HRMS automation masters-3] INFO HRMS - Reset button successfully worked
+2023-02-24 15:51:19,937 [TestNG-test=HRMS automation masters-3] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 15:51:20,193 [TestNG-test=HRMS automation masters-3] INFO HRMS - relation name is Approved
+2023-02-24 15:51:24,586 [TestNG-test=HRMS automation masters-3] INFO HRMS - Unable to edit the flow
+2023-02-24 15:51:30,683 [TestNG-test=HRMS automation masters-3] INFO HRMS -  DATA CHECK 
+2023-02-24 15:51:32,052 [TestNG-test=HRMS automation masters-3] INFO HRMS - Duplicate check!! Internal Error, Please contact Admin!!!
+2023-02-24 15:51:34,011 [TestNG-test=HRMS automation masters-3] INFO HRMS - NEGATIVE DATA CHECK
+2023-02-24 15:51:35,312 [TestNG-test=HRMS automation masters-3] INFO HRMS - Negative data check  : Please Enter valid Blood Group
+2023-02-24 15:51:36,473 [TestNG-test=HRMS automation masters-3] INFO HRMS -  RESET BUTTON CHECK 
+2023-02-24 15:51:36,623 [TestNG-test=HRMS automation masters-3] INFO HRMS - Reset button successfully worked
+2023-02-24 15:51:37,429 [TestNG-test=HRMS automation masters-3] INFO HRMS -  TABLE DATA VALIDATION  CHECK 
+2023-02-24 15:51:37,633 [TestNG-test=HRMS automation masters-3] INFO HRMS - BloodGroup name is not shown in the Table data
+2023-02-24 15:51:41,877 [TestNG-test=HRMS automation masters-3] INFO HRMS -  Search the BloodGroup Name 
+2023-02-24 15:51:42,109 [TestNG-test=HRMS automation masters-3] INFO HRMS - Search BloodGroup Name  is : A +ve
+2023-02-24 15:51:43,295 [TestNG-test=HRMS automation masters-3] INFO HRMS - Edit BloodGroup Name  is : A +ve
+2023-02-24 15:51:52,407 [TestNG-test=HRMS automation masters-3] INFO HRMS -  Search the IdentificationProof Name 
+2023-02-24 15:51:52,672 [TestNG-test=HRMS automation masters-3] INFO HRMS - Search IdentificationProof Name  is : Aadhar card
+2023-02-24 15:51:53,782 [TestNG-test=HRMS automation masters-3] INFO HRMS - Edit IdentificationProof Name  is : Aadhar card

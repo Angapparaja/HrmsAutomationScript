@@ -10,7 +10,7 @@ import com.hrms.pageobjects.Masters;
 
 public class MastersEducation extends Driverfactory{
 	
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public static ElementUtils eleUtil;
 	public static JavaScriptUtil js;
 	Masters mas;
@@ -42,10 +42,10 @@ public class MastersEducation extends Driverfactory{
 		eleUtil.doSendKeys(mas.qualificationName, QualificationName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -54,8 +54,8 @@ public class MastersEducation extends Driverfactory{
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter qualification Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter qualification Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		eleUtil.doSendKeys(mas.qualificationName, QualificationName);
 
@@ -137,10 +137,10 @@ public class MastersEducation extends Driverfactory{
 		Min_wait();
 		logger.info(" DATA CHECK ");
 		Min_wait();
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		Min_wait();
 		eleUtil.doClick(CL.AddBtn);
@@ -151,8 +151,8 @@ public class MastersEducation extends Driverfactory{
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter degree Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter degree Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
 		eleUtil.doSendKeys(mas.degreeName, DegreeName);
 
@@ -233,10 +233,10 @@ public class MastersEducation extends Driverfactory{
 		eleUtil.doSendKeys(mas.courseName, CourseName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -247,8 +247,8 @@ public class MastersEducation extends Driverfactory{
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter course Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter course Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
 		eleUtil.doSendKeys(mas.courseName, CourseName);
 

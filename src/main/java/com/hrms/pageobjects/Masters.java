@@ -160,5 +160,83 @@ public class Masters{
 	
 	public static By hierarchySelect=By.xpath("//*[@id='weightage']"); 
 	
+	/*
+	 * Master-Position-designation-Locators
+	 */
+	public static By designation=By.xpath("//span[@id='designation']");
+	 
+	public static By JoblevelSelect=By.xpath("//*[@id='levelId']"); 
+	
+	public static By designationName=By.xpath("//*[@id='designationName']"); 
+	
+	
+	/*
+	 * Master-Position-BusinessUnit-Locators
+	 */
+	public static By businessUnit=By.xpath("//*[text()='Business Unit']");
+	 
+	public static By businessUnitName=By.xpath("//*[@id='businessUnitName']"); 
+	
+	
+	/*
+	 * Master-Position-Department-Locators
+	 */
+	public static By department=By.xpath("//*[text()='Department']");
+	 
+	public static By departmentName=By.xpath("//*[@id='departmentName']"); 
+	
+	public static By departmentCode=By.xpath("//*[@id='departmentCode']"); 
+	
+	
+	/*
+	 * Master-Position-SubDepartment-Locators
+	 */
+	public static By subDepartment=By.xpath("//*[text()='Sub Department']");
+	 
+	public static By departmentSelect=By.xpath("//*[@id='departId']"); 
+	
+	public static By SubdepartmentName=By.xpath("//*[@id='divisionName']"); 
+
+	
+	/*
+	 * Master-Position-CostCenter-Locators
+	 */
+	public static By costCenter=By.xpath("//*[text()='Cost Center ']");
+	 
+	public static By costCenterName=By.xpath("//*[@id='CostCenterName']"); 
+	
+	
+	/*
+	 * Master-Position-Center-Locators
+	 */
+	public static By Center=By.xpath("//span[@id='center']");
+	 
+	public static By costCenterselect=By.xpath("//select[@id='costCenterId']"); 
+	
+	public static By CenterName=By.xpath("//input[@id='CenterName']"); 
+	
+	
+	/*
+	 * Master-Position-PositionCategory-Locators
+	 */
+	public static By positionCategory=By.xpath("//*[text()='Position Category ']");
+	 
+	public static By positionCategoryName=By.xpath("//*[@id='empCatName']"); 
+	
+	public static By TaxeligibleYes=By.xpath("(//span[@class='checkmark'])[1]");
+	
+	public static By TaxeligibleNo=By.xpath("(//span[@class='checkmark'])[2]");
+	
+	
+	/*
+	 * Master-Position-MarketDesignation-Locators
+	 */
+	public static By marketDesignation=By.xpath("//*[text()='Market Designation']");
+	 
+	public static By marketDesignationName=By.xpath("//*[@id='mktDesigName']"); 
+	
+	
+	
+	
 }
 

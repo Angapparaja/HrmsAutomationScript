@@ -12,8 +12,8 @@ import com.hrms.driverfactory.Driverfactory;
 
 
 public class HrmsHomePage extends Driverfactory{
-	private WebDriver driver;
-	private ElementUtils eleUtil;
+	public WebDriver driver;
+	public ElementUtils eleUtil;
 	
 	
 	@FindBy(xpath="//img[@src='resources/images/menu-icon-1.png']")

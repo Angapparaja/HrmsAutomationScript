@@ -1,4 +1,5 @@
 package com.hrms.pageactions.masters;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,11 +14,13 @@ import com.hrms.pageobjects.Masters;
 
 
 public class MastersGeography extends Driverfactory{
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public static ElementUtils eleUtil;
 	public static JavaScriptUtil js;
 	Masters mas;
 	CommanLocators CL;
+	public static Logger logger;
+	
 	
 	
 	public MastersGeography(WebDriver driver) {
@@ -34,19 +37,21 @@ public class MastersGeography extends Driverfactory{
 	 */
 	
 	public boolean CountryCheck(String CountryName) throws InterruptedException {
+		
 		Max_wait();
 		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		eleUtil.doClick(CL.AddBtn);
 		
 		Min_wait();
+		Max_wait();
 		eleUtil.doSendKeys(mas.countryName, CountryName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -55,8 +60,8 @@ public class MastersGeography extends Driverfactory{
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Please enter Country Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Please enter Country Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		eleUtil.doSendKeys(mas.countryName, CountryName);
 
@@ -104,7 +109,7 @@ public class MastersGeography extends Driverfactory{
 		
 		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
-			logger.info("Unable to edit the flow");
+			//logger.info("Unable to edit the flow");
 		}
 		
 			
@@ -119,6 +124,7 @@ public boolean StateCheck(String CountryName,String StateName) throws Interrupte
 	Max_wait();
 	eleUtil.doClick(mas.masterIcon);
 		Max_wait();
+		Min_wait();
 		eleUtil.doClick(mas.province);
 		Min_wait();
 		eleUtil.doClick(CL.AddBtn);
@@ -129,10 +135,10 @@ public boolean StateCheck(String CountryName,String StateName) throws Interrupte
 		eleUtil.doSendKeys(mas.stateName, StateName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -142,8 +148,8 @@ public boolean StateCheck(String CountryName,String StateName) throws Interrupte
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info(" NEGATIVE DATA CHECK ");
-		eleUtil.toasterMessage("Please enter state");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Please enter state");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		
 		logger.info(" RESET BUTTON CHECK ");
@@ -194,7 +200,7 @@ public void StateEdit(String SearchState ,String stateedit) throws InterruptedEx
 	
 	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
-		logger.info("Unable to edit the flow");
+//		logger.info("Unable to edit the flow");
 	}
 	
 		
@@ -212,7 +218,7 @@ eleUtil.doClick(mas.masterIcon);
 	eleUtil.doClick(mas.city);
 	Max_wait();
 	eleUtil.doClick(CL.AddBtn);
-	
+	Max_wait();
 	Min_wait();
 	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
@@ -233,10 +239,10 @@ eleUtil.doClick(mas.masterIcon);
 	
 	eleUtil.doClick(CL.saveButton);
 	logger.info(" DATA CHECK ");
-	if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-		logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+	if(toasterMessage().equals("Saved Successfully")) {
+		logger.info("Verified new data saved!! -> " + toasterMessage);
 	}else {
-		logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+		logger.info("Duplicate check!! " + toasterMessage);
 	}
 	
 	eleUtil.doClick(CL.AddBtn);
@@ -248,8 +254,8 @@ eleUtil.doClick(mas.masterIcon);
 	eleUtil.doClick(CL.saveButton);
 
 	logger.info(" NEGATIVE DATA CHECK ");
-	eleUtil.toasterMessage("Please enter city");
-	logger.info("Negative data check  : " + eleUtil.toasterMessage);
+	toasterMessage("Please enter city");
+	logger.info("Negative data check  : " + toasterMessage);
 	
 	
 	logger.info(" RESET BUTTON CHECK ");
@@ -324,7 +330,7 @@ public void CityEdit(String SearchCity ,String Cityedit) throws InterruptedExcep
 	
 	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
-		logger.info("Unable to edit the flow");
+		//logger.info("Unable to edit the flow");
 	}
 	
 		
@@ -366,10 +372,10 @@ eleUtil.doClick(mas.masterIcon);
 	
 	eleUtil.doClick(CL.saveButton);
 	logger.info(" DATA CHECK ");
-	if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-		logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+	if(toasterMessage().equals("Saved Successfully")) {
+		logger.info("Verified new data saved!! -> " + toasterMessage);
 	}else {
-		logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+		logger.info("Duplicate check!! " + toasterMessage);
 	}
 	
 	eleUtil.doClick(CL.AddBtn);
@@ -384,8 +390,8 @@ eleUtil.doClick(mas.masterIcon);
 	eleUtil.doClick(CL.saveButton);
 
 	logger.info(" NEGATIVE DATA CHECK ");
-	eleUtil.toasterMessage("Enter Area Name");
-	logger.info("Negative data check  : " + eleUtil.toasterMessage);
+	toasterMessage("Enter Area Name");
+	logger.info("Negative data check  : " + toasterMessage);
 	
 	
 	logger.info(" RESET BUTTON CHECK ");
@@ -458,7 +464,7 @@ public void AreaEdit(String SearchArea ,String Areaedit) throws InterruptedExcep
 	
 	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
-		logger.info("Unable to edit the flow");
+		//logger.info("Unable to edit the flow");
 	}
 	
 		
@@ -472,6 +478,7 @@ public void AreaEdit(String SearchArea ,String Areaedit) throws InterruptedExcep
  */
 
 public boolean WorklocationCheck(String CountryName,String StateName,String CityName,String AreaName,String locationcode,String locationName,String Stus) throws InterruptedException {
+Max_wait();
 Max_wait();
 eleUtil.doClick(mas.masterIcon);
 	Max_wait();
@@ -500,10 +507,10 @@ eleUtil.doClick(mas.masterIcon);
 	
 	eleUtil.doClick(CL.saveButton);
 	logger.info(" DATA CHECK ");
-	if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-		logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+	if(toasterMessage().equals("Saved Successfully")) {
+		logger.info("Verified new data saved!! -> " + toasterMessage);
 	}else {
-		logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+		logger.info("Duplicate check!! " + toasterMessage);
 	}
 	Max_wait();
 	Min_wait();
@@ -524,8 +531,8 @@ eleUtil.doClick(mas.masterIcon);
 	eleUtil.doClick(CL.saveButton);
 
 	logger.info(" NEGATIVE DATA CHECK ");
-	eleUtil.toasterMessage("Enter work Location Code");
-	logger.info("Negative data check  : " + eleUtil.toasterMessage);
+	toasterMessage("Enter work Location Code");
+	logger.info("Negative data check  : " + toasterMessage);
 	
 	
 	logger.info(" RESET BUTTON CHECK ");
@@ -601,7 +608,7 @@ public void WorklocationEdit(String Searchlocation ,String Loctionedit) throws I
 	
 	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
-		logger.info("Unable to edit the flow");
+		//logger.info("Unable to edit the flow");
 	}
 	
 		

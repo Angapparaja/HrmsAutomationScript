@@ -27,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driverfactory {
 	
-	public static WebDriver driver;
+	public WebDriver driver;
 	public static String highlight;
 	private Optionsmanagers optionsManager;
 	
@@ -46,6 +46,8 @@ public class Driverfactory {
 	@SuppressWarnings("deprecation")
 	public WebDriver initDriver(Properties prop) {  
 
+		
+		
         String browserName = prop.getProperty("browser");
         highlight =prop.getProperty("highlight"); 
         
@@ -79,7 +81,7 @@ public class Driverfactory {
 		
 		return getDriver();
 	}
-	public WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		return tlDriver.get();
 	}
 	
@@ -141,21 +143,22 @@ public class Driverfactory {
 		
 	}
 	
-public static int max = 1100;
-public static int min = 500;
+public static int max = 1400;
+public static int min = 800;
 	public static void Max_wait() throws InterruptedException {
 	Thread.sleep(max);
 	}
 	
 	public static void Min_wait() throws InterruptedException {
 	Thread.sleep(min);
+
 	}
 	
 	
 	/**
 	 * TAKE A SCREENSHOT
 	 */
-	public String getScreenshot() {
+	public  String getScreenshot() {
 		File srcFile =((TakesScreenshot)getDriver()).getScreenshotAs(OutputType.FILE);
 		String path= System.getProperty("user.dir")+"/screenshot/"+ System.currentTimeMillis()+".png";
 		
@@ -168,6 +171,55 @@ public static int min = 500;
 		}
 		return path;
 		
+	}
+	
+	
+	
+	/*
+	 * ToastMessage
+	 */
+	
+	public String toasterMessage;
+	public  String message;
+	
+	
+	public  void javaScriptClickEvent(WebElement e) {
+		try {
+			JavascriptExecutor js = (JavascriptExecutor) getDriver();
+			js.executeScript("arguments[0].click()", e);
+		} catch (Exception e2) {
+			JavascriptExecutor js = (JavascriptExecutor) getDriver();
+			try {
+				Thread.sleep(2000);
+				js.executeScript("arguments[0].click()", e);
+			} catch (InterruptedException e1) {
+				e1.printStackTrace();
+				js.executeScript("arguments[0].click()", e);
+			}
+		}
+	}
+	
+	public  String toasterMessage() throws InterruptedException {
+		WebElement element = getDriver().findElement(By.xpath("//div[@class='toast-message']"));
+		Thread.sleep(500);
+		toasterMessage = element.getAttribute("innerText");
+//		System.out.println(toasterMessage);
+		Thread.sleep(500);
+		javaScriptClickEvent(element);
+		return toasterMessage;
+	}
+	
+	
+	public  void toasterMessage(String message) throws InterruptedException {
+		try {
+			if (toasterMessage().trim().equals(message)) {
+				System.out.println("Verified!! -> " + toasterMessage);
+			} else {
+				System.out.println("Bug!! -> Expect: " + message + " Actual: " + toasterMessage);
+			}
+		} catch (Exception e) {
+			System.out.println("Bug: Toaster message not displayed:--> Expected: " + message);
+		}
 	}
 
 }

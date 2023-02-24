@@ -3,33 +3,32 @@
 
 <suite name="HRMS">
 
-<listeners>
-<listener class-name="com.hrms.listeners.ExtentReportListeners"></listener>
-</listeners>
+	<listeners>
+		<listener class-name="com.hrms.listeners.ExtentReportListeners"></listener>
+	</listeners>
 
 
-	<test name="HRMS automation masters" parallel="methods" >
- 	<groups>
-		     <run>
-		         <include name ="Regression"></include>
-		     </run>
+	<test name="HRMS automation masters" thread-count="5" parallel="classes">
+		<groups>
+			<run>
+				<include name="Regression"></include>
+			</run>
 
-		</groups> 
+		</groups>
 
-	
 
-	
 		<classes>
+
+			<class name="com.hrms.masters.tests.MastersGeographyTest" />
+
+			<class name="com.hrms.masters.tests.MastersPersonalTest" />
+
+			 	<class name="com.hrms.masters.tests.MastersEducationTest" />
 		
-		 <class name="com.hrms.masters.tests.MastersGeographyTest" />
-		
-		<class name="com.hrms.masters.tests.MastersPersonalTest" />
-		
-		<class name="com.hrms.masters.tests.MastersEducationTest" />
-		</classes> 
-		
+			<class name="com.hrms.masters.tests.MastersPositionTest" />
+		</classes>
+
 	</test>
 
 
 </suite>
-

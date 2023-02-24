@@ -16,17 +16,12 @@ import com.hrms.driverfactory.Driverfactory;
 
 
 
-public class LoginPage extends Driverfactory{
+public class LoginPage {
 	
-	private WebDriver driver;
-	private ElementUtils eleUtil;
+	public WebDriver driver;
+	public ElementUtils eleUtil;
 	
 	CommanLocators CL;
-
-
-
-	
-	
 
 	
 	public LoginPage(WebDriver driver) {
@@ -37,7 +32,7 @@ public class LoginPage extends Driverfactory{
 	public void Login(String cn, String un, String pwd) throws InterruptedException {
 		//driver.navigate().refresh();
 //		clientName.sendKeys(cn);
-		Max_wait();
+		
 		eleUtil.doSendKeys(CL.clientName, cn);
 		eleUtil.doSendKeys(CL.userName, un);
 		

@@ -32,6 +32,10 @@ public class CommanLocators {
 	
 	public static By Tabledata3 =By.xpath("((//table)[2]//tr)[position()=last()]//td[position()>1]");
 	
+	public static By Tabledata4 =By.xpath("((//table)[1]//tr)[position()=last()]//td[position()>1]");
+	
+	//public static By TableCheck =By.xpath("(//table)[1]//tr//td[text()='+searchBox+']//parent::tr//td[last()]");
+	
 	public static By duplicateCheck=By.xpath("//div[@class='toast-message']");
 	
 	public static By saveButton=By.xpath("//*[text()='Save']");

@@ -24,8 +24,8 @@ import com.hrms.driverfactory.Driverfactory;
 
 
 public class ElementUtils {
-	private static WebDriver driver;
-	private JavaScriptUtil jsUtil;
+	public  WebDriver driver;
+	public JavaScriptUtil jsUtil;
 	
 	public ElementUtils(WebDriver driver) {
 		this.driver = driver;
@@ -385,51 +385,6 @@ public class ElementUtils {
 	}
 	
 	
-	/*
-	 * ToastMessage
-	 */
 	
-	public static String toasterMessage;
-	public static String message;
-	
-	
-	public static void javaScriptClickEvent(WebElement e) {
-		try {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			js.executeScript("arguments[0].click()", e);
-		} catch (Exception e2) {
-			JavascriptExecutor js = (JavascriptExecutor) driver;
-			try {
-				Thread.sleep(2000);
-				js.executeScript("arguments[0].click()", e);
-			} catch (InterruptedException e1) {
-				e1.printStackTrace();
-				js.executeScript("arguments[0].click()", e);
-			}
-		}
-	}
-	
-	public static String toasterMessage() throws InterruptedException {
-		WebElement element = driver.findElement(By.xpath("//div[@class='toast-message']"));
-		Thread.sleep(500);
-		toasterMessage = element.getAttribute("innerText");
-//		System.out.println(toasterMessage);
-		Thread.sleep(500);
-		javaScriptClickEvent(element);
-		return toasterMessage;
-	}
-	
-	
-	public static void toasterMessage(String message) throws InterruptedException {
-		try {
-			if (toasterMessage().trim().equals(message)) {
-				System.out.println("Verified!! -> " + toasterMessage);
-			} else {
-				System.out.println("Bug!! -> Expect: " + message + " Actual: " + toasterMessage);
-			}
-		} catch (Exception e) {
-			System.out.println("Bug: Toaster message not displayed:--> Expected: " + message);
-		}
-	}
 
 }

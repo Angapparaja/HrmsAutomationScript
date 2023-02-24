@@ -10,7 +10,7 @@ import com.hrms.pageobjects.Masters;
 public class MastersPersonal extends Driverfactory {
 	
 	
-	public static WebDriver driver;
+	public  WebDriver driver;
 	public static ElementUtils eleUtil;
 	Masters mas;
 	CommanLocators CL;
@@ -31,7 +31,7 @@ public class MastersPersonal extends Driverfactory {
 	public boolean ReligionCheck(String reliName) throws InterruptedException {
 		Max_wait();
 		eleUtil.doClick(mas.masterIcon);
-		Min_wait();
+		Max_wait();
 		eleUtil.doClick(mas.personal);
 		Min_wait();
 		eleUtil.doClick(CL.AddBtn);
@@ -40,10 +40,10 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doSendKeys(mas.religionName,reliName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -52,8 +52,8 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter religion Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter religion Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		eleUtil.doSendKeys(mas.religionName, reliName);
 
@@ -127,10 +127,10 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doSendKeys(mas.nationalityName,NatioName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -139,8 +139,8 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter nationality Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter nationality Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		eleUtil.doSendKeys(mas.nationalityName,NatioName);
 
@@ -209,17 +209,17 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(mas.personal);
 		Min_wait();
 		eleUtil.doClick(mas.language);
-		Min_wait();
+		Max_wait();
 		eleUtil.doClick(CL.AddBtn);
 		
-		Min_wait();
+		Max_wait();
 		eleUtil.doSendKeys(mas.languageName,LanguageName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -228,8 +228,8 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter language Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter language Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		eleUtil.doSendKeys(mas.languageName,LanguageName);
 
@@ -307,10 +307,10 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		Min_wait();
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -319,8 +319,8 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter relationship Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter relationship Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		
 		eleUtil.doSendKeys(mas.relationshipName,relationName);
 
@@ -382,6 +382,7 @@ public class MastersPersonal extends Driverfactory {
 	
 	public boolean BloodGroupCheck(String BloodGroupName) throws InterruptedException {
 		Max_wait();
+		Min_wait();
 		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		eleUtil.doClick(mas.personal);
@@ -394,10 +395,10 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doSendKeys(mas.bloodgroupName,BloodGroupName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		Min_wait();
 		eleUtil.doClick(CL.AddBtn);
@@ -406,8 +407,8 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Please Enter valid Blood Group");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Please Enter valid Blood Group");
+		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
 		eleUtil.doClick(CL.AddBtn);
 		eleUtil.doSendKeys(mas.bloodgroupName,BloodGroupName);
@@ -471,6 +472,7 @@ public class MastersPersonal extends Driverfactory {
 	
 	public boolean IdentificationProofCheck(String IdentificationProofName) throws InterruptedException {
 		Max_wait();
+		Min_wait();
 		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		eleUtil.doClick(mas.personal);
@@ -483,10 +485,10 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doSendKeys(mas.idproofName,IdentificationProofName);
 		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
-		if(eleUtil.toasterMessage().equals("Saved Successfully")) {
-			logger.info("Verified new data saved!! -> " + eleUtil.toasterMessage);
+		if(toasterMessage().equals("Saved Successfully")) {
+			logger.info("Verified new data saved!! -> " + toasterMessage);
 		}else {
-			logger.info("Duplicate check!! " + eleUtil.toasterMessage);
+			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
 		eleUtil.doClick(CL.AddBtn);
@@ -495,8 +497,8 @@ public class MastersPersonal extends Driverfactory {
 		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
-		eleUtil.toasterMessage("Enter Idproof Name");
-		logger.info("Negative data check  : " + eleUtil.toasterMessage);
+		toasterMessage("Enter Idproof Name");
+		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
 //		eleUtil.doClick(CL.AddBtn);
 //		Min_wait();
