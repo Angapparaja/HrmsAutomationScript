@@ -12,7 +12,6 @@ public class MastersPersonalTest extends BaseTest{
 
 	@BeforeClass
 	public void login() throws InterruptedException {
-		
 		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 	}
 	

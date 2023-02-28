@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hrms.masters.tests.MastersPositionTest">
+      <class name="com.hrms.masters.tests.MastersGeographyTest">
         <methods>
           <include name="setup"/>
-          <include name="PositionCategoryTest"/>
+          <include name="CountryTest"/>
           <include name="tearDown"/>
           <include name="login"/>
         </methods>
-      </class> <!-- com.hrms.masters.tests.MastersPositionTest -->
+      </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

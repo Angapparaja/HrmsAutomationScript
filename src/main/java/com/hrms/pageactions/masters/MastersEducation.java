@@ -30,17 +30,18 @@ public class MastersEducation extends Driverfactory{
 	
 	public boolean QualificationCheck(String QualificationName) throws InterruptedException {
 		Max_wait();
-		eleUtil.doClick(mas.masterIcon);
+		eleUtil.doClick(Masters.masterIcon);
 		Min_wait();
-		eleUtil.doClick(mas.education);
+		eleUtil.doClick(Masters.education);
 		Min_wait();
-		eleUtil.doClick(mas.Qualification);
+		eleUtil.doClick(Masters.Qualification);
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		Max_wait();
+		eleUtil.doClick(CommanLocators.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSendKeys(mas.qualificationName, QualificationName);
-		eleUtil.doClick(CL.saveButton);
+		eleUtil.doSendKeys(Masters.qualificationName, QualificationName);
+		eleUtil.doClick(CommanLocators.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -48,20 +49,20 @@ public class MastersEducation extends Driverfactory{
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(mas.qualificationName, "#@$$$");  //negative check 
-		eleUtil.doClick(CL.saveButton);
+		eleUtil.doSendKeys(Masters.qualificationName, "#@$$$");  //negative check 
+		eleUtil.doClick(CommanLocators.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter qualification Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(mas.qualificationName, QualificationName);
+		eleUtil.doSendKeys(Masters.qualificationName, QualificationName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CL.resetButton)) {
-			eleUtil.doClick(CL.resetButton);
+		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
+			eleUtil.doClick(CommanLocators.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -71,10 +72,10 @@ public class MastersEducation extends Driverfactory{
 
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
 		Min_wait();
-		eleUtil.doSendKeys(CL.searchBox, QualificationName);
+		eleUtil.doSendKeys(CommanLocators.searchBox, QualificationName);
 		String Qualification = QualificationName;
 		Min_wait();
-		if(Qualification.equals(eleUtil.getElements(CL.Tabledata3).get(0).getAttribute("innerText").trim())) {
+		if(Qualification.equals(eleUtil.getElements(CommanLocators.Tabledata3).get(0).getAttribute("innerText").trim())) {
 			logger.info("Qualification name is Approved");
 		}
 		else {
@@ -89,23 +90,23 @@ public class MastersEducation extends Driverfactory{
 	public void QualificationEdit(String SearchQualification ,String Qualificationedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(mas.masterIcon);
+			eleUtil.doClick(Masters.masterIcon);
 		Max_wait();
-		eleUtil.doClick(mas.education);
+		eleUtil.doClick(Masters.education);
 		Min_wait();
-		eleUtil.doClick(mas.Qualification);
+		eleUtil.doClick(Masters.Qualification);
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		logger.info(" Search the Qualification Name ");
-		eleUtil.waitForElementPresence(CL.searchBox, 30);
-		eleUtil.doSendKeys(CL.searchBox, SearchQualification);
+		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
+		eleUtil.doSendKeys(CommanLocators.searchBox, SearchQualification);
 		logger.info("Search Qualification Name  is : " + SearchQualification );
-		eleUtil.doClick(CL.editBtn);
+		eleUtil.doClick(CommanLocators.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(mas.qualificationName,Qualificationedit);
+		eleUtil.doSendKeys(Masters.qualificationName,Qualificationedit);
 		logger.info("Edit Qualification Name  is : " + Qualificationedit);
 		
-		eleUtil.doClick(CL.updateBtn);
+		eleUtil.doClick(CommanLocators.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -120,20 +121,21 @@ public class MastersEducation extends Driverfactory{
 	
 	public boolean DegreeCheck(String qulificationName, String DegreeName) throws InterruptedException {
 		Max_wait();
-		eleUtil.doClick(mas.masterIcon);
+		eleUtil.doClick(Masters.masterIcon);
 		Min_wait();
-		eleUtil.doClick(mas.education);
+		Max_wait();
+		eleUtil.doClick(Masters.education);
 		Min_wait();
-		eleUtil.doClick(mas.degree);
+		eleUtil.doClick(Masters.degree);
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSelectByVisibleText(mas.qualificationselect, qulificationName);
+		eleUtil.doSelectByVisibleText(Masters.qualificationselect, qulificationName);
 		Min_wait();
-		eleUtil.doSendKeys(mas.degreeName, DegreeName);
+		eleUtil.doSendKeys(Masters.degreeName, DegreeName);
 		Min_wait();
-		eleUtil.doClick(CL.saveButton);
+		eleUtil.doClick(CommanLocators.saveButton);
 		Min_wait();
 		logger.info(" DATA CHECK ");
 		Min_wait();
@@ -143,22 +145,22 @@ public class MastersEducation extends Driverfactory{
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(mas.qualificationselect, qulificationName);
+		eleUtil.doSelectByVisibleText(Masters.qualificationselect, qulificationName);
 		Min_wait();
-		eleUtil.doSendKeys(mas.degreeName, "#@$$$");  //negative check 
-		eleUtil.doClick(CL.saveButton);
+		eleUtil.doSendKeys(Masters.degreeName, "#@$$$");  //negative check 
+		eleUtil.doClick(CommanLocators.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter degree Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
-		eleUtil.doSendKeys(mas.degreeName, DegreeName);
+		eleUtil.doSendKeys(Masters.degreeName, DegreeName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CL.resetButton)) {
-			eleUtil.doClick(CL.resetButton);
+		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
+			eleUtil.doClick(CommanLocators.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -167,10 +169,10 @@ public class MastersEducation extends Driverfactory{
 		Min_wait();
 
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CL.searchBox, DegreeName);
+		eleUtil.doSendKeys(CommanLocators.searchBox, DegreeName);
 		String Degree = DegreeName;
 		
-		if(Degree.equals(eleUtil.getElements(CL.Tabledata3).get(1).getAttribute("innerText").trim())) {
+		if(Degree.equals(eleUtil.getElements(CommanLocators.Tabledata3).get(1).getAttribute("innerText").trim())) {
 			logger.info("Degree name is Approved");
 		}
 		else {
@@ -185,23 +187,23 @@ public class MastersEducation extends Driverfactory{
 	public void DegreeEdit(String Searchdegree ,String degreeedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(mas.masterIcon);
+			eleUtil.doClick(Masters.masterIcon);
 		Max_wait();
-		eleUtil.doClick(mas.education);
+		eleUtil.doClick(Masters.education);
 		Min_wait();
-		eleUtil.doClick(mas.degree);
+		eleUtil.doClick(Masters.degree);
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		logger.info(" Search the degree Name ");
-		eleUtil.waitForElementPresence(CL.searchBox, 30);
-		eleUtil.doSendKeys(CL.searchBox, Searchdegree);
+		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
+		eleUtil.doSendKeys(CommanLocators.searchBox, Searchdegree);
 		logger.info("Search degree Name  is : " + Searchdegree );
-		eleUtil.doClick(CL.editBtn);
+		eleUtil.doClick(CommanLocators.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(mas.degreeName,degreeedit);
+		eleUtil.doSendKeys(Masters.degreeName,degreeedit);
 		logger.info("Edit degree Name  is : " + degreeedit);
 		
-		eleUtil.doClick(CL.updateBtn);
+		eleUtil.doClick(CommanLocators.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -218,20 +220,22 @@ public class MastersEducation extends Driverfactory{
 	public boolean CourseCheck( String DegreeName,String CourseName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(mas.masterIcon);
-		Min_wait();
+		eleUtil.doClick(Masters.masterIcon);
 		Max_wait();
-		eleUtil.doClick(mas.education);
+		Max_wait();
+		eleUtil.doClick(Masters.education);
+		Max_wait();
 		Min_wait();
-		eleUtil.doClick(mas.course);
+		eleUtil.doClick(Masters.course);
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSelectByVisibleText(mas.degreeSelect, DegreeName);
 		Min_wait();
-		eleUtil.doSendKeys(mas.courseName, CourseName);
-		eleUtil.doClick(CL.saveButton);
+		eleUtil.doSelectByVisibleText(Masters.degreeSelect, DegreeName);
+		Min_wait();
+		eleUtil.doSendKeys(Masters.courseName, CourseName);
+		eleUtil.doClick(CommanLocators.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -239,22 +243,22 @@ public class MastersEducation extends Driverfactory{
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(mas.degreeSelect, DegreeName);
+		eleUtil.doSelectByVisibleText(Masters.degreeSelect, DegreeName);
 		Min_wait();
-		eleUtil.doSendKeys(mas.courseName, "#@$$$");  //negative check 
-		eleUtil.doClick(CL.saveButton);
+		eleUtil.doSendKeys(Masters.courseName, "#@$$$");  //negative check 
+		eleUtil.doClick(CommanLocators.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter course Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
-		eleUtil.doSendKeys(mas.courseName, CourseName);
+		eleUtil.doSendKeys(Masters.courseName, CourseName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CL.resetButton)) {
-			eleUtil.doClick(CL.resetButton);
+		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
+			eleUtil.doClick(CommanLocators.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -263,9 +267,9 @@ public class MastersEducation extends Driverfactory{
 		Min_wait();
 
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CL.searchBox, CourseName);
+		eleUtil.doSendKeys(CommanLocators.searchBox, CourseName);
 		String Course = CourseName;
-		if(Course.equals(eleUtil.getElements(CL.Tabledata3).get(1).getAttribute("innerText").trim())) {
+		if(Course.equals(eleUtil.getElements(CommanLocators.Tabledata3).get(1).getAttribute("innerText").trim())) {
 			logger.info("Course name is Approved");
 		}
 		else {
@@ -280,23 +284,23 @@ public class MastersEducation extends Driverfactory{
 	public void CourseEdit(String SearchCourse ,String Courseedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(mas.masterIcon);
+			eleUtil.doClick(Masters.masterIcon);
 		Max_wait();
-		eleUtil.doClick(mas.education);
+		eleUtil.doClick(Masters.education);
 		Min_wait();
-		eleUtil.doClick(mas.course);
+		eleUtil.doClick(Masters.course);
 		Min_wait();
-		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doClick(CommanLocators.AddBtn);
 		logger.info(" Search the Course Name ");
-		eleUtil.waitForElementPresence(CL.searchBox, 30);
-		eleUtil.doSendKeys(CL.searchBox, SearchCourse);
+		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
+		eleUtil.doSendKeys(CommanLocators.searchBox, SearchCourse);
 		logger.info("Search Course Name  is : " + SearchCourse );
-		eleUtil.doClick(CL.editBtn);
+		eleUtil.doClick(CommanLocators.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(mas.courseName,Courseedit);
+		eleUtil.doSendKeys(Masters.courseName,Courseedit);
 		logger.info("Edit course Name  is : " + Courseedit);
 		
-		eleUtil.doClick(CL.updateBtn);
+		eleUtil.doClick(CommanLocators.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}

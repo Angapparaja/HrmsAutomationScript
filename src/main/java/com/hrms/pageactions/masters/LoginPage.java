@@ -6,12 +6,11 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+
 
 
 import com.hrms.Utils.ElementUtils;
 import com.hrms.commans.CommanLocators;
-import com.hrms.driverfactory.Driverfactory;
 
 
 
@@ -33,12 +32,12 @@ public class LoginPage {
 		//driver.navigate().refresh();
 //		clientName.sendKeys(cn);
 		
-		eleUtil.doSendKeys(CL.clientName, cn);
-		eleUtil.doSendKeys(CL.userName, un);
+		eleUtil.doSendKeys(CommanLocators.clientName, cn);
+		eleUtil.doSendKeys(CommanLocators.userName, un);
 		
-		eleUtil.doSendKeys(CL.password, pwd);
+		eleUtil.doSendKeys(CommanLocators.password, pwd);
 		
-		eleUtil.doClick(CL.loginBtn);
+		eleUtil.doClick(CommanLocators.loginBtn);
 	
 //		loginBtn.click();
 //		Thread.sleep(1500);
@@ -51,13 +50,13 @@ public class LoginPage {
 	            if (element.isDisplayed() || element.isEnabled())
 //	                flag = false;
 //	            	ElementUtils.waitForElementPresenseClick(hrms, 10);
-	            eleUtil.doClick(CL.hrms);
+	            eleUtil.doClick(CommanLocators.hrms);
 //	            	Locationetro.click();
 			
 	        } catch (Exception e) {
 
 //	            ElementUtils.waitForElementPresenseClick(selfcare, 10);
-	            eleUtil.doClick(CL.selfcare);
+	            eleUtil.doClick(CommanLocators.selfcare);
 	        } 
 			
 		
