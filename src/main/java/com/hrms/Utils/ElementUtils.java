@@ -7,7 +7,6 @@ import java.util.NoSuchElementException;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -92,13 +91,23 @@ public class ElementUtils {
 	}
 
 	public void doSendKeys(By locator, String value) {
+		try {
+			
 		WebElement ele = getElement(locator);
 		ele.clear();
 		ele.sendKeys(value);
+		}catch(Exception e) {
+			System.out.println("unable to get the element");
+		}
 	}
 
 	public void doClick(By locator) {
+		try {
+			
 		getElement(locator).click();
+		}catch(Exception e) {
+			System.out.println("unable to click the element");
+		}
 	}
 
 	public String doGetText(By locator) {

@@ -27,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Driverfactory {
 	
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static String highlight;
 	private Optionsmanagers optionsManager;
 	
@@ -43,6 +43,7 @@ public class Driverfactory {
 	 * This method is used to initialize the driver
 	 * @param browserName
 	 */
+	
 	@SuppressWarnings("deprecation")
 	public WebDriver initDriver(Properties prop) {  
 
@@ -143,8 +144,8 @@ public class Driverfactory {
 		
 	}
 	
-public static int max = 1400;
-public static int min = 800;
+public static int max = 1000;
+public static int min = 700;
 	public static void Max_wait() throws InterruptedException {
 	Thread.sleep(max);
 	}

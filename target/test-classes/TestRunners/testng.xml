@@ -8,7 +8,7 @@
 	</listeners>
 
 
-	<test name="HRMS automation masters" thread-count="5" parallel="classes">
+	<test name="HRMS automation masters">
 		<groups>
 			<run>
 				<include name="Regression"></include>
@@ -23,8 +23,8 @@
 
 			<class name="com.hrms.masters.tests.MastersPersonalTest" />
 
-			 	<class name="com.hrms.masters.tests.MastersEducationTest" />
-		
+			<class name="com.hrms.masters.tests.MastersEducationTest" />
+
 			<class name="com.hrms.masters.tests.MastersPositionTest" />
 		</classes>
 

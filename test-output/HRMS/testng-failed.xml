@@ -4,7 +4,7 @@
   <listeners>
     <listener class-name="com.hrms.listeners.ExtentReportListeners"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="HRMS automation masters(failed)">
+  <test thread-count="5" name="HRMS automation masters(failed)">
     <groups>
       <run>
         <include name="Regression"/>
@@ -17,18 +17,13 @@
           <include name="CourseTest"/>
           <include name="tearDown"/>
           <include name="login"/>
-          <include name="DegreeTest"/>
-          <include name="QualificationTest"/>
         </methods>
       </class> <!-- com.hrms.masters.tests.MastersEducationTest -->
       <class name="com.hrms.masters.tests.MastersGeographyTest">
         <methods>
-          <include name="AreaTest"/>
           <include name="WorklocationTest"/>
           <include name="setup"/>
-          <include name="CountryTest"/>
           <include name="tearDown"/>
-          <include name="CityTest"/>
           <include name="login"/>
           <include name="StateTest"/>
         </methods>
@@ -36,12 +31,22 @@
       <class name="com.hrms.masters.tests.MastersPersonalTest">
         <methods>
           <include name="setup"/>
-          <include name="ReligionTest"/>
           <include name="tearDown"/>
           <include name="IdentificationProofTest"/>
+          <include name="LanguageTest"/>
           <include name="login"/>
         </methods>
       </class> <!-- com.hrms.masters.tests.MastersPersonalTest -->
+      <class name="com.hrms.masters.tests.MastersPositionTest">
+        <methods>
+          <include name="setup"/>
+          <include name="DesignationTest"/>
+          <include name="tearDown"/>
+          <include name="SubDepartmentTest"/>
+          <include name="CenterTest"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.hrms.masters.tests.MastersPositionTest -->
     </classes>
   </test> <!-- HRMS automation masters(failed) -->
 </suite> <!-- Failed suite [HRMS] -->

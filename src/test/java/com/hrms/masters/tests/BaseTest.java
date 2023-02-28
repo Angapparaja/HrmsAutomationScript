@@ -2,8 +2,7 @@ package com.hrms.masters.tests;
 
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
@@ -35,25 +34,17 @@ public class BaseTest {
 	MastersPersonal Mp;
 	MastersEducation ME;
 	MastersPosition MPO;
-	Logger logger; 
-	
-	
-	
-	 
 
 	@BeforeClass(alwaysRun=true)
 	public void setup() throws InterruptedException  {
 		
-		logger = Logger.getLogger("HRMS");
-		PropertyConfigurator.configure("Log4j.properties");
 		
 		softAssert = new SoftAssert();
 		df =new Driverfactory(); 
 		prop = df.initProperties();
 		
 		driver = df.initDriver(prop);
-		 df.Max_wait();
-		df.Min_wait();
+		
 		Lp = new LoginPage(driver);
 		Mg = new MastersGeography(driver);
 		Mp = new MastersPersonal(driver);
