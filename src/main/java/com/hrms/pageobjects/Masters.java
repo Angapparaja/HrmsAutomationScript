@@ -80,6 +80,13 @@ public class Masters{
 	 * Master-Personal-Nationality-Locators
 	 */
 
+<<<<<<< HEAD
+
+}
+
+
+
+=======
 	public static By nationality=By.xpath("//*[@id='nationality']");
 	
 	public static By nationalityName=By.xpath("//*[@id='nationalityName']");
@@ -236,3 +243,4 @@ public class Masters{
 	
 }
 
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5

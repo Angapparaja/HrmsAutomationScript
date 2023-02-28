@@ -312,6 +312,10 @@ return true;
 }
 
 
+<<<<<<< HEAD:src/main/java/com/hrms/pageactions/MastersGeography.java
+
+=======
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5:src/main/java/com/hrms/pageactions/masters/MastersGeography.java
 public void CityEdit(String SearchCity ,String Cityedit) throws InterruptedException {
 	try {
 		eleUtil.doClick(Masters.masterIcon);
@@ -338,10 +342,13 @@ public void CityEdit(String SearchCity ,String Cityedit) throws InterruptedExcep
 
 
 
+<<<<<<< HEAD:src/main/java/com/hrms/pageactions/MastersGeography.java
+=======
 
 
 
 
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5:src/main/java/com/hrms/pageactions/masters/MastersGeography.java
 /*
  * Masters-Geography-AREA action class
  */
@@ -351,8 +358,15 @@ Max_wait();
 Max_wait();
 eleUtil.doClick(Masters.masterIcon);
 	Max_wait();
+<<<<<<< HEAD:src/main/java/com/hrms/pageactions/MastersGeography.java
+=======
 	Max_wait();
+<<<<<<< HEAD
 	eleUtil.doClick(Masters.barangay);
+=======
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5:src/main/java/com/hrms/pageactions/masters/MastersGeography.java
+	eleUtil.doClick(mas.barangay);
+>>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
 	Max_wait();
 	eleUtil.doClick(CommanLocators.AddBtn);
 	
@@ -515,6 +529,11 @@ eleUtil.doClick(Masters.masterIcon);
 	}else {
 		logger.info("Duplicate check!! " + toasterMessage);
 	}
+<<<<<<< HEAD:src/main/java/com/hrms/pageactions/MastersGeography.java
+	
+	eleUtil.doClick(CL.AddBtn);
+	Min_wait();
+=======
 	Max_wait();
 	Min_wait();
 //	driver.findElement(By.id("swap")).click();
@@ -522,7 +541,12 @@ eleUtil.doClick(Masters.masterIcon);
 //	js.clickElementByJS(CL.AddBtn);
 	Max_wait();
 	Max_wait();
+<<<<<<< HEAD
 	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+=======
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5:src/main/java/com/hrms/pageactions/masters/MastersGeography.java
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
+>>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
 	Min_wait();
 	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
 	
@@ -576,7 +600,15 @@ eleUtil.doClick(Masters.masterIcon);
 	}
 	}catch(Exception e) {
 		Min_wait();
+<<<<<<< HEAD
 		eleUtil.doSendKeys(CommanLocators.searchBox, "TEST");
+=======
+<<<<<<< HEAD:src/main/java/com/hrms/pageactions/MastersGeography.java
+		eleUtil.doSendKeys(mas.searchBox1, "TEST");
+=======
+		eleUtil.doSendKeys(CL.searchBox, "TEST");
+>>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5:src/main/java/com/hrms/pageactions/masters/MastersGeography.java
+>>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
 		String Area = AreaName;
 		Min_wait();
 		if(Area.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(5).getAttribute("innerText").trim())) {
