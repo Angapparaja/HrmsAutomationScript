@@ -74,11 +74,7 @@
 			<version>${extentreports-version}</version>
 </dependency>
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5
     
   </dependencies>
 

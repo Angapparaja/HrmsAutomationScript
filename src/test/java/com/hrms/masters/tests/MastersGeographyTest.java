@@ -7,39 +7,13 @@ import org.testng.annotations.Test;
 
 @Test(groups = {"Regression"})
 public class MastersGeographyTest extends BaseTest{
-<<<<<<< HEAD
-=======
-	
-	
-
-<<<<<<< HEAD
-	@Test()
-	public void LoginTest() throws InterruptedException {
-		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
-	}
-
-//	@Test()
-//	public void LoginTest() throws InterruptedException {
-//		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
-//	}
-
-
-	@Test(dependsOnMethods = { "LoginTest" })
-=======
->>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
-
 
 	@BeforeClass
 	public void login() throws InterruptedException {
 		Lp.Login(prop.getProperty("clientname"), prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
-<<<<<<< HEAD
-	@Test(priority=0 )
-=======
 	@Test(priority=0)
->>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5
->>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
 	public void CountryTest() throws InterruptedException {
 		
 		Assert.assertTrue(Mg.CountryCheck(prop.getProperty("countryname")));
@@ -99,11 +73,7 @@ public class MastersGeographyTest extends BaseTest{
 		Mg.WorklocationEdit(prop.getProperty("Work-searchCountry"),prop.getProperty("Work-stateEdits"));
 	}
 	
-<<<<<<< HEAD
-		
-=======
 
->>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5
 
 }
 
