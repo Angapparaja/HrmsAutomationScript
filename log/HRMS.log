@@ -3784,3 +3784,146 @@
 2023-02-28 19:00:32,104 - HRMS -INFO - Edit Area Name  is : Northstreet
 2023-02-28 19:02:01,542 - HRMS -INFO - Search the Area Name 
 2023-02-28 19:02:01,771 - HRMS -INFO - Search Area Name  is : Northstreet
+2023-03-02 11:09:38,453 - HRMS -INFO -  DATA CHECK 
+2023-03-02 11:09:39,743 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 11:09:40,616 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 11:09:57,402 - HRMS -INFO - Negative data check  : Please Enter Consultancy Name
+2023-03-02 11:09:58,895 - HRMS -INFO - Negative data check  : Please Enter Contact Person
+2023-03-02 11:10:00,352 - HRMS -INFO - Negative data check  : Please Enter Consultancy Contact No
+2023-03-02 11:10:01,790 - HRMS -INFO - Negative data check  : Please Enter Consultancy Email
+2023-03-02 11:10:06,275 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 11:10:06,437 - HRMS -INFO - Reset button successfully worked
+2023-03-02 11:10:07,142 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 11:18:33,142 - HRMS -INFO -  DATA CHECK 
+2023-03-02 11:18:34,378 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 11:18:35,249 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 11:20:17,774 - HRMS -INFO -  DATA CHECK 
+2023-03-02 11:20:19,068 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 11:20:20,657 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 11:21:00,821 - HRMS -INFO - Negative data check  : Database Query Error
+2023-03-02 11:24:06,178 - HRMS -INFO -  DATA CHECK 
+2023-03-02 11:24:07,459 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 11:24:09,298 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 11:24:30,209 - HRMS -INFO - Negative data check  : Database Query Error
+2023-03-02 11:24:31,727 - HRMS -INFO - Negative data check  : Please Enter Contact Person
+2023-03-02 11:24:33,173 - HRMS -INFO - Negative data check  : Please Enter Consultancy Contact No
+2023-03-02 11:25:58,885 - HRMS -INFO -  DATA CHECK 
+2023-03-02 11:26:00,104 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 11:26:02,511 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 11:26:03,703 - HRMS -INFO - Negative data check  : Please Enter Consultancy Name
+2023-03-02 11:26:05,180 - HRMS -INFO - Negative data check  : Please Enter Contact Person
+2023-03-02 11:26:06,660 - HRMS -INFO - Negative data check  : Please Enter Consultancy Contact No
+2023-03-02 11:26:08,152 - HRMS -INFO - Negative data check  : Please Enter Consultancy Email
+2023-03-02 11:26:12,627 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 11:26:12,777 - HRMS -INFO - Reset button successfully worked
+2023-03-02 11:26:14,289 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 11:30:42,391 - HRMS -INFO -  DATA CHECK 
+2023-03-02 11:30:43,796 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 11:30:46,136 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 11:30:47,321 - HRMS -INFO - Negative data check  : Please Enter Consultancy Name
+2023-03-02 11:30:48,829 - HRMS -INFO - Negative data check  : Please Enter Contact Person
+2023-03-02 11:30:50,298 - HRMS -INFO - Negative data check  : Please Enter Consultancy Contact No
+2023-03-02 11:30:51,764 - HRMS -INFO - Negative data check  : Please Enter Consultancy Email
+2023-03-02 11:30:56,254 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 11:30:56,415 - HRMS -INFO - Reset button successfully worked
+2023-03-02 11:30:58,968 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 11:30:59,486 - HRMS -INFO - consultant name is Approved
+2023-03-02 11:39:25,893 - HRMS -INFO -  Search the consultant Name 
+2023-03-02 11:39:27,595 - HRMS -INFO - Search Recruitment Name  is : abc consultant
+2023-03-02 11:39:28,617 - HRMS -INFO - Edit consultantName  is : abc consultant
+2023-03-02 12:18:07,881 - HRMS -INFO -  DATA CHECK 
+2023-03-02 12:18:09,426 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 12:25:31,392 - HRMS -INFO -  DATA CHECK 
+2023-03-02 12:25:32,853 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 12:28:44,156 - HRMS -INFO -  DATA CHECK 
+2023-03-02 12:28:45,695 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 12:29:06,450 - HRMS -INFO - Add button is visible
+2023-03-02 12:29:07,264 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 12:29:08,438 - HRMS -INFO - Negative data check  : Please Enter title
+2023-03-02 12:29:09,938 - HRMS -INFO - Negative data check  : Please Enter Valid Topic / Questions
+2023-03-02 12:29:10,929 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 12:29:11,796 - HRMS -INFO - Reset button successfully worked
+2023-03-02 12:29:13,286 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 12:35:55,650 - HRMS -INFO -  Search the Title Name 
+2023-03-02 12:35:57,372 - HRMS -INFO - Search Title Name  is : QA Evaluation Formy
+2023-03-02 12:35:58,467 - HRMS -INFO - Edit TitleName  is : QA Evaluation Formy
+2023-03-02 12:36:49,135 - HRMS -INFO -  DATA CHECK 
+2023-03-02 12:36:50,672 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 12:37:11,470 - HRMS -INFO - Add button is visible
+2023-03-02 12:37:12,302 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 12:37:13,481 - HRMS -INFO - Negative data check  : Please Enter title
+2023-03-02 12:37:14,981 - HRMS -INFO - Negative data check  : Please Enter Valid Topic / Questions
+2023-03-02 12:37:15,973 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 12:37:16,848 - HRMS -INFO - Reset button successfully worked
+2023-03-02 12:37:18,391 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 12:37:18,784 - HRMS -INFO - title name is Approved
+2023-03-02 12:38:39,490 - HRMS -INFO -  DATA CHECK 
+2023-03-02 12:38:41,034 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 12:38:41,878 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 12:38:43,115 - HRMS -INFO - Negative data check  : Please Enter title
+2023-03-02 12:38:44,602 - HRMS -INFO - Negative data check  : Please Enter Valid Topic / Questions
+2023-03-02 12:38:45,592 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 12:38:46,450 - HRMS -INFO - Reset button successfully worked
+2023-03-02 12:38:48,008 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 12:38:48,412 - HRMS -INFO - title name is Approved
+2023-03-02 12:41:08,367 - HRMS -INFO -  DATA CHECK 
+2023-03-02 12:41:09,821 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 12:41:13,776 - HRMS -INFO - Back button is visible
+2023-03-02 12:41:13,777 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 12:41:14,993 - HRMS -INFO - Negative data check  : Please Enter Consultancy Name
+2023-03-02 12:41:16,449 - HRMS -INFO - Negative data check  : Please Enter Contact Person
+2023-03-02 12:41:17,837 - HRMS -INFO - Negative data check  : Please Enter Consultancy Contact No
+2023-03-02 12:41:19,279 - HRMS -INFO - Negative data check  : Please Enter Consultancy Email
+2023-03-02 12:41:23,746 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 12:41:24,619 - HRMS -INFO - Reset button successfully worked
+2023-03-02 12:41:26,136 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 12:41:26,480 - HRMS -INFO - consultant name is Approved
+2023-03-02 13:10:13,402 - HRMS -INFO -  DATA CHECK 
+2023-03-02 13:10:14,605 - HRMS -INFO - Duplicate check!! Database Query Error
+2023-03-02 13:10:15,435 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 13:10:16,674 - HRMS -INFO - Negative data check  : Please Enter skill Name
+2023-03-02 13:10:17,679 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 13:10:18,558 - HRMS -INFO - Reset button successfully worked
+2023-03-02 13:10:20,070 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 13:10:20,397 - HRMS -INFO - skill name is Approved
+2023-03-02 13:11:22,607 - HRMS -INFO -  Search the Skill Name 
+2023-03-02 13:11:23,608 - HRMS -INFO - Search SkillName is : coding skill
+2023-03-02 13:11:24,677 - HRMS -INFO - Edit SkillName  is : coding skill
+2023-03-02 14:29:06,753 - HRMS -INFO -  DATA CHECK 
+2023-03-02 14:29:07,860 - HRMS -INFO - Duplicate check!! Please Enter Intervention
+2023-03-02 14:29:09,590 - HRMS -INFO - Back button is visible
+2023-03-02 14:29:09,591 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 14:29:10,680 - HRMS -INFO - Negative data check  : Please Enter Name
+2023-03-02 14:29:12,012 - HRMS -INFO - Negative data check  : Please Enter Group
+2023-03-02 14:29:13,263 - HRMS -INFO - Negative data check  : Please Enter Description
+2023-03-02 14:29:14,904 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 14:29:15,673 - HRMS -INFO - Reset button successfully worked
+2023-03-02 14:29:17,143 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 14:29:17,363 - HRMS -INFO - Competencies name is Approved
+2023-03-02 14:30:05,204 - HRMS -INFO -  Search the Competencies Name 
+2023-03-02 14:30:06,816 - HRMS -INFO - Search Competencies Name  is : CompetenciesValue
+2023-03-02 14:30:07,768 - HRMS -INFO - Edit CompetenciesName  is : CompetenciesValue
+2023-03-02 14:31:45,449 - HRMS -INFO -  DATA CHECK 
+2023-03-02 14:31:46,774 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 14:32:06,787 - HRMS -INFO - Add button is visible
+2023-03-02 14:32:07,554 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 14:32:08,674 - HRMS -INFO - Negative data check  : Please Enter Name
+2023-03-02 14:32:09,944 - HRMS -INFO - Negative data check  : Please Enter Group
+2023-03-02 14:32:11,213 - HRMS -INFO - Negative data check  : Please Enter Description
+2023-03-02 14:32:12,867 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 14:32:13,641 - HRMS -INFO - Reset button successfully worked
+2023-03-02 14:32:15,110 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 14:32:15,327 - HRMS -INFO - Competencies name is Approved
+2023-03-02 14:34:00,169 - HRMS -INFO -  DATA CHECK 
+2023-03-02 14:34:01,494 - HRMS -INFO - Verified new data saved!! -> Saved Successfully
+2023-03-02 14:34:02,265 - HRMS -INFO - NEGATIVE DATA CHECK
+2023-03-02 14:34:03,425 - HRMS -INFO - Negative data check  : Please Enter Name
+2023-03-02 14:34:04,678 - HRMS -INFO - Negative data check  : Please Enter Group
+2023-03-02 14:34:05,932 - HRMS -INFO - Negative data check  : Please Enter Description
+2023-03-02 14:34:07,583 - HRMS -INFO -  RESET BUTTON CHECK 
+2023-03-02 14:34:08,369 - HRMS -INFO - Reset button successfully worked
+2023-03-02 14:34:09,836 - HRMS -INFO -  TABLE DATA VALIDATION  CHECK 
+2023-03-02 14:34:10,056 - HRMS -INFO - Competencies name is Approved
+2023-03-02 14:34:58,763 - HRMS -INFO -  Search the Competencies Name 
+2023-03-02 14:35:00,388 - HRMS -INFO - Search Competencies Name  is : CompetenciesValue
+2023-03-02 14:35:01,349 - HRMS -INFO - Edit CompetenciesName  is : CompetenciesValue

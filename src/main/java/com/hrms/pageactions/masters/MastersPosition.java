@@ -31,21 +31,21 @@ public class MastersPosition extends Driverfactory {
 	public boolean JoblevelCheck(String jobName,String Hierarchy) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.jobLevel);
+		eleUtil.doClick(mas.jobLevel);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSendKeys(Masters.jobLevelName,jobName);
+		eleUtil.doSendKeys(mas.jobLevelName,jobName);
 		
-		eleUtil.doSelectByVisibleText(Masters.hierarchySelect, Hierarchy);
+		eleUtil.doSelectByVisibleText(mas.hierarchySelect, Hierarchy);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -53,22 +53,22 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.jobLevelName, "");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.jobLevelName, "");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Job level Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.jobLevelName, jobName);
-		eleUtil.doSelectByVisibleText(Masters.hierarchySelect, Hierarchy);
+		eleUtil.doSendKeys(mas.jobLevelName, jobName);
+		eleUtil.doSelectByVisibleText(mas.hierarchySelect, Hierarchy);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -76,7 +76,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, jobName);
+		eleUtil.doSendKeys(CL.searchBox, jobName);
 		String Job = jobName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+jobName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -97,27 +97,27 @@ public class MastersPosition extends Driverfactory {
 	public void JoblevelEdit(String SearchJoblevel ,String Jobleveledit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.jobLevel);
+			eleUtil.doClick(mas.jobLevel);
 			Min_wait();
 //		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the Joblevel Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchJoblevel);
+		eleUtil.doSendKeys(CL.searchBox, SearchJoblevel);
 		logger.info("Search Joblevel Name  is : " + SearchJoblevel );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchJoblevel+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.jobLevelName, Jobleveledit);
+		eleUtil.doSendKeys(mas.jobLevelName, Jobleveledit);
 		logger.info("Edit jobLevelName  is : " + Jobleveledit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -133,21 +133,21 @@ public class MastersPosition extends Driverfactory {
 	
 	public boolean DesignationCheck(String Joblevel,String DesignationName) throws InterruptedException {
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
-		Min_wait();
-		Min_wait();
-		eleUtil.doClick(Masters.designation);
-		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
 		Min_wait();
-		eleUtil.doSelectByVisibleText(Masters.JoblevelSelect, Joblevel);
+		eleUtil.doClick(mas.designation);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.designationName,DesignationName);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		Min_wait();
+		eleUtil.doSelectByVisibleText(mas.JoblevelSelect, Joblevel);
+		Min_wait();
+		eleUtil.doSendKeys(mas.designationName,DesignationName);
+		Min_wait();
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -155,24 +155,24 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(Masters.JoblevelSelect, Joblevel);
+		eleUtil.doSelectByVisibleText(mas.JoblevelSelect, Joblevel);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.designationName, "");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.designationName, "");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Designation");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.designationName, DesignationName);
+		eleUtil.doSendKeys(mas.designationName, DesignationName);
 		
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -180,7 +180,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, DesignationName);
+		eleUtil.doSendKeys(CL.searchBox, DesignationName);
 		String Designation = DesignationName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+DesignationName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -201,27 +201,27 @@ public class MastersPosition extends Driverfactory {
 	public void DesignationEdit(String SearchDesignation ,String Designationedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.designation);
+			eleUtil.doClick(mas.designation);
 			Min_wait();
 //		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the Designation Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchDesignation);
+		eleUtil.doSendKeys(CL.searchBox, SearchDesignation);
 		logger.info("Search Designation Name  is : " + SearchDesignation );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchDesignation+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.designationName, Designationedit);
+		eleUtil.doSendKeys(mas.designationName, Designationedit);
 		logger.info("Edit Designation  is : " + Designationedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -238,17 +238,17 @@ public class MastersPosition extends Driverfactory {
 	public boolean BusinessUnitCheck(String BusinessUnitName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.businessUnit);
+		eleUtil.doClick(mas.businessUnit);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.businessUnitName,BusinessUnitName);
+		eleUtil.doSendKeys(mas.businessUnitName,BusinessUnitName);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -256,22 +256,22 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.businessUnitName, "$#%");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.businessUnitName, "$#%");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Business Unit Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.businessUnitName, BusinessUnitName);
+		eleUtil.doSendKeys(mas.businessUnitName, BusinessUnitName);
 		
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -279,7 +279,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, BusinessUnitName);
+		eleUtil.doSendKeys(CL.searchBox, BusinessUnitName);
 		String BusinessUnit = BusinessUnitName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+BusinessUnitName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -300,27 +300,27 @@ public class MastersPosition extends Driverfactory {
 	public void BusinessUnitEdit(String SearchBusinessUnit ,String BusinessUnitedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.businessUnit);
+			eleUtil.doClick(mas.businessUnit);
 			Min_wait();
 
 		logger.info(" Search the BusinessUnit Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchBusinessUnit);
+		eleUtil.doSendKeys(CL.searchBox, SearchBusinessUnit);
 		logger.info("Search BusinessUnit Name  is : " + SearchBusinessUnit );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchBusinessUnit+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.businessUnitName, BusinessUnitedit);
+		eleUtil.doSendKeys(mas.businessUnitName, BusinessUnitedit);
 		logger.info("Edit BusinessUnit  is : " + BusinessUnitedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -337,19 +337,19 @@ public class MastersPosition extends Driverfactory {
 	public boolean DepartmentCheck(String DepartmentName,String DepartmentCode) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.department);
+		eleUtil.doClick(mas.department);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.departmentName,DepartmentName);
+		eleUtil.doSendKeys(mas.departmentName,DepartmentName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.departmentCode,DepartmentCode);
+		eleUtil.doSendKeys(mas.departmentCode,DepartmentCode);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -357,24 +357,24 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.departmentName,""); //negative check 
+		eleUtil.doSendKeys(mas.departmentName,""); //negative check 
 		Min_wait(); 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Department Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.departmentName,DepartmentName);
+		eleUtil.doSendKeys(mas.departmentName,DepartmentName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.departmentCode,DepartmentCode);
+		eleUtil.doSendKeys(mas.departmentCode,DepartmentCode);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -382,7 +382,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, DepartmentName);
+		eleUtil.doSendKeys(CL.searchBox, DepartmentName);
 		String Department = DepartmentName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+DepartmentName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -403,27 +403,27 @@ public class MastersPosition extends Driverfactory {
 	public void DepartmentEdit(String SearchDepartment ,String Departmentedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.department);
+			eleUtil.doClick(mas.department);
 			Min_wait();
 
 		logger.info(" Search the department Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchDepartment);
+		eleUtil.doSendKeys(CL.searchBox, SearchDepartment);
 		logger.info("Search BusinessUnit Name  is : " + SearchDepartment );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchDepartment+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.departmentName, Departmentedit);
+		eleUtil.doSendKeys(mas.departmentName, Departmentedit);
 		logger.info("Edit department  is : " + Departmentedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -440,19 +440,19 @@ public class MastersPosition extends Driverfactory {
 	public boolean SubDepartmentCheck(String DepartmentName,String SubDepartment) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.subDepartment);
+		eleUtil.doClick(mas.subDepartment);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(Masters.departmentSelect,DepartmentName);
+		eleUtil.doSelectByVisibleText(mas.departmentSelect,DepartmentName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.SubdepartmentName,SubDepartment);
+		eleUtil.doSendKeys(mas.SubdepartmentName,SubDepartment);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -460,25 +460,25 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(Masters.departmentSelect,DepartmentName);
+		eleUtil.doSelectByVisibleText(mas.departmentSelect,DepartmentName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.SubdepartmentName,""); //negative check 
+		eleUtil.doSendKeys(mas.SubdepartmentName,""); //negative check 
 		Min_wait(); 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter sub department Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
 	
-		eleUtil.doSendKeys(Masters.SubdepartmentName,SubDepartment);
+		eleUtil.doSendKeys(mas.SubdepartmentName,SubDepartment);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -486,7 +486,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, SubDepartment);
+		eleUtil.doSendKeys(CL.searchBox, SubDepartment);
 		String Department = SubDepartment;
 		Min_wait();
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+DepartmentName+"']");
@@ -508,27 +508,27 @@ public class MastersPosition extends Driverfactory {
 	public void SubDepartmentEdit(String SearchSubDepartment ,String SubDepartmentedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.subDepartment);
+			eleUtil.doClick(mas.subDepartment);
 			Min_wait();
 
 		logger.info(" Search the Subdepartment Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchSubDepartment);
+		eleUtil.doSendKeys(CL.searchBox, SearchSubDepartment);
 		logger.info("Search SubDepartment Name  is : " + SearchSubDepartment );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchSubDepartment+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.SubdepartmentName, SubDepartmentedit);
+		eleUtil.doSendKeys(mas.SubdepartmentName, SubDepartmentedit);
 		logger.info("Edit Subdepartment  is : " + SubDepartmentedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -545,18 +545,18 @@ public class MastersPosition extends Driverfactory {
 	public boolean CostCenterCheck(String CostCenterName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.costCenter);
+		eleUtil.doClick(mas.costCenter);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.costCenterName,CostCenterName);
+		eleUtil.doSendKeys(mas.costCenterName,CostCenterName);
 		Min_wait();
 		
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -564,24 +564,24 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
 	
-		eleUtil.doSendKeys(Masters.costCenterName,"$#$%#"); //negative check 
+		eleUtil.doSendKeys(mas.costCenterName,"$#$%#"); //negative check 
 		Min_wait(); 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter CostCenter Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
 	
-		eleUtil.doSendKeys(Masters.costCenterName,CostCenterName);
+		eleUtil.doSendKeys(mas.costCenterName,CostCenterName);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -589,7 +589,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, CostCenterName);
+		eleUtil.doSendKeys(CL.searchBox, CostCenterName);
 		String CostCenter = CostCenterName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+CostCenterName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -610,27 +610,27 @@ public class MastersPosition extends Driverfactory {
 	public void CostCenterEdit(String SearchCostCenter ,String CostCenteredit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.costCenter);
+			eleUtil.doClick(mas.costCenter);
 			Min_wait();
 
 		logger.info(" Search the CostCenter Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchCostCenter);
+		eleUtil.doSendKeys(CL.searchBox, SearchCostCenter);
 		logger.info("Search CostCenter Name  is : " + SearchCostCenter );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchCostCenter+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.costCenterName, CostCenteredit);
+		eleUtil.doSendKeys(mas.costCenterName, CostCenteredit);
 		logger.info("Edit costCenterName  is : " + CostCenteredit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -646,21 +646,21 @@ public class MastersPosition extends Driverfactory {
 	public boolean CenterCheck(String CostCenterName,String centerName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.Center);
+		eleUtil.doClick(mas.Center);
 		Min_wait();
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(Masters.costCenterselect,CostCenterName);
+		eleUtil.doSelectByVisibleText(mas.costCenterselect,CostCenterName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.CenterName,centerName);
+		eleUtil.doSendKeys(mas.CenterName,centerName);
 		Min_wait();
 		
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -668,25 +668,25 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(Masters.costCenterselect,CostCenterName);
+		eleUtil.doSelectByVisibleText(mas.costCenterselect,CostCenterName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.CenterName,"$#$%#"); //negative check 
+		eleUtil.doSendKeys(mas.CenterName,"$#$%#"); //negative check 
 		Min_wait(); 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Center Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
 	
-		eleUtil.doSendKeys(Masters.CenterName,centerName);
+		eleUtil.doSendKeys(mas.CenterName,centerName);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -694,7 +694,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, centerName);
+		eleUtil.doSendKeys(CL.searchBox, centerName);
 		String CostCenter = centerName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+centerName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -715,27 +715,27 @@ public class MastersPosition extends Driverfactory {
 	public void CenterEdit(String SearchCenter ,String Centeredit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.Center);
+			eleUtil.doClick(mas.Center);
 			Min_wait();
 
 		logger.info(" Search the Center Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchCenter);
+		eleUtil.doSendKeys(CL.searchBox, SearchCenter);
 		logger.info("Search Center Name  is : " + SearchCenter );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchCenter+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.CenterName, Centeredit);
+		eleUtil.doSendKeys(mas.CenterName, Centeredit);
 		logger.info("Edit CenterName  is : " + Centeredit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -751,18 +751,18 @@ public class MastersPosition extends Driverfactory {
 	public boolean PositionCategoryCheck(String PositionCategoryName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.positionCategory);
+		eleUtil.doClick(mas.positionCategory);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
 		//TaxeligibleYes
-		eleUtil.doSendKeys(Masters.positionCategoryName,PositionCategoryName);
+		eleUtil.doSendKeys(mas.positionCategoryName,PositionCategoryName);
 		Min_wait();
-		eleUtil.doClick(Masters.TaxeligibleYes);
+		eleUtil.doClick(mas.TaxeligibleYes);
 //		 if (eleUtil.doIsDisplayed(mas.TaxeligibleYes) || eleUtil.doIsEnabled(mas.TaxeligibleYes)) {
 // boolean selectType =eleUtil.doIsEnabled(mas.TaxeligibleYes);
 //		if(selectType == false) {
@@ -770,7 +770,7 @@ public class MastersPosition extends Driverfactory {
 //		}
 //   } 
 		Min_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK -- TaxeligibleYes ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -779,19 +779,19 @@ public class MastersPosition extends Driverfactory {
 		}
 		Min_wait();
 		//TaxeligibleNo
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(Masters.positionCategoryName,PositionCategoryName);
+		eleUtil.doSendKeys(mas.positionCategoryName,PositionCategoryName);
 		Min_wait();
-		eleUtil.doClick(Masters.TaxeligibleNo);	
+		eleUtil.doClick(mas.TaxeligibleNo);	
 //		 if (eleUtil.doIsDisplayed(mas.TaxeligibleNo) || eleUtil.doIsEnabled(mas.TaxeligibleNo)) {
 // boolean selectType =eleUtil.doIsEnabled(mas.TaxeligibleNo);
 //		if(selectType == false) {
 //		eleUtil.doClick(mas.TaxeligibleNo);	
 //		}
 //   } 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK -- TaxeligibleNo");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -799,24 +799,24 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
 		
-		eleUtil.doSendKeys(Masters.positionCategoryName,"$#$%#"); //negative check 
+		eleUtil.doSendKeys(mas.positionCategoryName,"$#$%#"); //negative check 
 		Min_wait(); 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Position Category Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
 	
-		eleUtil.doSendKeys(Masters.positionCategoryName,PositionCategoryName);
+		eleUtil.doSendKeys(mas.positionCategoryName,PositionCategoryName);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -824,7 +824,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, PositionCategoryName);
+		eleUtil.doSendKeys(CL.searchBox, PositionCategoryName);
 		String PositionCategory = PositionCategoryName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+PositionCategoryName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -845,27 +845,27 @@ public class MastersPosition extends Driverfactory {
 	public void PositionCategoryEdit(String SearchPositionCategory ,String PositionCategoryedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.positionCategory);
+			eleUtil.doClick(mas.positionCategory);
 			Min_wait();
 
 		logger.info(" Search the PositionCategory Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchPositionCategory);
+		eleUtil.doSendKeys(CL.searchBox, SearchPositionCategory);
 		logger.info("Search positionCategory Name  is : " + SearchPositionCategory );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchPositionCategory+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.positionCategoryName, PositionCategoryedit);
+		eleUtil.doSendKeys(mas.positionCategoryName, PositionCategoryedit);
 		logger.info("Edit positionCategoryName  is : " +PositionCategoryedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -881,19 +881,19 @@ public class MastersPosition extends Driverfactory {
 	public boolean MarketDesignationCheck(String MarketDesignationName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.Position);
+		eleUtil.doClick(mas.Position);
 		Min_wait();
-		eleUtil.doClick(Masters.marketDesignation);
+		eleUtil.doClick(mas.marketDesignation);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
-		Min_wait();
-		
-		eleUtil.doSendKeys(Masters.marketDesignationName,MarketDesignationName);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
 		
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.marketDesignationName,MarketDesignationName);
+		Min_wait();
+		
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -901,24 +901,24 @@ public class MastersPosition extends Driverfactory {
 			logger.info("Duplicate check!! " +toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
 	
-		eleUtil.doSendKeys(Masters.marketDesignationName,"$#$%#"); //negative check 
+		eleUtil.doSendKeys(mas.marketDesignationName,"$#$%#"); //negative check 
 		Min_wait(); 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Center Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
 	
-		eleUtil.doSendKeys(Masters.marketDesignationName,MarketDesignationName);
+		eleUtil.doSendKeys(mas.marketDesignationName,MarketDesignationName);
 		Min_wait();
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -926,7 +926,7 @@ public class MastersPosition extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, MarketDesignationName);
+		eleUtil.doSendKeys(CL.searchBox, MarketDesignationName);
 		String MarketDesignation = MarketDesignationName;
 		By tablecheck =By.xpath("(//table)[1]//tr//td[text()= '"+MarketDesignationName+"']");
 		String value=eleUtil.doGetText(tablecheck);
@@ -947,27 +947,27 @@ public class MastersPosition extends Driverfactory {
 	public void MarketDesignationEdit(String SearchMarketDesignation ,String MarketDesignationedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 			Min_wait();
-			eleUtil.doClick(Masters.Position);
+			eleUtil.doClick(mas.Position);
 			Min_wait();
-			eleUtil.doClick(Masters.marketDesignation);
+			eleUtil.doClick(mas.marketDesignation);
 			Min_wait();
 
 		logger.info(" Search the MarketDesignation Name ");
 		
 		Min_wait();
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchMarketDesignation);
+		eleUtil.doSendKeys(CL.searchBox, SearchMarketDesignation);
 		logger.info("Search MarketDesignation Name  is : " + SearchMarketDesignation );
 		By TableCheck =By.xpath("(//table)[1]//tr//td[text()= '"+SearchMarketDesignation+"']//parent::tr//td[last()]//a");
 		eleUtil.doClick(TableCheck);
 //		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.marketDesignationName,MarketDesignationedit);
+		eleUtil.doSendKeys(mas.marketDesignationName,MarketDesignationedit);
 		logger.info("Edit MarketDesignation  is : " + MarketDesignationedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}

@@ -40,6 +40,8 @@ public class CommanLocators {
 	
 	public static By saveButton=By.xpath("//*[text()='Save']");
 	
+	public static By BackButton=By.xpath("//*[text()='Back']");
+	
 	public static By resetButton=By.xpath("//*[text()='Reset']");
 	
 	public static By nextButton=By.xpath("//*[text()='Next']");

@@ -34,15 +34,15 @@ public class MastersGeography extends Driverfactory{
 	public boolean CountryCheck(String CountryName) throws InterruptedException {
 		
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		Max_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Min_wait();
 		Max_wait();
-		eleUtil.doSendKeys(Masters.countryName, CountryName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.countryName, CountryName);
+		eleUtil.doClick(CL.saveButton);
 		Max_wait();
 		logger.info(" DATA CHECK ");
 		Max_wait();
@@ -52,34 +52,34 @@ public class MastersGeography extends Driverfactory{
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		Max_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Max_wait();
-		eleUtil.doSendKeys(Masters.countryName, "#@$$$");  //negative check 
+		eleUtil.doSendKeys(mas.countryName, "#@$$$");  //negative check 
 		Max_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		Min_wait();
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Please enter Country Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		Max_wait();
-		eleUtil.doSendKeys(Masters.countryName, CountryName);
+		eleUtil.doSendKeys(mas.countryName, CountryName);
 		Max_wait();
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
 		}
 		
 		Max_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.showentries, "100");
+		eleUtil.doSelectByVisibleText(CL.showentries, "100");
 		Max_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, CountryName);
+		eleUtil.doSendKeys(CL.searchBox, CountryName);
 		String country = CountryName;
 		Max_wait();
-		if(country.equals(eleUtil.getElements(CommanLocators.Tabledata).get(0).getAttribute("innerText").trim())) {
+		if(country.equals(eleUtil.getElements(CL.Tabledata).get(0).getAttribute("innerText").trim())) {
 			logger.info("country name is Approved");
 		}
 		else {
@@ -94,19 +94,19 @@ public class MastersGeography extends Driverfactory{
 	public void CountryEdit(String SearchCountry ,String countryedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the Country Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchCountry);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, SearchCountry);
 		logger.info("Search Country Name  is : " + SearchCountry );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.countryName, countryedit);
+		eleUtil.doSendKeys(mas.countryName, countryedit);
 		logger.info("Edit Country Name  is : " + countryedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			//logger.info("Unable to edit the flow");
 		}
@@ -121,18 +121,18 @@ public class MastersGeography extends Driverfactory{
 	
 public boolean StateCheck(String CountryName,String StateName) throws InterruptedException {
 	Max_wait();
-	eleUtil.doClick(Masters.masterIcon);
+	eleUtil.doClick(mas.masterIcon);
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.province);
+		eleUtil.doClick(mas.province);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Max_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+		eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.stateName, StateName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.stateName, StateName);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -140,11 +140,11 @@ public boolean StateCheck(String CountryName,String StateName) throws Interrupte
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
-		eleUtil.doSendKeys(Masters.stateName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
+		eleUtil.doSendKeys(mas.stateName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info(" NEGATIVE DATA CHECK ");
 		toasterMessage("Please enter state");
@@ -153,23 +153,23 @@ public boolean StateCheck(String CountryName,String StateName) throws Interrupte
 		
 		logger.info(" RESET BUTTON CHECK ");
 		Min_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
-		eleUtil.doSendKeys(Masters.stateName, StateName);
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
+		eleUtil.doSendKeys(mas.stateName, StateName);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
 		}
 		
 		Min_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.showentries, "100");
+		eleUtil.doSelectByVisibleText(CL.showentries, "100");
 		Min_wait();
 		logger.info("TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, StateName);
+		eleUtil.doSendKeys(CL.searchBox, StateName);
 		String state = StateName;
 		Min_wait();
-		if(state.equals(eleUtil.getElements(CommanLocators.Tabledata).get(1).getAttribute("innerText").trim())) {
+		if(state.equals(eleUtil.getElements(CL.Tabledata).get(1).getAttribute("innerText").trim())) {
 			logger.info("state name is Approved");
 		}
 		else {
@@ -183,21 +183,21 @@ public boolean StateCheck(String CountryName,String StateName) throws Interrupte
 
 public void StateEdit(String SearchState ,String stateedit) throws InterruptedException {
 	try {
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 	Min_wait();
-	eleUtil.doClick(Masters.province);
+	eleUtil.doClick(mas.province);
 	Min_wait();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	logger.info("Search the State Name ");
-	eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-	eleUtil.doSendKeys(CommanLocators.searchBox, SearchState);
+	eleUtil.waitForElementPresence(CL.searchBox, 30);
+	eleUtil.doSendKeys(CL.searchBox, SearchState);
 	logger.info("Search State Name  is : " + SearchState);
-	eleUtil.doClick(CommanLocators.editBtn);
+	eleUtil.doClick(CL.editBtn);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.stateName, stateedit);
+	eleUtil.doSendKeys(mas.stateName, stateedit);
 	logger.info("Edit State Name  is : " + stateedit);
 	
-	eleUtil.doClick(CommanLocators.updateBtn);
+	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
 //		logger.info("Unable to edit the flow");
 	}
@@ -212,32 +212,32 @@ public void StateEdit(String SearchState ,String stateedit) throws InterruptedEx
 
 public boolean CityCheck(String CountryName,String StateName,String CityName,String Populations,String Stus) throws InterruptedException {
 Max_wait();
-eleUtil.doClick(Masters.masterIcon);
+eleUtil.doClick(mas.masterIcon);
 	Max_wait();
 	Max_wait();
-	eleUtil.doClick(Masters.city);
+	eleUtil.doClick(mas.city);
 	Max_wait();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	Max_wait();
 	Max_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.cityName, CityName);
+	eleUtil.doSendKeys(mas.cityName, CityName);
 	Min_wait();
 	
-	if (eleUtil.doIsDisplayed(Masters.LocMetro) || eleUtil.doIsEnabled(Masters.LocMetro)) {
-  	eleUtil.doClick(Masters.LocMetro);
+	if (eleUtil.doIsDisplayed(mas.LocMetro) || eleUtil.doIsEnabled(mas.LocMetro)) {
+  	eleUtil.doClick(mas.LocMetro);
 	}
 	
-	eleUtil.doSelectByVisibleText(Masters.population, Populations);
+	eleUtil.doSelectByVisibleText(mas.population, Populations);
 	Min_wait();
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.Status, Stus);
+	eleUtil.doSelectByVisibleText(CL.Status, Stus);
 	Min_wait();
 	
-	eleUtil.doClick(CommanLocators.saveButton);
+	eleUtil.doClick(CL.saveButton);
 	logger.info(" DATA CHECK ");
 	if(toasterMessage().equals("Saved Successfully")) {
 		logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -245,13 +245,13 @@ eleUtil.doClick(Masters.masterIcon);
 		logger.info("Duplicate check!! " + toasterMessage);
 	}
 	
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
-	eleUtil.doSendKeys(Masters.cityName, "#$%%"); //negative check
-	eleUtil.doClick(CommanLocators.saveButton);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
+	eleUtil.doSendKeys(mas.cityName, "#$%%"); //negative check
+	eleUtil.doClick(CL.saveButton);
 
 	logger.info(" NEGATIVE DATA CHECK ");
 	toasterMessage("Please enter city");
@@ -260,11 +260,11 @@ eleUtil.doClick(Masters.masterIcon);
 	
 	logger.info(" RESET BUTTON CHECK ");
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
-	eleUtil.doSendKeys(Masters.cityName, CityName);
-	if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-		eleUtil.doClick(CommanLocators.resetButton);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
+	eleUtil.doSendKeys(mas.cityName, CityName);
+	if(eleUtil.doIsEnabled(CL.resetButton)) {
+		eleUtil.doClick(CL.resetButton);
 	logger.info("Reset button successfully worked");
 	}else {
 		logger.info("Reset button is does not worked");
@@ -274,14 +274,14 @@ eleUtil.doClick(Masters.masterIcon);
 	Min_wait();
 	logger.info("TABLE DATA VALIDATION  CHECK ");
 	try {
-	if(eleUtil.doIsDisplayed(CommanLocators.showentries)==eleUtil.doIsEnabled(CommanLocators.showentries) ) {
+	if(eleUtil.doIsDisplayed(CL.showentries)==eleUtil.doIsEnabled(CL.showentries) ) {
 		Min_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.showentries, "100");
+		eleUtil.doSelectByVisibleText(CL.showentries, "100");
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, CityName);
+		eleUtil.doSendKeys(CL.searchBox, CityName);
 		String city = CityName;
 		Min_wait();
-		if(city.equals(eleUtil.getElements(CommanLocators.Tabledata).get(2).getAttribute("innerText").trim())) {
+		if(city.equals(eleUtil.getElements(CL.Tabledata).get(2).getAttribute("innerText").trim())) {
 			logger.info("state name is Approved");
 		}
 		else {
@@ -291,10 +291,10 @@ eleUtil.doClick(Masters.masterIcon);
 	}
 	}catch(Exception e) {
 		Min_wait();
-		eleUtil.doSendKeys(CommanLocators.searchBox, CityName);
+		eleUtil.doSendKeys(CL.searchBox, CityName);
 		String city = CityName;
 		Min_wait();
-		if(city.equals(eleUtil.getElements(CommanLocators.Tabledata).get(2).getAttribute("innerText").trim())) {
+		if(city.equals(eleUtil.getElements(CL.Tabledata).get(2).getAttribute("innerText").trim())) {
 			logger.info("City name is Approved");
 		}
 		else {
@@ -315,21 +315,21 @@ return true;
 
 public void CityEdit(String SearchCity ,String Cityedit) throws InterruptedException {
 	try {
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 	Min_wait();
-	eleUtil.doClick(Masters.city);
+	eleUtil.doClick(mas.city);
 	Min_wait();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	logger.info("Search the City Name ");
-	eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-	eleUtil.doSendKeys(CommanLocators.searchBox, SearchCity);
+	eleUtil.waitForElementPresence(CL.searchBox, 30);
+	eleUtil.doSendKeys(CL.searchBox, SearchCity);
 	logger.info("Search City Name  is : " + SearchCity);
-	eleUtil.doClick(CommanLocators.editBtn);
+	eleUtil.doClick(CL.editBtn);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.cityName, Cityedit);
+	eleUtil.doSendKeys(mas.cityName, Cityedit);
 	logger.info("Edit City Name  is : " + Cityedit);
 	
-	eleUtil.doClick(CommanLocators.updateBtn);
+	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
 		//logger.info("Unable to edit the flow");
 	}
@@ -344,32 +344,32 @@ public void CityEdit(String SearchCity ,String Cityedit) throws InterruptedExcep
 public boolean AreaCheck(String CountryName,String StateName,String CityName,String AreaName,String Pincode,String Stus) throws InterruptedException {
 Max_wait();
 Max_wait();
-eleUtil.doClick(Masters.masterIcon);
+eleUtil.doClick(mas.masterIcon);
 	Max_wait();
 
 	Max_wait();
 
-	eleUtil.doClick(Masters.barangay);
+	eleUtil.doClick(mas.barangay);
 
 	Max_wait();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	
 	Max_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.citySelect, CityName);
+	eleUtil.doSelectByVisibleText(CL.citySelect, CityName);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.barangayName, AreaName);
+	eleUtil.doSendKeys(mas.barangayName, AreaName);
 	
-	eleUtil.doSendKeys(Masters.zipCode, Pincode);
-	Min_wait();
-	
-	eleUtil.doSelectByVisibleText(CommanLocators.Status, Stus);
+	eleUtil.doSendKeys(mas.zipCode, Pincode);
 	Min_wait();
 	
-	eleUtil.doClick(CommanLocators.saveButton);
+	eleUtil.doSelectByVisibleText(CL.Status, Stus);
+	Min_wait();
+	
+	eleUtil.doClick(CL.saveButton);
 	logger.info(" DATA CHECK ");
 	if(toasterMessage().equals("Saved Successfully")) {
 		logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -377,16 +377,16 @@ eleUtil.doClick(Masters.masterIcon);
 		logger.info("Duplicate check!! " + toasterMessage);
 	}
 	
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.citySelect, CityName);
+	eleUtil.doSelectByVisibleText(CL.citySelect, CityName);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.barangayName, "#$%%"); //negative check
-	eleUtil.doClick(CommanLocators.saveButton);
+	eleUtil.doSendKeys(mas.barangayName, "#$%%"); //negative check
+	eleUtil.doClick(CL.saveButton);
 
 	logger.info(" NEGATIVE DATA CHECK ");
 	toasterMessage("Enter Area Name");
@@ -395,12 +395,12 @@ eleUtil.doClick(Masters.masterIcon);
 	
 	logger.info(" RESET BUTTON CHECK ");
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
-	eleUtil.doSelectByVisibleText(CommanLocators.citySelect, CityName);
-	eleUtil.doSendKeys(Masters.barangayName, AreaName);
-	if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-		eleUtil.doClick(CommanLocators.resetButton);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.citySelect, CityName);
+	eleUtil.doSendKeys(mas.barangayName, AreaName);
+	if(eleUtil.doIsEnabled(CL.resetButton)) {
+		eleUtil.doClick(CL.resetButton);
 	logger.info("Reset button successfully worked");
 	}else {
 		logger.info("Reset button is does not worked");
@@ -410,15 +410,15 @@ eleUtil.doClick(Masters.masterIcon);
 	Min_wait();
 	logger.info("TABLE DATA VALIDATION  CHECK ");
 	try {
-	if(eleUtil.doIsDisplayed(CommanLocators.showentries)==eleUtil.doIsEnabled(CommanLocators.showentries) ) {
+	if(eleUtil.doIsDisplayed(CL.showentries)==eleUtil.doIsEnabled(CL.showentries) ) {
 		Min_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.showentries, "100");
+		eleUtil.doSelectByVisibleText(CL.showentries, "100");
 		Max_wait();
-		eleUtil.doSendKeys(Masters.searchBox1, "North Branch");
+		eleUtil.doSendKeys(mas.searchBox1, "North Branch");
 		Max_wait();
 		String Area = AreaName;
 		Min_wait();
-		if(Area.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(4).getAttribute("innerText").trim())) {
+		if(Area.equals(eleUtil.getElements(CL.Tabledata1).get(4).getAttribute("innerText").trim())) {
 			logger.info("Area name is Approved");
 		}
 		else {
@@ -428,10 +428,10 @@ eleUtil.doClick(Masters.masterIcon);
 	}
 	}catch(Exception e) {
 		Min_wait();
-		eleUtil.doSendKeys(Masters.searchBox1,"North Branch");
+		eleUtil.doSendKeys(mas.searchBox1,"North Branch");
 		String Area = AreaName;
 		Min_wait();
-		if(Area.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(4).getAttribute("innerText").trim())) {
+		if(Area.equals(eleUtil.getElements(CL.Tabledata1).get(4).getAttribute("innerText").trim())) {
 			logger.info("Area name is Approved");
 		}
 		else {
@@ -447,21 +447,21 @@ return true;
 
 public void AreaEdit(String SearchArea ,String Areaedit) throws InterruptedException {
 	try {
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 	Min_wait();
-	eleUtil.doClick(Masters.barangay);
+	eleUtil.doClick(mas.barangay);
 	Min_wait();
-//	eleUtil.doClick(CommanLocators.AddBtn);
+//	eleUtil.doClick(CL.AddBtn);
 	logger.info("Search the Area Name ");
-	eleUtil.waitForElementPresence(Masters.searchBox1, 30);
-	eleUtil.doSendKeys(Masters.searchBox1, SearchArea);
+	eleUtil.waitForElementPresence(mas.searchBox1, 30);
+	eleUtil.doSendKeys(mas.searchBox1, SearchArea);
 	logger.info("Search Area Name  is : " + SearchArea);
-	eleUtil.doClick(CommanLocators.editBtn);
+	eleUtil.doClick(CL.editBtn);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.barangayName, Areaedit);
+	eleUtil.doSendKeys(mas.barangayName, Areaedit);
 	logger.info("Edit Area Name  is : " + Areaedit);
 	
-	eleUtil.doClick(CommanLocators.updateBtn);
+	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
 		//logger.info("Unable to edit the flow");
 	}
@@ -479,34 +479,34 @@ public void AreaEdit(String SearchArea ,String Areaedit) throws InterruptedExcep
 public boolean WorklocationCheck(String CountryName,String StateName,String CityName,String AreaName,String locationcode,String locationName,String Stus) throws InterruptedException {
 Max_wait();
 Max_wait();
-eleUtil.doClick(Masters.masterIcon);
+eleUtil.doClick(mas.masterIcon);
 	Max_wait();
 	Max_wait();
-	eleUtil.doClick(Masters.workLocation);
+	eleUtil.doClick(mas.workLocation);
 	Max_wait();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	
 	Max_wait();
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.citySelect, CityName);
+	eleUtil.doSelectByVisibleText(CL.citySelect, CityName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(Masters.AreaSelect, AreaName);
+	eleUtil.doSelectByVisibleText(mas.AreaSelect, AreaName);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.workLocationCode, locationName);
+	eleUtil.doSendKeys(mas.workLocationCode, locationName);
 	Min_wait();
 
-	eleUtil.doSendKeys(Masters.workLocationName, locationcode);
+	eleUtil.doSendKeys(mas.workLocationName, locationcode);
 	Min_wait();
 	
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.Status, Stus);
+	eleUtil.doSelectByVisibleText(CL.Status, Stus);
 	Min_wait();
 	
-	eleUtil.doClick(CommanLocators.saveButton);
+	eleUtil.doClick(CL.saveButton);
 	logger.info(" DATA CHECK ");
 	if(toasterMessage().equals("Saved Successfully")) {
 		logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -521,7 +521,7 @@ eleUtil.doClick(Masters.masterIcon);
 	Max_wait();
 	Min_wait();
 //	driver.findElement(By.id("swap")).click();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 //	js.clickElementByJS(CL.AddBtn);
 	Max_wait();
 	Max_wait();
@@ -529,14 +529,14 @@ eleUtil.doClick(Masters.masterIcon);
 	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.citySelect, CityName);
+	eleUtil.doSelectByVisibleText(CL.citySelect, CityName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(Masters.AreaSelect, AreaName);
+	eleUtil.doSelectByVisibleText(mas.AreaSelect, AreaName);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.workLocationCode, "#$%%"); //negative check
-	eleUtil.doClick(CommanLocators.saveButton);
+	eleUtil.doSendKeys(mas.workLocationCode, "#$%%"); //negative check
+	eleUtil.doClick(CL.saveButton);
 
 	logger.info(" NEGATIVE DATA CHECK ");
 	toasterMessage("Enter work Location Code");
@@ -545,15 +545,15 @@ eleUtil.doClick(Masters.masterIcon);
 	
 	logger.info(" RESET BUTTON CHECK ");
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.countrySelect, CountryName);
+	eleUtil.doSelectByVisibleText(CL.countrySelect, CountryName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(CommanLocators.stateSelect, StateName);
+	eleUtil.doSelectByVisibleText(CL.stateSelect, StateName);
 	
-	eleUtil.doSelectByVisibleText(CommanLocators.citySelect, CityName);
+	eleUtil.doSelectByVisibleText(CL.citySelect, CityName);
 	Min_wait();
-	eleUtil.doSelectByVisibleText(Masters.AreaSelect, AreaName);
-	if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-		eleUtil.doClick(CommanLocators.resetButton);
+	eleUtil.doSelectByVisibleText(mas.AreaSelect, AreaName);
+	if(eleUtil.doIsEnabled(CL.resetButton)) {
+		eleUtil.doClick(CL.resetButton);
 	logger.info("Reset button successfully worked");
 	}else {
 		logger.info("Reset button is does not worked");
@@ -563,15 +563,15 @@ eleUtil.doClick(Masters.masterIcon);
 	Min_wait();
 	logger.info("TABLE DATA VALIDATION  CHECK ");
 	try {
-	if(eleUtil.doIsDisplayed(CommanLocators.showentries)==eleUtil.doIsEnabled(CommanLocators.showentries) ) {
+	if(eleUtil.doIsDisplayed(CL.showentries)==eleUtil.doIsEnabled(CL.showentries) ) {
 		Min_wait();
-		eleUtil.doSelectByVisibleText(CommanLocators.showentries, "100");
+		eleUtil.doSelectByVisibleText(CL.showentries, "100");
 		Max_wait();
-		eleUtil.doSendKeys(Masters.searchBox1, "TEST");
+		eleUtil.doSendKeys(mas.searchBox1, "TEST");
 		Max_wait();
 		String location = locationcode;
 		Min_wait();
-		if(location.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(5).getAttribute("innerText").trim())) {
+		if(location.equals(eleUtil.getElements(CL.Tabledata1).get(5).getAttribute("innerText").trim())) {
 			logger.info("location code name is Approved");
 		}
 		else {
@@ -586,7 +586,7 @@ eleUtil.doClick(Masters.masterIcon);
 
 		String Area = AreaName;
 		Min_wait();
-		if(Area.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(5).getAttribute("innerText").trim())) {
+		if(Area.equals(eleUtil.getElements(CL.Tabledata1).get(5).getAttribute("innerText").trim())) {
 			logger.info("location code name is Approved");
 		}
 		else {
@@ -602,21 +602,21 @@ return true;
 
 public void WorklocationEdit(String Searchlocation ,String Loctionedit) throws InterruptedException {
 	try {
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 	Min_wait();
-	eleUtil.doClick(Masters.workLocation);
+	eleUtil.doClick(mas.workLocation);
 	Min_wait();
-	eleUtil.doClick(CommanLocators.AddBtn);
+	eleUtil.doClick(CL.AddBtn);
 	logger.info("Search the WorkLocation Code Name ");
-	eleUtil.waitForElementPresence(Masters.searchBox1, 30);
-	eleUtil.doSendKeys(Masters.searchBox1, Searchlocation);
+	eleUtil.waitForElementPresence(mas.searchBox1, 30);
+	eleUtil.doSendKeys(mas.searchBox1, Searchlocation);
 	logger.info("Search worklocation Name  is : " + Searchlocation);
-	eleUtil.doClick(CommanLocators.editBtn);
+	eleUtil.doClick(CL.editBtn);
 	Min_wait();
-	eleUtil.doSendKeys(Masters.workLocationCode, Loctionedit);
+	eleUtil.doSendKeys(mas.workLocationCode, Loctionedit);
 	logger.info("Edit worklocation code Name  is : " + Loctionedit);
 	
-	eleUtil.doClick(CommanLocators.updateBtn);
+	eleUtil.doClick(CL.updateBtn);
 	}catch(Exception e) {
 		//logger.info("Unable to edit the flow");
 	}

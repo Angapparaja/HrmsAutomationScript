@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="9" total="10" passed="1" failed="0" skipped="0">
+<testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-28T18:59:58 IST" name="Default suite" finished-at="2023-02-28T19:00:52 IST" duration-ms="54543">
+  <suite started-at="2023-03-02T14:34:30 IST" name="Default suite" finished-at="2023-03-02T14:35:02 IST" duration-ms="31837">
     <groups>
       <group name="Regression">
-        <method signature="MastersGeographyTest.AreaEditTest()[pri:7, instance:com.hrms.masters.tests.MastersGeographyTest@942a29c]" name="AreaEditTest" class="com.hrms.masters.tests.MastersGeographyTest"/>
+        <method signature="MastersRecruitmentTest.CompetenciesEditTest()[pri:3, instance:com.hrms.masters.tests.MastersRecruitmentTest@3f6f6701]" name="CompetenciesEditTest" class="com.hrms.masters.tests.MastersRecruitmentTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2023-02-28T18:59:58 IST" name="Default test" finished-at="2023-02-28T19:00:52 IST" duration-ms="54543">
-      <class name="com.hrms.masters.tests.MastersGeographyTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@942a29c]" started-at="2023-02-28T18:59:58 IST" name="setup" finished-at="2023-02-28T19:00:11 IST" duration-ms="12573" status="PASS">
+    <test started-at="2023-03-02T14:34:30 IST" name="Default test" finished-at="2023-03-02T14:35:02 IST" duration-ms="31837">
+      <class name="com.hrms.masters.tests.MastersRecruitmentTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hrms.masters.tests.MastersRecruitmentTest@3f6f6701]" started-at="2023-03-02T14:34:30 IST" name="setup" finished-at="2023-03-02T14:34:39 IST" duration-ms="8754" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@942a29c]" started-at="2023-02-28T19:00:11 IST" name="login" finished-at="2023-02-28T19:00:27 IST" duration-ms="15981" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.hrms.masters.tests.MastersRecruitmentTest@3f6f6701]" started-at="2023-03-02T14:34:39 IST" name="login" finished-at="2023-03-02T14:34:55 IST" duration-ms="15883" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="AreaEditTest()[pri:7, instance:com.hrms.masters.tests.MastersGeographyTest@942a29c]" started-at="2023-02-28T19:00:27 IST" name="AreaEditTest" finished-at="2023-02-28T19:00:52 IST" duration-ms="25063" status="PASS">
+        <test-method signature="CompetenciesEditTest()[pri:3, instance:com.hrms.masters.tests.MastersRecruitmentTest@3f6f6701]" started-at="2023-03-02T14:34:55 IST" name="CompetenciesEditTest" finished-at="2023-03-02T14:35:01 IST" duration-ms="6275" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AreaEditTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersGeographyTest@942a29c]" started-at="2023-02-28T19:00:52 IST" name="tearDown" finished-at="2023-02-28T19:00:52 IST" duration-ms="842" status="PASS">
+        </test-method> <!-- CompetenciesEditTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.hrms.masters.tests.MastersRecruitmentTest@3f6f6701]" started-at="2023-03-02T14:35:01 IST" name="tearDown" finished-at="2023-03-02T14:35:02 IST" duration-ms="893" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.hrms.masters.tests.MastersGeographyTest -->
+      </class> <!-- com.hrms.masters.tests.MastersRecruitmentTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

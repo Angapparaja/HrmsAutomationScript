@@ -232,6 +232,86 @@ public class Masters{
 	public static By marketDesignationName=By.xpath("//*[@id='mktDesigName']"); 
 	
 	
+	/*
+	 * Master-Recruitment-Consultant-Locators
+	 */
+	public static By recruitment=By.xpath("//*[text()='RECRUITMENT']");
+	 
+	public static By consultant=By.xpath("//*[text()='Consultant']"); 
+	
+	public static By consultantName=By.xpath("//*[@id='consultantName']");
+	
+	public static By consultantPerson=By.xpath("//*[@id='consultantContactPerson']");
+	
+	public static By consContactNo=By.xpath("//*[@id='consultantContactNo']");
+	
+	public static By consEmail=By.xpath("//*[@id='consultantEmail']");
+	
+	public static By consAddress=By.xpath("//*[@id='consultantAddress']");
+	
+	public static By conslocation=By.xpath("//*[@id='location']");	
+	
+	public static By consuserName=By.xpath("//*[@id='userName']");
+	
+    public static By countrySelect=By.xpath("//*[@id='countryName']");
+	
+	public static By stateSelect=By.xpath("//*[@id='stateName']");
+	
+	public static By citySelect=By.xpath("//*[@id='city']");
+	
+	
+	/*
+	 * Master-Recruitment-Competencies-Locators
+	 */
+	public static By competencies=By.xpath("//*[text()='COMPETENCIES']");
+	
+	public static By compName=By.xpath("//*[@id='compName']");
+	
+	public static By compGroup=By.xpath("//*[@id='compGroup']");
+	
+	public static By compDescription=By.xpath("//*[@id='compDescription']");
+	
+	public static By behaviouralRadio=By.xpath("(//span[@class='checkmark'])[1]");
+	
+	public static By functionalRadio=By.xpath("(//*[@class='checkmark'])[2]");
+	
+	public static By positiveIndicator=By.xpath("(//input[@type='text'])[4]");
+	
+	public static By negativeIndicator=By.xpath("//*[@id='negativeIndicator']");
+	
+	public static By interventionYes=By.xpath("//*[@id='Yes']");
+	
+	public static By interventionNo=By.xpath("(//*[@class='checkmark'])[4]");
+	
+	public static By mode=By.xpath("//*[text()='MODE']");
+	
+	public static By compStatus =By.xpath("//*[@id='compStatus']");
+	
+
+	/*
+	 * Master-Recruitment-EvalutionForm-Locators
+	 */
+	public static By EvalutionForm=By.xpath("//*[text()='Evaluation Form']");
+	
+	public static By EvatitleName=By.xpath("//*[@id='com_name']");
+	
+	public static By Evaquestion=By.xpath("//*[@id='txt_crit_1']");
+	
+	public static By EvaTopicsAdd=By.xpath("//a[@class='fa fa-plus-circle mt-3']");
+	
+	public static By EvaTopicsTrash=By.xpath("//a[@class='fa fa-trash mt-3']");
+	
+	
+	/*
+	 * Master-Recruitment--Locators
+	 */
+	public static By Skill=By.xpath("//*[text()='Skill']");
+	
+	public static By SkillName=By.xpath("//*[@id='SkillName']");
+	
+	
+	
+	
 	
 	
 }

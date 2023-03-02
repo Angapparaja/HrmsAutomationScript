@@ -17,6 +17,7 @@ import com.hrms.pageactions.masters.MastersEducation;
 import com.hrms.pageactions.masters.MastersGeography;
 import com.hrms.pageactions.masters.MastersPersonal;
 import com.hrms.pageactions.masters.MastersPosition;
+import com.hrms.pageactions.masters.MastersRecruitment;
 
 
 public class BaseTest {
@@ -34,6 +35,8 @@ public class BaseTest {
 	MastersPersonal Mp;
 	MastersEducation ME;
 	MastersPosition MPO;
+	MastersRecruitment Mr;
+	
 
 
 	@BeforeClass(alwaysRun=true)
@@ -52,6 +55,7 @@ public class BaseTest {
 		Mp = new MastersPersonal(driver);
 	    ME   = new MastersEducation(driver);
 	    MPO   = new MastersPosition(driver);
+	    Mr = new MastersRecruitment(driver);
 
 
 	}

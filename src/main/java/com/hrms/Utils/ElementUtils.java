@@ -125,6 +125,10 @@ public class ElementUtils {
 	public boolean doIsEnabled(By locator) {
 		return getElement(locator).isEnabled();
 	}
+	
+	public boolean doIsSelected(By locator) {
+		return getElement(locator).isSelected();
+	}
 
 	public void clickOnElement(By locator, String value) {
 		List<WebElement> eleList = getElements(locator);

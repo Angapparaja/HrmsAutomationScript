@@ -31,17 +31,17 @@ public class MastersPersonal extends Driverfactory {
 	public boolean ReligionCheck(String reliName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Max_wait();
-		eleUtil.doSendKeys(Masters.religionName,reliName);
+		eleUtil.doSendKeys(mas.religionName,reliName);
 		Max_wait();
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doClick(CL.saveButton);
 		Max_wait();
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
@@ -50,20 +50,20 @@ public class MastersPersonal extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		Max_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Max_wait();
-		eleUtil.doSendKeys(Masters.religionName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.religionName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 		Min_wait();
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter religion Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.religionName, reliName);
+		eleUtil.doSendKeys(mas.religionName, reliName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -71,10 +71,10 @@ public class MastersPersonal extends Driverfactory {
 		
 		Max_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, reliName);
+		eleUtil.doSendKeys(CL.searchBox, reliName);
 		String religion = reliName;
 		Max_wait();
-		if(religion.equals(eleUtil.getElements(CommanLocators.Tabledata).get(0).getAttribute("innerText").trim())) {
+		if(religion.equals(eleUtil.getElements(CL.Tabledata).get(0).getAttribute("innerText").trim())) {
 			logger.info("Religion name is Approved");
 		}
 		else {
@@ -89,21 +89,21 @@ public class MastersPersonal extends Driverfactory {
 	public void ReligionEdit(String SearchReligion ,String Religionedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the Religion Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchReligion);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, SearchReligion);
 		logger.info("Search Religion Name  is : " + SearchReligion );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.countryName, Religionedit);
+		eleUtil.doSendKeys(mas.countryName, Religionedit);
 		logger.info("Edit Religion Name  is : " + Religionedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -119,18 +119,18 @@ public class MastersPersonal extends Driverfactory {
 	
 	public boolean NationalityCheck(String NatioName) throws InterruptedException {
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		Min_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.nationality);
+		eleUtil.doClick(mas.nationality);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Max_wait();
-		eleUtil.doSendKeys(Masters.nationalityName,NatioName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.nationalityName,NatioName);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -138,20 +138,20 @@ public class MastersPersonal extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.nationalityName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.nationalityName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter nationality Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.nationalityName,NatioName);
+		eleUtil.doSendKeys(mas.nationalityName,NatioName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -159,10 +159,10 @@ public class MastersPersonal extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, NatioName);
+		eleUtil.doSendKeys(CL.searchBox, NatioName);
 		String nation = NatioName;
 		
-		if(nation.equals(eleUtil.getElements(CommanLocators.Tabledata3).get(0).getAttribute("innerText").trim())) {
+		if(nation.equals(eleUtil.getElements(CL.Tabledata3).get(0).getAttribute("innerText").trim())) {
 			logger.info("Nationality name is Approved");
 		}
 		else {
@@ -177,23 +177,23 @@ public class MastersPersonal extends Driverfactory {
 	public void NationalityEdit(String SearchNationality ,String Nationalityedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.nationality);
+		eleUtil.doClick(mas.nationality);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the Nationality Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchNationality);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, SearchNationality);
 		logger.info("Search Nationality Name  is : " + SearchNationality );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.nationalityName, Nationalityedit);
+		eleUtil.doSendKeys(mas.nationalityName, Nationalityedit);
 		logger.info("Edit Nationality Name  is : " + Nationalityedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -209,18 +209,18 @@ public class MastersPersonal extends Driverfactory {
 	
 	public boolean LanguageCheck(String LanguageName) throws InterruptedException {
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
 		Min_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.language);
+		eleUtil.doClick(mas.language);
 		Max_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Max_wait();
-		eleUtil.doSendKeys(Masters.languageName,LanguageName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.languageName,LanguageName);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -228,20 +228,20 @@ public class MastersPersonal extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.languageName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.languageName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter language Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.languageName,LanguageName);
+		eleUtil.doSendKeys(mas.languageName,LanguageName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -249,10 +249,10 @@ public class MastersPersonal extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, LanguageName);
+		eleUtil.doSendKeys(CL.searchBox, LanguageName);
 		String Languages = LanguageName;
 		
-		if(Languages.equals(eleUtil.getElements(CommanLocators.Tabledata3).get(0).getAttribute("innerText").trim())) {
+		if(Languages.equals(eleUtil.getElements(CL.Tabledata3).get(0).getAttribute("innerText").trim())) {
 			logger.info("Languauge name is Approved");
 		}
 		else {
@@ -267,23 +267,23 @@ public class MastersPersonal extends Driverfactory {
 	public void LanguaugeEdit(String SearchLanguauge ,String Languaugeedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.language);
+		eleUtil.doClick(mas.language);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the Languauge Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchLanguauge);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, SearchLanguauge);
 		logger.info("Search Languauge Name  is : " + SearchLanguauge );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.languageName, Languaugeedit);
+		eleUtil.doSendKeys(mas.languageName, Languaugeedit);
 		logger.info("Edit Languauge Name  is : " + Languaugeedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -300,18 +300,18 @@ public class MastersPersonal extends Driverfactory {
 	public boolean RelationShipCheck(String relationName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.relationship);
+		eleUtil.doClick(mas.relationship);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSendKeys(Masters.relationshipName,relationName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.relationshipName,relationName);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		Min_wait();
 		if(toasterMessage().equals("Saved Successfully")) {
@@ -320,20 +320,20 @@ public class MastersPersonal extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.relationshipName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.relationshipName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter relationship Name");
 		logger.info("Negative data check  : " + toasterMessage);
 		
-		eleUtil.doSendKeys(Masters.relationshipName,relationName);
+		eleUtil.doSendKeys(mas.relationshipName,relationName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -341,10 +341,10 @@ public class MastersPersonal extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, relationName);
+		eleUtil.doSendKeys(CL.searchBox, relationName);
 		String relations = relationName;
 		
-		if(relations.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(0).getAttribute("innerText").trim())) {
+		if(relations.equals(eleUtil.getElements(CL.Tabledata1).get(0).getAttribute("innerText").trim())) {
 			logger.info("relation name is Approved");
 		}
 		else {
@@ -359,23 +359,23 @@ public class MastersPersonal extends Driverfactory {
 	public void relationshipEdit(String Searchrelations ,String relationsedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.relationship);
+		eleUtil.doClick(mas.relationship);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the relationship Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, Searchrelations);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, Searchrelations);
 		logger.info("Search relationship Name  is : " + Searchrelations );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.relationshipName, relationsedit);
+		eleUtil.doSendKeys(mas.relationshipName, relationsedit);
 		logger.info("Edit relationship Name  is : " + relationsedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -390,17 +390,17 @@ public class MastersPersonal extends Driverfactory {
 	public boolean BloodGroupCheck(String BloodGroupName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.bloodGroup);
+		eleUtil.doClick(mas.bloodGroup);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSendKeys(Masters.bloodgroupName,BloodGroupName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.bloodgroupName,BloodGroupName);
+		eleUtil.doClick(CL.saveButton);
 		Min_wait();
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
@@ -409,21 +409,21 @@ public class MastersPersonal extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.bloodgroupName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.bloodgroupName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Please Enter valid Blood Group");
 		logger.info("Negative data check  : " + toasterMessage);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
-		eleUtil.doSendKeys(Masters.bloodgroupName,BloodGroupName);
+		eleUtil.doClick(CL.AddBtn);
+		eleUtil.doSendKeys(mas.bloodgroupName,BloodGroupName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -431,10 +431,10 @@ public class MastersPersonal extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, BloodGroupName);
+		eleUtil.doSendKeys(CL.searchBox, BloodGroupName);
 		String BloodGroup = BloodGroupName;
 		
-		if(BloodGroup.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(0).getAttribute("innerText").trim())) {
+		if(BloodGroup.equals(eleUtil.getElements(CL.Tabledata1).get(0).getAttribute("innerText").trim())) {
 			logger.info("BloodGroup name is Approved");
 		}
 		else {
@@ -449,23 +449,23 @@ public class MastersPersonal extends Driverfactory {
 	public void BloodGroupEdit(String SearchBloodGroup ,String BloodGroupedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.bloodGroup);
+		eleUtil.doClick(mas.bloodGroup);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the BloodGroup Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchBloodGroup);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, SearchBloodGroup);
 		logger.info("Search BloodGroup Name  is : " + SearchBloodGroup );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.bloodgroupName, BloodGroupedit);
+		eleUtil.doSendKeys(mas.bloodgroupName, BloodGroupedit);
 		logger.info("Edit BloodGroup Name  is : " + BloodGroupedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}
@@ -481,17 +481,17 @@ public class MastersPersonal extends Driverfactory {
 	public boolean IdentificationProofCheck(String IdentificationProofName) throws InterruptedException {
 		Max_wait();
 		Max_wait();
-		eleUtil.doClick(Masters.masterIcon);
+		eleUtil.doClick(mas.masterIcon);
 		Min_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.idproof);
+		eleUtil.doClick(mas.idproof);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		
 		Min_wait();
-		eleUtil.doSendKeys(Masters.idproofName,IdentificationProofName);
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.idproofName,IdentificationProofName);
+		eleUtil.doClick(CL.saveButton);
 		logger.info(" DATA CHECK ");
 		if(toasterMessage().equals("Saved Successfully")) {
 			logger.info("Verified new data saved!! -> " + toasterMessage);
@@ -499,10 +499,10 @@ public class MastersPersonal extends Driverfactory {
 			logger.info("Duplicate check!! " + toasterMessage);
 		}
 		
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.idproofName, "#@$$$");  //negative check 
-		eleUtil.doClick(CommanLocators.saveButton);
+		eleUtil.doSendKeys(mas.idproofName, "#@$$$");  //negative check 
+		eleUtil.doClick(CL.saveButton);
 
 		logger.info("NEGATIVE DATA CHECK");
 		toasterMessage("Enter Idproof Name");
@@ -510,11 +510,11 @@ public class MastersPersonal extends Driverfactory {
 		Min_wait();
 //		eleUtil.doClick(CL.AddBtn);
 //		Min_wait();
-		eleUtil.doSendKeys(Masters.idproofName,IdentificationProofName);
+		eleUtil.doSendKeys(mas.idproofName,IdentificationProofName);
 
 		logger.info(" RESET BUTTON CHECK ");
-		if(eleUtil.doIsEnabled(CommanLocators.resetButton)) {
-			eleUtil.doClick(CommanLocators.resetButton);
+		if(eleUtil.doIsEnabled(CL.resetButton)) {
+			eleUtil.doClick(CL.resetButton);
 		logger.info("Reset button successfully worked");
 		}else {
 			logger.info("Reset button is does not worked");
@@ -522,10 +522,10 @@ public class MastersPersonal extends Driverfactory {
 		
 		Min_wait();
 		logger.info(" TABLE DATA VALIDATION  CHECK ");
-		eleUtil.doSendKeys(CommanLocators.searchBox, IdentificationProofName);
+		eleUtil.doSendKeys(CL.searchBox, IdentificationProofName);
 		String Identification =IdentificationProofName;
 		
-		if(Identification.equals(eleUtil.getElements(CommanLocators.Tabledata1).get(0).getAttribute("innerText").trim())) {
+		if(Identification.equals(eleUtil.getElements(CL.Tabledata1).get(0).getAttribute("innerText").trim())) {
 			logger.info("IdentificationProof name is Approved");
 		}
 		else {
@@ -540,23 +540,23 @@ public class MastersPersonal extends Driverfactory {
 	public void IdentificationProofEdit(String SearchIdentificationProof ,String IdentificationProofedit) throws InterruptedException {
 		try {
 			Min_wait();
-			eleUtil.doClick(Masters.masterIcon);
+			eleUtil.doClick(mas.masterIcon);
 		Max_wait();
-		eleUtil.doClick(Masters.personal);
+		eleUtil.doClick(mas.personal);
 		Min_wait();
-		eleUtil.doClick(Masters.idproof);
+		eleUtil.doClick(mas.idproof);
 		Min_wait();
-		eleUtil.doClick(CommanLocators.AddBtn);
+		eleUtil.doClick(CL.AddBtn);
 		logger.info(" Search the IdentificationProof Name ");
-		eleUtil.waitForElementPresence(CommanLocators.searchBox, 30);
-		eleUtil.doSendKeys(CommanLocators.searchBox, SearchIdentificationProof);
+		eleUtil.waitForElementPresence(CL.searchBox, 30);
+		eleUtil.doSendKeys(CL.searchBox, SearchIdentificationProof);
 		logger.info("Search IdentificationProof Name  is : " + SearchIdentificationProof );
-		eleUtil.doClick(CommanLocators.editBtn);
+		eleUtil.doClick(CL.editBtn);
 		Min_wait();
-		eleUtil.doSendKeys(Masters.idproofName, IdentificationProofedit);
+		eleUtil.doSendKeys(mas.idproofName, IdentificationProofedit);
 		logger.info("Edit IdentificationProof Name  is : " + IdentificationProofedit);
 		
-		eleUtil.doClick(CommanLocators.updateBtn);
+		eleUtil.doClick(CL.updateBtn);
 		}catch(Exception e) {
 			logger.info("Unable to edit the flow");
 		}

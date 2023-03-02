@@ -14,24 +14,13 @@
 				<include name="Regression"></include>
 			</run>
 
-<<<<<<< HEAD
+
 		</groups>
-=======
-<<<<<<< HEAD
-		</groups> -->
-
-		
-		
-=======
-		</groups> 
->>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
 
 
-<<<<<<< HEAD
-=======
-	
->>>>>>> 20ec7aafb60c75bc3b542e393315afe2042f9df5
->>>>>>> 0f1f3fdc07b073332b0ca5a6b2d3ab9394efad46
+
+
+
 		<classes>
 
 			<class name="com.hrms.masters.tests.MastersGeographyTest" />
@@ -41,6 +30,8 @@
 			<class name="com.hrms.masters.tests.MastersEducationTest" />
 
 			<class name="com.hrms.masters.tests.MastersPositionTest" />
+			
+			<class name="com.hrms.masters.tests.MastersRecruitmentTest" />
 		</classes>
 
 	</test>
